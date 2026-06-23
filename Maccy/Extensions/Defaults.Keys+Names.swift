@@ -1,5 +1,106 @@
 import AppKit
 import Defaults
+import Observation
+
+enum AppLanguage: String, CaseIterable, Identifiable, Defaults.Serializable {
+  case system
+  case ar
+  case be
+  case bn
+  case bs
+  case ca
+  case ckb
+  case cs
+  case de
+  case el
+  case en
+  case eo
+  case es
+  case fa
+  case fr
+  case he
+  case hi
+  case hr
+  case hu
+  case id
+  case it
+  case ja
+  case ko
+  case lt
+  case lv
+  case nb
+  case nl
+  case pl
+  case pt
+  case ptBR = "pt-BR"
+  case ro
+  case ru
+  case sl
+  case sv
+  case ta
+  case th
+  case tr
+  case uk
+  case uz
+  case vi
+  case zhHans = "zh-Hans"
+  case zhHant = "zh-Hant"
+
+  var id: Self { self }
+
+  var localeIdentifier: String? {
+    self == .system ? nil : rawValue
+  }
+
+  var locale: Locale {
+    if let localeIdentifier {
+      return Locale(identifier: localeIdentifier)
+    }
+
+    return .autoupdatingCurrent
+  }
+
+  var displayName: String {
+    if self == .system {
+      return AppLocalization.shared.localizedString("SystemDefault", tableName: "GeneralSettings")
+    }
+
+    return Locale(identifier: rawValue).localizedString(forIdentifier: rawValue) ?? rawValue
+  }
+}
+
+@Observable
+class AppLocalization {
+  static let shared = AppLocalization()
+
+  var language: AppLanguage {
+    didSet {
+      Defaults[.language] = language
+    }
+  }
+
+  var locale: Locale {
+    language.locale
+  }
+
+  private var bundle: Bundle {
+    guard let localeIdentifier = language.localeIdentifier,
+          let path = Bundle.main.path(forResource: localeIdentifier, ofType: "lproj"),
+          let bundle = Bundle(path: path) else {
+      return .main
+    }
+
+    return bundle
+  }
+
+  private init() {
+    language = Defaults[.language]
+  }
+
+  func localizedString(_ key: String, tableName: String? = nil, comment: String = "") -> String {
+    bundle.localizedString(forKey: key, value: nil, table: tableName)
+  }
+}
 
 struct StorageType {
   static let files = StorageType(types: [.fileURL])
@@ -34,6 +135,7 @@ extension Defaults.Keys {
     ])
   )
   static let imageMaxHeight = Key<Int>("imageMaxHeight", default: 40)
+  static let language = Key<AppLanguage>("language", default: .system)
   static let lastReviewRequestedAt = Key<Date>("lastReviewRequestedAt", default: Date.now)
   static let menuIcon = Key<MenuIcon>("menuIcon", default: .maccy)
   static let migrations = Key<[String: Bool]>("migrations", default: [:])

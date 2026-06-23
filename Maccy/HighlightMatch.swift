@@ -9,16 +9,16 @@ enum HighlightMatch: String, CaseIterable, Identifiable, CustomStringConvertible
 
   var id: Self { self }
 
-  var description: String {
+    var description: String {
     switch self {
     case .bold:
-      return NSLocalizedString("HighlightMatchBold", tableName: "AppearanceSettings", comment: "")
+      return AppLocalization.shared.localizedString("HighlightMatchBold", tableName: "AppearanceSettings")
     case .color:
-      return NSLocalizedString("HighlightMatchColor", tableName: "AppearanceSettings", comment: "")
+      return AppLocalization.shared.localizedString("HighlightMatchColor", tableName: "AppearanceSettings")
     case .italic:
-      return NSLocalizedString("HighlightMatchItalic", tableName: "AppearanceSettings", comment: "")
+      return AppLocalization.shared.localizedString("HighlightMatchItalic", tableName: "AppearanceSettings")
     case .underline:
-      return NSLocalizedString("HighlightMatchUnderline", tableName: "AppearanceSettings", comment: "")
+      return AppLocalization.shared.localizedString("HighlightMatchUnderline", tableName: "AppearanceSettings")
     }
   }
 }

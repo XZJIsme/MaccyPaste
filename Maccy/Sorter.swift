@@ -14,11 +14,11 @@ class Sorter {
     var description: String {
       switch self {
       case .lastCopiedAt:
-        return NSLocalizedString("LastCopiedAt", tableName: "StorageSettings", comment: "")
+        return AppLocalization.shared.localizedString("LastCopiedAt", tableName: "StorageSettings")
       case .firstCopiedAt:
-        return NSLocalizedString("FirstCopiedAt", tableName: "StorageSettings", comment: "")
+        return AppLocalization.shared.localizedString("FirstCopiedAt", tableName: "StorageSettings")
       case .numberOfCopies:
-        return NSLocalizedString("NumberOfCopies", tableName: "StorageSettings", comment: "")
+        return AppLocalization.shared.localizedString("NumberOfCopies", tableName: "StorageSettings")
       }
     }
   }

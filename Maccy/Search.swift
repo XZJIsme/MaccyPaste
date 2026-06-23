@@ -14,13 +14,13 @@ class Search {
     var description: String {
       switch self {
       case .exact:
-        return NSLocalizedString("Exact", tableName: "GeneralSettings", comment: "")
+        return AppLocalization.shared.localizedString("Exact", tableName: "GeneralSettings")
       case .fuzzy:
-        return NSLocalizedString("Fuzzy", tableName: "GeneralSettings", comment: "")
+        return AppLocalization.shared.localizedString("Fuzzy", tableName: "GeneralSettings")
       case .regexp:
-        return NSLocalizedString("Regex", tableName: "GeneralSettings", comment: "")
+        return AppLocalization.shared.localizedString("Regex", tableName: "GeneralSettings")
       case .mixed:
-        return NSLocalizedString("Mixed", tableName: "GeneralSettings", comment: "")
+        return AppLocalization.shared.localizedString("Mixed", tableName: "GeneralSettings")
       }
     }
   }

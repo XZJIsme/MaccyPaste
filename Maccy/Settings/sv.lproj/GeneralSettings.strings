@@ -15,6 +15,8 @@
 "Fuzzy" = "Ungefärlig";
 "Mixed" = "Blandad";
 "NotificationsAndSounds" = "Notiser och ljud 􀱁";
+"Language" = "Språk:";
+"SystemDefault" = "Systemstandard";
 "PasteAutomatically" = "Klistra in automatiskt";
 "Pin" = "Fästa:";
 "Behavior" = "Beteende:";

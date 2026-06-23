@@ -1,5 +1,19 @@
 import SwiftUI
 
+struct LocalizedView<Content: View>: View {
+  @State private var localization = AppLocalization.shared
+  let content: () -> Content
+
+  init(@ViewBuilder content: @escaping () -> Content) {
+    self.content = content
+  }
+
+  var body: some View {
+    content()
+      .environment(\.locale, localization.locale)
+  }
+}
+
 @main
 struct MaccyApp: App {
   @NSApplicationDelegateAdaptor(AppDelegate.self) var appDelegate

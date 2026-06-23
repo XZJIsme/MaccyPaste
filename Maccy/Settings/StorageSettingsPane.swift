@@ -72,7 +72,7 @@ struct StorageSettingsPane: View {
 
   private var storageUsageSummary: String {
     let countSummary = String(
-      format: NSLocalizedString("HistoryCountSummary", tableName: "StorageSettings", comment: ""),
+      format: AppLocalization.shared.localizedString("HistoryCountSummary", tableName: "StorageSettings"),
       historyCounts.total,
       historyCounts.pinned,
       historyCounts.unpinned

@@ -112,53 +112,84 @@ class AppState: Sendable {
         panes: [
           Settings.Pane(
             identifier: Settings.PaneIdentifier.general,
-            title: NSLocalizedString("Title", tableName: "GeneralSettings", comment: ""),
+            title: localizedPaneTitle(tableName: "GeneralSettings"),
             toolbarIcon: NSImage.gearshape!
           ) {
-            GeneralSettingsPane()
+            LocalizedView {
+              GeneralSettingsPane()
+            }
           },
           Settings.Pane(
             identifier: Settings.PaneIdentifier.storage,
-            title: NSLocalizedString("Title", tableName: "StorageSettings", comment: ""),
+            title: localizedPaneTitle(tableName: "StorageSettings"),
             toolbarIcon: NSImage.externaldrive!
           ) {
-            StorageSettingsPane()
+            LocalizedView {
+              StorageSettingsPane()
+            }
           },
           Settings.Pane(
             identifier: Settings.PaneIdentifier.appearance,
-            title: NSLocalizedString("Title", tableName: "AppearanceSettings", comment: ""),
+            title: localizedPaneTitle(tableName: "AppearanceSettings"),
             toolbarIcon: NSImage.paintpalette!
           ) {
-            AppearanceSettingsPane()
+            LocalizedView {
+              AppearanceSettingsPane()
+            }
           },
           Settings.Pane(
             identifier: Settings.PaneIdentifier.pins,
-            title: NSLocalizedString("Title", tableName: "PinsSettings", comment: ""),
+            title: localizedPaneTitle(tableName: "PinsSettings"),
             toolbarIcon: NSImage.pincircle!
           ) {
-            PinsSettingsPane()
-              .environment(self)
-              .modelContainer(Storage.shared.container)
+            LocalizedView {
+              PinsSettingsPane()
+                .environment(self)
+                .modelContainer(Storage.shared.container)
+            }
           },
           Settings.Pane(
             identifier: Settings.PaneIdentifier.ignore,
-            title: NSLocalizedString("Title", tableName: "IgnoreSettings", comment: ""),
+            title: localizedPaneTitle(tableName: "IgnoreSettings"),
             toolbarIcon: NSImage.nosign!
           ) {
-            IgnoreSettingsPane()
+            LocalizedView {
+              IgnoreSettingsPane()
+            }
           },
           Settings.Pane(
             identifier: Settings.PaneIdentifier.advanced,
-            title: NSLocalizedString("Title", tableName: "AdvancedSettings", comment: ""),
+            title: localizedPaneTitle(tableName: "AdvancedSettings"),
             toolbarIcon: NSImage.gearshape2!
           ) {
-            AdvancedSettingsPane()
+            LocalizedView {
+              AdvancedSettingsPane()
+            }
           }
         ]
       )
     }
     settingsWindowController?.show()
     settingsWindowController?.window?.orderFrontRegardless()
+  }
+
+  @MainActor
+  func reloadPreferencesForLocalizationChange() {
+    guard settingsWindowController?.window?.isVisible == true else {
+      settingsWindowController = nil
+      return
+    }
+
+    settingsWindowController?.window?.close()
+    settingsWindowController = nil
+
+    DispatchQueue.main.async {
+      self.openPreferences()
+    }
+  }
+
+  private func localizedPaneTitle(tableName: String) -> String {
+    AppLocalization.shared.localizedString("Title", tableName: tableName)
   }
 
   func quit() {

@@ -8,13 +8,14 @@ private struct KeyboardShortcutHelpModifier: ViewModifier {
   let tableName: String
   let comment: String = ""
   let replacementKey: String
+  @State private var localization = AppLocalization.shared
 
   func body(content: Content) -> some View {
     if let shortcut = KeyboardShortcuts.Shortcut(name: name) {
       content
         .help(
           Text(
-            NSLocalizedString(key, tableName: tableName, comment: comment)
+            localization.localizedString(key, tableName: tableName, comment: comment)
               .replacingOccurrences(
                 of: "{\(replacementKey)}",
                 with: shortcut.description

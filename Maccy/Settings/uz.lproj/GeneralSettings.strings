@@ -2,6 +2,8 @@
 "Fuzzy" = "Noaniq";
 "Mixed" = "Aralash";
 "NotificationsAndSounds" = "Bildirishnoma va tovushlar 􀱁";
+"Language" = "Til:";
+"SystemDefault" = "Tizim standarti";
 "LaunchAtLogin" = "Kirish paytida ishga tushirish";
 "CheckForUpdates" = "Yangilanishlarni avtomatik ravishda tekshirish";
 "CheckNow" = "Hozir tekshir";

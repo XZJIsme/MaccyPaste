@@ -11,18 +11,18 @@ enum PopupPosition: String, CaseIterable, Identifiable, CustomStringConvertible,
 
   var id: Self { self }
 
-  var description: String {
+    var description: String {
     switch self {
     case .cursor:
-      return NSLocalizedString("PopupAtCursor", tableName: "AppearanceSettings", comment: "")
+      return AppLocalization.shared.localizedString("PopupAtCursor", tableName: "AppearanceSettings")
     case .statusItem:
-      return NSLocalizedString("PopupAtMenuBarIcon", tableName: "AppearanceSettings", comment: "")
+      return AppLocalization.shared.localizedString("PopupAtMenuBarIcon", tableName: "AppearanceSettings")
     case .window:
-      return NSLocalizedString("PopupAtWindowCenter", tableName: "AppearanceSettings", comment: "")
+      return AppLocalization.shared.localizedString("PopupAtWindowCenter", tableName: "AppearanceSettings")
     case .center:
-      return NSLocalizedString("PopupAtScreenCenter", tableName: "AppearanceSettings", comment: "")
+      return AppLocalization.shared.localizedString("PopupAtScreenCenter", tableName: "AppearanceSettings")
     case .lastPosition:
-      return NSLocalizedString("PopupAtLastPosition", tableName: "AppearanceSettings", comment: "")
+      return AppLocalization.shared.localizedString("PopupAtLastPosition", tableName: "AppearanceSettings")
     }
   }
 

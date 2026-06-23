@@ -11,6 +11,7 @@ struct GeneralSettingsPane: View {
 
   @Default(.searchMode) private var searchMode
 
+  @State private var localization = AppLocalization.shared
   @State private var copyModifier = HistoryItemAction.copy.modifierFlags.description
   @State private var pasteModifier = HistoryItemAction.paste.modifierFlags.description
   @State private var pasteWithoutFormatting = HistoryItemAction.pasteWithoutFormatting.modifierFlags.description
@@ -68,6 +69,26 @@ struct GeneralSettingsPane: View {
 
       Settings.Section(
         bottomDivider: true,
+        label: { Text("Language", tableName: "GeneralSettings") }
+      ) {
+        Picker("", selection: Binding(
+          get: { localization.language },
+          set: { localization.language = $0 }
+        )) {
+          ForEach(AppLanguage.allCases) { language in
+            Text(language.displayName)
+              .tag(language)
+          }
+        }
+        .labelsHidden()
+        .frame(width: 180, alignment: .leading)
+        .onChange(of: localization.language) { _, _ in
+          AppState.shared.reloadPreferencesForLocalizationChange()
+        }
+      }
+
+      Settings.Section(
+        bottomDivider: true,
         label: { Text("Behavior", tableName: "GeneralSettings") }
       ) {
         Defaults.Toggle(key: .pasteByDefault) {
@@ -83,7 +104,7 @@ struct GeneralSettingsPane: View {
         .fixedSize()
 
         Text(String(
-          format: NSLocalizedString("Modifiers", tableName: "GeneralSettings", comment: ""),
+          format: AppLocalization.shared.localizedString("Modifiers", tableName: "GeneralSettings"),
           copyModifier, pasteModifier, pasteWithoutFormatting
         ))
         .fixedSize(horizontal: false, vertical: true)

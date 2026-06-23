@@ -7,12 +7,12 @@ enum PinsPosition: String, CaseIterable, Identifiable, CustomStringConvertible, 
 
   var id: Self { self }
 
-  var description: String {
+    var description: String {
     switch self {
     case .top:
-      return NSLocalizedString("PinToTop", tableName: "AppearanceSettings", comment: "")
+      return AppLocalization.shared.localizedString("PinToTop", tableName: "AppearanceSettings")
     case .bottom:
-      return NSLocalizedString("PinToBottom", tableName: "AppearanceSettings", comment: "")
+      return AppLocalization.shared.localizedString("PinToBottom", tableName: "AppearanceSettings")
     }
   }
 }

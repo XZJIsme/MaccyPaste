@@ -3,6 +3,7 @@ import SwiftUI
 
 struct ContentView: View {
   @State private var appState = AppState.shared
+  @State private var localization = AppLocalization.shared
   @State private var modifierFlags = ModifierFlags()
   @State private var scenePhase: ScenePhase = .background
 
@@ -56,6 +57,7 @@ struct ContentView: View {
     .animation(.easeInOut(duration: 0.2), value: appState.searchVisible)
     .environment(appState)
     .environment(modifierFlags)
+    .environment(\.locale, localization.locale)
     .environment(\.scenePhase, scenePhase)
     // FloatingPanel is not a scene, so let's implement custom scenePhase..
     .onReceive(NotificationCenter.default.publisher(for: NSWindow.didBecomeKeyNotification)) {
