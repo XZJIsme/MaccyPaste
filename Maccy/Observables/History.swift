@@ -59,6 +59,39 @@ class History: ItemsContainer { // swiftlint:disable:this type_body_length
   @ObservationIgnored
   private var sessionLog: [Int: HistoryItem] = [:]
 
+  @ObservationIgnored
+  private var hasLoadedUnpinnedHistory = false
+
+  @ObservationIgnored
+  private let unpinnedPageSize = 100
+
+  @ObservationIgnored
+  private let initialUnpinnedWindowSize = 200
+
+  @ObservationIgnored
+  private let retainedUnpinnedWindowSize = 300
+
+  @ObservationIgnored
+  private let pageLoadThreshold = 20
+
+  @ObservationIgnored
+  private let duplicateCandidateLimit = 500
+
+  @ObservationIgnored
+  private let historyLimitDeleteBatchSize = 500
+
+  @ObservationIgnored
+  private var unpinnedStartOffset = 0
+
+  @ObservationIgnored
+  private var canLoadNewerUnpinned = false
+
+  @ObservationIgnored
+  private var canLoadOlderUnpinned = false
+
+  @ObservationIgnored
+  private var isLoadingUnpinnedPage = false
+
   // The distinction between `all` and `items` is the following:
   // - `all` stores all history items, even the ones that are currently hidden by a search
   // - `items` stores only visible history items, updated during a search
@@ -66,6 +99,10 @@ class History: ItemsContainer { // swiftlint:disable:this type_body_length
   var all: [HistoryItemDecorator] = []
 
   init() {
+    Task { @MainActor in
+      try? await loadPinnedItems()
+    }
+
     Task {
       for await _ in Defaults.updates(.pasteByDefault, initial: false) {
         updateShortcuts()
@@ -74,13 +111,13 @@ class History: ItemsContainer { // swiftlint:disable:this type_body_length
 
     Task {
       for await _ in Defaults.updates(.sortBy, initial: false) {
-        try? await load()
+        await reloadForCurrentLifecycle()
       }
     }
 
     Task {
       for await _ in Defaults.updates(.pinTo, initial: false) {
-        try? await load()
+        await reloadForCurrentLifecycle()
       }
     }
 
@@ -103,12 +140,88 @@ class History: ItemsContainer { // swiftlint:disable:this type_body_length
 
   @MainActor
   func load() async throws {
-    let descriptor = FetchDescriptor<HistoryItem>()
-    let results = try Storage.shared.context.fetch(descriptor)
-    all = sorter.sort(results).map { HistoryItemDecorator($0) }
-    items = all
+    try await loadInitialHistoryWindow()
+  }
 
+  @MainActor
+  func prepareForPopupOpen() async {
+    guard !hasLoadedUnpinnedHistory else {
+      return
+    }
+
+    try? await loadInitialHistoryWindow()
+  }
+
+  @MainActor
+  func releaseUnpinnedForBackground() {
+    throttler.cancel()
+
+    let pinned = all.filter(\.isPinned)
+    all.forEach { item in
+      if item.isUnpinned {
+        cleanup(item)
+      } else {
+        item.highlight("", [])
+      }
+    }
+
+    all = pinned
+    items = pinned
+    hasLoadedUnpinnedHistory = false
+    resetUnpinnedPagingState()
+
+    if !searchQuery.isEmpty {
+      searchQuery = ""
+      throttler.cancel()
+    }
+
+    AppState.shared.navigator.selectWithoutScrolling()
+    AppState.shared.navigator.scrollTarget = nil
+
+    updateShortcuts()
+    AppState.shared.popup.needsResize = true
+  }
+
+  @MainActor
+  private func loadPinnedItems() async throws {
+    let descriptor = FetchDescriptor<HistoryItem>(
+      predicate: #Predicate { $0.pin != nil },
+      sortBy: sortDescriptors()
+    )
+    let pinned = try Storage.shared.context.fetch(descriptor).map { HistoryItemDecorator($0) }
+    rebuildLoadedItems(pinned: pinned, unpinned: loadedUnpinnedItems)
+
+    updateShortcuts()
+  }
+
+  @MainActor
+  private func reloadForCurrentLifecycle() async {
+    if hasLoadedUnpinnedHistory {
+      try? await loadInitialHistoryWindow()
+    } else {
+      try? await loadPinnedItems()
+    }
+  }
+
+  @MainActor
+  private func loadInitialHistoryWindow() async throws {
+    let pinnedDescriptor = FetchDescriptor<HistoryItem>(
+      predicate: #Predicate { $0.pin != nil },
+      sortBy: sortDescriptors()
+    )
+    let pinned = try Storage.shared.context.fetch(pinnedDescriptor).map { HistoryItemDecorator($0) }
+    let page = try fetchUnpinnedDecorators(offset: 0, limit: initialUnpinnedWindowSize)
+    let previousUnpinned = loadedUnpinnedItems
+
+    unpinnedStartOffset = 0
+    canLoadNewerUnpinned = false
+    canLoadOlderUnpinned = page.hasMore
+    hasLoadedUnpinnedHistory = true
+
+    previousUnpinned.forEach(cleanup)
+    rebuildLoadedItems(pinned: pinned, unpinned: page.items)
     limitHistorySize(to: Defaults[.size])
+    canLoadOlderUnpinned = canLoadMoreUnpinnedWithinLimit && page.hasMore
 
     updateShortcuts()
     // Ensure that panel size is proper *after* loading all items.
@@ -118,16 +231,269 @@ class History: ItemsContainer { // swiftlint:disable:this type_body_length
   }
 
   @MainActor
-  private func limitHistorySize(to maxSize: Int) {
+  func loadPreviousUnpinnedPageIfNeeded(around item: HistoryItemDecorator) {
+    guard shouldLoadPreviousUnpinnedPage(around: item) else {
+      return
+    }
+
+    Task { @MainActor in
+      await loadNewerUnpinnedPage()
+    }
+  }
+
+  @MainActor
+  func loadNextUnpinnedPageIfNeeded(around item: HistoryItemDecorator) {
+    guard shouldLoadNextUnpinnedPage(around: item) else {
+      return
+    }
+
+    Task { @MainActor in
+      await loadOlderUnpinnedPage()
+    }
+  }
+
+  @MainActor
+  private func shouldLoadPreviousUnpinnedPage(around item: HistoryItemDecorator) -> Bool {
+    guard searchQuery.isEmpty, canLoadNewerUnpinned, !isLoadingUnpinnedPage else {
+      return false
+    }
+    guard let index = unpinnedItems.firstIndex(of: item) else {
+      return false
+    }
+
+    return index < pageLoadThreshold
+  }
+
+  @MainActor
+  private func shouldLoadNextUnpinnedPage(around item: HistoryItemDecorator) -> Bool {
+    guard searchQuery.isEmpty,
+          canLoadMoreUnpinnedWithinLimit,
+          canLoadOlderUnpinned,
+          !isLoadingUnpinnedPage else {
+      return false
+    }
+    guard let index = unpinnedItems.firstIndex(of: item) else {
+      return false
+    }
+
+    return index >= max(unpinnedItems.count - pageLoadThreshold, 0)
+  }
+
+  @MainActor
+  private func loadOlderUnpinnedPage() async {
+    guard !isLoadingUnpinnedPage, canLoadOlderUnpinned else {
+      return
+    }
+
+    isLoadingUnpinnedPage = true
+    defer { isLoadingUnpinnedPage = false }
+
+    let currentPinned = loadedPinnedItems
+    var currentUnpinned = loadedUnpinnedItems
+    let nextOffset = unpinnedStartOffset + currentUnpinned.count
+    guard let page = try? fetchUnpinnedDecorators(offset: nextOffset, limit: unpinnedPageSize) else {
+      return
+    }
+
+    let newItems = page.items.filter { newItem in
+      !currentUnpinned.contains(where: { $0.item == newItem.item })
+    }
+
+    guard !newItems.isEmpty else {
+      canLoadOlderUnpinned = false
+      return
+    }
+
+    currentUnpinned.append(contentsOf: newItems)
+
+    if currentUnpinned.count > retainedUnpinnedWindowSize {
+      let overflow = currentUnpinned.count - retainedUnpinnedWindowSize
+      currentUnpinned.prefix(overflow).forEach(cleanup)
+      currentUnpinned.removeFirst(overflow)
+      unpinnedStartOffset += overflow
+      canLoadNewerUnpinned = true
+    }
+
+    canLoadOlderUnpinned = page.hasMore
+    rebuildLoadedItems(pinned: currentPinned, unpinned: currentUnpinned)
+    updateShortcuts()
+    AppState.shared.popup.needsResize = true
+  }
+
+  @MainActor
+  private func loadNewerUnpinnedPage() async {
+    guard !isLoadingUnpinnedPage, canLoadNewerUnpinned else {
+      return
+    }
+
+    isLoadingUnpinnedPage = true
+    defer { isLoadingUnpinnedPage = false }
+
+    let currentPinned = loadedPinnedItems
+    var currentUnpinned = loadedUnpinnedItems
+    let previousOffset = max(unpinnedStartOffset - unpinnedPageSize, 0)
+    let limit = unpinnedStartOffset - previousOffset
+    guard limit > 0,
+          let page = try? fetchUnpinnedDecorators(offset: previousOffset, limit: limit) else {
+      return
+    }
+
+    let newItems = page.items.filter { newItem in
+      !currentUnpinned.contains(where: { $0.item == newItem.item })
+    }
+
+    guard !newItems.isEmpty else {
+      canLoadNewerUnpinned = previousOffset > 0
+      return
+    }
+
+    currentUnpinned.insert(contentsOf: newItems, at: 0)
+    unpinnedStartOffset = previousOffset
+
+    if currentUnpinned.count > retainedUnpinnedWindowSize {
+      let overflow = currentUnpinned.count - retainedUnpinnedWindowSize
+      currentUnpinned.suffix(overflow).forEach(cleanup)
+      currentUnpinned.removeLast(overflow)
+      canLoadOlderUnpinned = true
+    }
+
+    canLoadNewerUnpinned = unpinnedStartOffset > 0
+    rebuildLoadedItems(pinned: currentPinned, unpinned: currentUnpinned)
+    updateShortcuts()
+    AppState.shared.popup.needsResize = true
+  }
+
+  @MainActor
+  private func fetchUnpinnedDecorators(offset: Int, limit: Int) throws -> (items: [HistoryItemDecorator], hasMore: Bool) {
+    var descriptor = FetchDescriptor<HistoryItem>(
+      predicate: #Predicate { $0.pin == nil },
+      sortBy: sortDescriptors()
+    )
+    descriptor.fetchLimit = limit + 1
+    descriptor.fetchOffset = offset
+
+    let results = try Storage.shared.context.fetch(descriptor)
+    let hasMore = results.count > limit
+    let items = results.prefix(limit).map { HistoryItemDecorator($0) }
+
+    return (items, hasMore)
+  }
+
+  private func sortDescriptors() -> [SortDescriptor<HistoryItem>] {
+    switch Defaults[.sortBy] {
+    case .firstCopiedAt:
+      return [SortDescriptor(\.firstCopiedAt, order: .reverse)]
+    case .numberOfCopies:
+      return [SortDescriptor(\.numberOfCopies, order: .reverse)]
+    default:
+      return [SortDescriptor(\.lastCopiedAt, order: .reverse)]
+    }
+  }
+
+  private var loadedPinnedItems: [HistoryItemDecorator] {
+    all.filter(\.isPinned)
+  }
+
+  private var loadedUnpinnedItems: [HistoryItemDecorator] {
+    all.filter(\.isUnpinned)
+  }
+
+  private var canLoadMoreUnpinnedWithinLimit: Bool {
+    Defaults[.unlimitedHistory] || loadedUnpinnedItems.count < Defaults[.size]
+  }
+
+  private func rebuildLoadedItems(pinned: [HistoryItemDecorator], unpinned: [HistoryItemDecorator]) {
+    if Defaults[.pinTo] == .bottom {
+      all = unpinned + pinned
+    } else {
+      all = pinned + unpinned
+    }
+
+    items = all
+  }
+
+  private func resetUnpinnedPagingState() {
+    unpinnedStartOffset = 0
+    canLoadNewerUnpinned = false
+    canLoadOlderUnpinned = false
+    isLoadingUnpinnedPage = false
+  }
+
+  @MainActor
+  private func limitHistorySize(to maxSize: Int, preserving itemToPreserve: HistoryItem? = nil) {
     guard !Defaults[.unlimitedHistory] else {
       return
     }
 
     let maxSize = max(maxSize, 0)
-    let unpinned = all.filter(\.isUnpinned)
-    if unpinned.count >= maxSize {
-      unpinned[maxSize...].forEach(delete)
+    let allowedCount = maxSize + (itemToPreserve == nil ? 0 : 1)
+    let countDescriptor = FetchDescriptor<HistoryItem>(
+      predicate: #Predicate { $0.pin == nil }
+    )
+    let currentCount = (try? Storage.shared.context.fetchCount(countDescriptor)) ?? 0
+    guard currentCount > allowedCount else {
+      return
     }
+
+    let fetchOffset = historyLimitFetchOffset(maxSize: maxSize, preserving: itemToPreserve)
+    while true {
+      var descriptor = FetchDescriptor<HistoryItem>(
+        predicate: #Predicate { $0.pin == nil },
+        sortBy: sortDescriptors()
+      )
+      descriptor.fetchOffset = fetchOffset
+      descriptor.fetchLimit = historyLimitDeleteBatchSize
+
+      guard let excess = try? Storage.shared.context.fetch(descriptor),
+            !excess.isEmpty else {
+        break
+      }
+
+      let deletable = excess.filter { candidate in
+        guard let itemToPreserve else { return true }
+        return candidate !== itemToPreserve
+      }
+      guard !deletable.isEmpty else {
+        break
+      }
+
+      removeFromLoadedItems(deletable)
+      deletable.forEach(Storage.shared.context.delete)
+      Storage.shared.context.processPendingChanges()
+    }
+
+    try? Storage.shared.context.save()
+  }
+
+  @MainActor
+  private func historyLimitFetchOffset(maxSize: Int, preserving itemToPreserve: HistoryItem?) -> Int {
+    guard let itemToPreserve else {
+      return maxSize
+    }
+
+    var descriptor = FetchDescriptor<HistoryItem>(
+      predicate: #Predicate { $0.pin == nil },
+      sortBy: sortDescriptors()
+    )
+    descriptor.fetchLimit = maxSize + 1
+
+    let keptItems = (try? Storage.shared.context.fetch(descriptor)) ?? []
+    return keptItems.contains(where: { $0 === itemToPreserve }) ? maxSize + 1 : maxSize
+  }
+
+  @MainActor
+  private func removeFromLoadedItems(_ historyItems: [HistoryItem]) {
+    let itemsToRemove = Set(historyItems.map(ObjectIdentifier.init))
+
+    all.forEach { decorator in
+      if itemsToRemove.contains(ObjectIdentifier(decorator.item)) {
+        cleanup(decorator)
+      }
+    }
+
+    all.removeAll { itemsToRemove.contains(ObjectIdentifier($0.item)) }
+    items.removeAll { itemsToRemove.contains(ObjectIdentifier($0.item)) }
+    sessionLog.removeValues { itemsToRemove.contains(ObjectIdentifier($0)) }
   }
 
   @MainActor
@@ -174,7 +540,7 @@ class History: ItemsContainer { // swiftlint:disable:this type_body_length
 
     // Remove exceeding items. Do this after the item is added to avoid removing something
     // if a duplicate was found as then the size already stayed the same.
-    limitHistorySize(to: Defaults[.size] - 1)
+    limitHistorySize(to: Defaults[.size] - 1, preserving: item)
 
     sessionLog[Clipboard.shared.changeCount] = item
 
@@ -187,6 +553,10 @@ class History: ItemsContainer { // swiftlint:disable:this type_body_length
       }
     } else {
       itemDecorator = HistoryItemDecorator(item)
+
+      guard hasLoadedUnpinnedHistory else {
+        return itemDecorator
+      }
 
       let sortedItems = sorter.sort(all.map(\.item) + [item])
       if let index = sortedItems.firstIndex(of: item) {
@@ -450,17 +820,22 @@ class History: ItemsContainer { // swiftlint:disable:this type_body_length
 
   @MainActor
   private func findSimilarItem(_ item: HistoryItem) -> HistoryItem? {
-    let descriptor = FetchDescriptor<HistoryItem>()
-    if let all = try? Storage.shared.context.fetch(descriptor) {
-      let duplicates = all.filter({ $0 == item || $0.supersedes(item) })
-      if duplicates.count > 1 {
-        return duplicates.first(where: { $0 != item })
-      } else {
-        return isModified(item)
-      }
+    let duplicates = duplicateCandidates().filter { candidate in
+      candidate !== item && (candidate == item || candidate.supersedes(item))
     }
 
-    return item
+    return duplicates.first ?? isModified(item)
+  }
+
+  @MainActor
+  private func duplicateCandidates() -> [HistoryItem] {
+    var descriptor = FetchDescriptor<HistoryItem>(
+      sortBy: [SortDescriptor(\.lastCopiedAt, order: .reverse)]
+    )
+    descriptor.fetchLimit = duplicateCandidateLimit
+
+    let recentItems = (try? Storage.shared.context.fetch(descriptor)) ?? []
+    return all.map(\.item) + Array(sessionLog.values) + recentItems
   }
 
   private func isModified(_ item: HistoryItem) -> HistoryItem? {

@@ -96,14 +96,17 @@ class AppDelegate: NSObject, NSApplicationDelegate {
       contentRect: NSRect(origin: .zero, size: Defaults[.windowSize]),
       identifier: Bundle.main.bundleIdentifier ?? "org.p0deje.Maccy",
       statusBarButton: statusItem.button,
-      onClose: { AppState.shared.popup.reset() }
+      onClose: {
+        AppState.shared.popup.reset()
+        AppState.shared.history.releaseUnpinnedForBackground()
+      }
     ) {
       ContentView()
     }
   }
 
   func applicationShouldHandleReopen(_ sender: NSApplication, hasVisibleWindows flag: Bool) -> Bool {
-    panel.toggle(height: AppState.shared.popup.height)
+    AppState.shared.popup.toggle(height: AppState.shared.popup.height, at: .statusItem)
     return true
   }
 
@@ -154,7 +157,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
       }
     }
 
-    panel.toggle(height: AppState.shared.popup.height, at: .statusItem)
+    AppState.shared.popup.toggle(height: AppState.shared.popup.height, at: .statusItem)
   }
 
   private func synchronizeMenuIconText() {

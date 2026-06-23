@@ -73,7 +73,20 @@ class Popup {
   }
 
   func open(height: CGFloat, at popupPosition: PopupPosition = Defaults[.popupPosition]) {
-    AppState.shared.appDelegate?.panel.open(height: height, at: popupPosition)
+    Task { @MainActor in
+      await AppState.shared.history.prepareForPopupOpen()
+      guard isClosed() else { return }
+      let initialHeight = height > 0 ? height : Defaults[.windowSize].height
+      AppState.shared.appDelegate?.panel.open(height: initialHeight, at: popupPosition)
+    }
+  }
+
+  func toggle(height: CGFloat, at popupPosition: PopupPosition = Defaults[.popupPosition]) {
+    if isClosed() {
+      open(height: height, at: popupPosition)
+    } else {
+      close()
+    }
   }
 
   func reset() {

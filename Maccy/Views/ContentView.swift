@@ -52,9 +52,6 @@ struct ContentView: View {
         }
       }
       .frame(maxWidth: .infinity, alignment: .leading)
-      .task {
-        try? await appState.history.load()
-      }
     }
     .animation(.easeInOut(duration: 0.2), value: appState.searchVisible)
     .environment(appState)
