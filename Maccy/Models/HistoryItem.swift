@@ -1,52 +1,10 @@
 import AppKit
 import Defaults
-import Sauce
 import SwiftData
 import Vision
 
 @Model
 class HistoryItem {
-  static var supportedPins: Set<String> {
-    // "a" reserved for select all
-    // "q" reserved for quit
-    // "v" reserved for paste
-    // "w" reserved for close window
-    // "z" reserved for undo/redo
-    var keys = Set([
-      "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l",
-      "m", "n", "o", "p", "r", "s", "t", "u", "x", "y"
-    ])
-
-    if let deleteKey = KeyChord.deleteKey,
-       let character = Sauce.shared.character(for: Int(deleteKey.QWERTYKeyCode), cocoaModifiers: []) {
-      keys.remove(character)
-    }
-
-    if let pinKey = KeyChord.pinKey,
-       let character = Sauce.shared.character(for: Int(pinKey.QWERTYKeyCode), cocoaModifiers: []) {
-      keys.remove(character)
-    }
-    if let previewKey = KeyChord.previewKey,
-       let character = Sauce.shared.character(for: Int(previewKey.QWERTYKeyCode), cocoaModifiers: []) {
-      keys.remove(character)
-    }
-
-    return keys
-  }
-
-  @MainActor
-  static var availablePins: [String] {
-    let descriptor = FetchDescriptor<HistoryItem>(
-      predicate: #Predicate { $0.pin != nil }
-    )
-    let pins = try? Storage.shared.context.fetch(descriptor).compactMap({ $0.pin })
-    let assignedPins = Set(pins ?? [])
-    return Array(supportedPins.subtracting(assignedPins))
-  }
-
-  @MainActor
-  static var randomAvailablePin: String { availablePins.randomElement() ?? "" }
-
   private static let transientTypes: [String] = [
     NSPasteboard.PasteboardType.modified.rawValue,
     NSPasteboard.PasteboardType.fromMaccy.rawValue,

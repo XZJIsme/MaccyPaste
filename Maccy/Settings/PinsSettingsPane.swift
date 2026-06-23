@@ -1,26 +1,6 @@
 import SwiftData
 import SwiftUI
 
-struct PinPickerView: View {
-  @Bindable var item: HistoryItem
-  var availablePins: [String]
-
-  var body: some View {
-    if let pin = item.pin {
-      // Ensure unique pins for ForEach
-      let uniquePins = Array(Set(availablePins + [pin])).sorted()
-      Picker("", selection: $item.pin) {
-        ForEach(uniquePins, id: \.self) { pin in
-          Text(pin)
-            .tag(pin as String?)
-        }
-      }
-      .controlSize(.small)
-      .labelsHidden()
-    }
-  }
-}
-
 struct PinTitleView: View {
   @Bindable var item: HistoryItem
 
@@ -118,20 +98,11 @@ struct PinsSettingsPane: View {
   @Query(filter: #Predicate<HistoryItem> { $0.pin != nil }, sort: \.firstCopiedAt)
   private var items: [HistoryItem]
 
-  @State private var availablePins: [String] = []
   @State private var selection: PersistentIdentifier?
 
   var body: some View {
     VStack(alignment: .leading) {
       Table(items, selection: $selection) {
-        TableColumn(Text("Key", tableName: "PinsSettings")) { item in
-          PinPickerView(item: item, availablePins: availablePins)
-            .onChange(of: item.pin) {
-              availablePins = HistoryItem.availablePins
-            }
-        }
-        .width(60)
-
         TableColumn(Text("Alias", tableName: "PinsSettings")) { item in
           PinTitleView(item: item)
         }
@@ -139,9 +110,6 @@ struct PinsSettingsPane: View {
         TableColumn(Text("Content", tableName: "PinsSettings")) { item in
           PinValueView(item: item)
         }
-      }
-      .onAppear {
-        availablePins = HistoryItem.availablePins
       }
       .onDeleteCommand {
         guard let selection,

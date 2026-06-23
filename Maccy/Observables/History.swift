@@ -545,8 +545,8 @@ class History: ItemsContainer { // swiftlint:disable:this type_body_length
     sessionLog[Clipboard.shared.changeCount] = item
 
     var itemDecorator: HistoryItemDecorator
-    if let pin = item.pin {
-      itemDecorator = HistoryItemDecorator(item, shortcuts: KeyShortcut.create(character: pin))
+    if item.pin != nil {
+      itemDecorator = HistoryItemDecorator(item)
       // Keep pins in the same place.
       if let removedItemIndex {
         all.insert(itemDecorator, at: removedItemIndex)
@@ -864,9 +864,7 @@ class History: ItemsContainer { // swiftlint:disable:this type_body_length
 
   private func updateShortcuts() {
     for item in pinnedItems {
-      if let pin = item.item.pin {
-        item.shortcuts = KeyShortcut.create(character: pin)
-      }
+      item.shortcuts = []
     }
 
     updateUnpinnedShortcuts()

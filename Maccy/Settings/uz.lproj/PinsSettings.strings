@@ -4,4 +4,4 @@
 "Content" = "Kontent";
 "ContentIsNotText" = "Tahrirlanmaydigan kontent (rasm yoki fayl)";
 "RichTextEditWarning" = "Tahrirlash barcha formatlashni bekor qiladi.";
-"PinCustomizationDescription" = "Har qanday mahkamlangan elementning tezkor tugmasi, sarlavhasi va mazmunini sozlashingiz mumkin. Tahrirlash uchun elementni ikki marta bosing va yangi qiymat kiriting.\nYodda tutingki, faqat oddiy matnni oʻzgartirish mumkin.";
+"PinCustomizationDescription" = "Har qanday mahkamlangan elementning sarlavhasi va mazmunini sozlashingiz mumkin. Tahrirlash uchun elementni ikki marta bosing va yangi qiymat kiriting.\nYodda tutingki, faqat oddiy matnni oʻzgartirish mumkin.";

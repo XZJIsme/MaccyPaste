@@ -108,8 +108,17 @@ class HistoryItemDecoratorTests: XCTestCase {
   func testPin() {
     let itemDecorator = historyItemDecorator("foo")
     itemDecorator.togglePin()
-    XCTAssertNotNil(itemDecorator.item.pin)
+    XCTAssertEqual(itemDecorator.item.pin, "")
     XCTAssertTrue(itemDecorator.isPinned)
+    XCTAssertEqual(itemDecorator.shortcuts, [])
+  }
+
+  func testPinnedItemDoesNotUseSingleKeyShortcut() {
+    let itemDecorator = historyItemDecorator("foo")
+    itemDecorator.item.pin = "f"
+
+    XCTAssertTrue(itemDecorator.isPinned)
+    XCTAssertEqual(itemDecorator.shortcuts, [])
   }
 
   func testUnpin() {
