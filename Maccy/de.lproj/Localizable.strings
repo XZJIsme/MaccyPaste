@@ -9,7 +9,7 @@
 "quit" = "Beenden";
 "preferences" = "Einstellungen…";
 "preferences_advanced" = "Erweitert";
-"preferences_pins" = "Pins";
+"preferences_pins" = "Angeheftet";
 "copy_modifiers_config" = "• Drücke %@, um den gewählten Eintrag zu kopieren.";
 "paste_modifiers_config" = "• Drücke %@, um den gewählten Eintrag zu kopieren und einzufügen.";
 "format_modifiers_config" = "• Drücke %@, um den gewählten Eintrag zu kopieren und unformatiert einzufügen.";

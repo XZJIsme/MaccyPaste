@@ -1,7 +1,7 @@
-"Title" = "";
-"Key" = "";
-"Alias" = "";
-"Content" = "";
-"ContentIsNotText" = "";
-"RichTextEditWarning" = "";
-"PinCustomizationDescription" = "";
+"Title" = "Fästa objekt";
+"Key" = "Tangent";
+"Alias" = "Titel";
+"Content" = "Innehåll";
+"ContentIsNotText" = "Ej redigerbart innehåll (bild eller fil)";
+"RichTextEditWarning" = "Redigering tar bort all formatering.";
+"PinCustomizationDescription" = "Du kan anpassa snabbtangent, titel och innehåll för alla fästa objekt. Dubbelklicka på objektet och ange ett nytt värde för att redigera.\nObservera att endast ren text kan ändras.";

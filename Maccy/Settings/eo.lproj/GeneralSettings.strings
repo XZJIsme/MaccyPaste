@@ -16,7 +16,7 @@
 "ShowPreview" = "Antaŭrigardo:";
 "ShowPreviewTooltip" = "Montri antaŭrigardon kun aldonaj informoj.\nDefaŭlta: ⌃Space.";
 "Behavior" = "Konduto:";
-"Modifiers" = "";
+"Modifiers" = "Agordu la konduton elektante eron:\n• Elektu kun %@ premata por kopii eron.\n• Elektu kun %@ premata por kopii kaj alglui eron.\n• Elektu kun %@ premata por kopii, forigi formatadon kaj alglui eron.";
 "Exact" = "Ekzakta";
 "Fuzzy" = "Proksimuma";
 "Mixed" = "Miksita";

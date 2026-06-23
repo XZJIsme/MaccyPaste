@@ -5,12 +5,13 @@
 "Text" = "Tekst";
 "SaveDescription" = "Verander welke soorten gekopieerde inhoud moeten worden opgeslagen.";
 "Size" = "Grootte:";
-"SizeTooltip" = "Aantal te bewaren geschiedenisitems.\nStandaard: 9999.";
-"CurrentSizeTooltip" = "Huidige grootte op schijf.";
+"SizeTooltip" = "Aantal niet-vastgemaakte geschiedenisobjecten om te bewaren. Vastgemaakte objecten tellen niet mee voor deze limiet.\nStandaard: 9999.";
+"CurrentSizeTooltip" = "Huidige databasegrootte en aantallen geschiedenisitems.";
+"HistoryCountSummary" = "%d objecten (%d vastgemaakt, %d niet vastgemaakt)";
 "SortBy" = "Sorteer op:";
 "LastCopiedAt" = "Tijd van laatste kopie";
 "FirstCopiedAt" = "Tijd van eerste kopie";
 "NumberOfCopies" = "Aantal kopieën";
 "SortByTooltip" = "Standaard: Tijd van laatste kopie.";
-"UnlimitedHistory" = "Unlimited";
-"UnlimitedHistoryTooltip" = "Do not limit the number of history items to keep. When enabled, the size field is disabled.";
+"UnlimitedHistory" = "Onbeperkt";
+"UnlimitedHistoryTooltip" = "Beperk het aantal te bewaren geschiedenisitems niet. Wanneer ingeschakeld, is het aantalveld uitgeschakeld.";

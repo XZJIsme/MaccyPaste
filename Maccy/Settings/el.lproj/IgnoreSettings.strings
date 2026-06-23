@@ -6,4 +6,4 @@
 "PasteboardTypesTab" = "Τύποι επικόλλησης";
 "IgnoredPasteboardTypesReset" = "Επαναφορά";
 "RegexpTab" = "Τυπικές εκφράσεις";
-"IgnoredRegexpsDescription" = "";
+"IgnoredRegexpsDescription" = "Είναι δυνατό να αγνοούνται ορισμένες αντιγραφές βάσει καθορισμένων κανονικών εκφράσεων.";

@@ -800,7 +800,12 @@ class History: ItemsContainer { // swiftlint:disable:this type_body_length
   func togglePin(_ item: HistoryItemDecorator?) {
     guard let item else { return }
 
+    let wasPinned = item.isPinned
     item.togglePin()
+
+    if wasPinned, item.isUnpinned {
+      limitHistorySize(to: Defaults[.size] - 1, preserving: item.item)
+    }
 
     let sortedItems = sorter.sort(all.map(\.item))
     if let currentIndex = all.firstIndex(of: item),

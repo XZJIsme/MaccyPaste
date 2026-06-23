@@ -5,12 +5,13 @@
 "Text" = "النصوص";
 "SaveDescription" = "تغيير أنواع المحتوى المنسوخة التي يجب حفظها.";
 "Size" = "الحجم:";
-"SizeTooltip" = "عدد عناصر التاريخ للحفاظ عليها.\nالافتراضي: 9999.";
-"CurrentSizeTooltip" = "الحجم الحالي على القرص.";
+"SizeTooltip" = "عدد عناصر السجل غير المثبتة التي سيتم الاحتفاظ بها. لا تُحتسب العناصر المثبتة ضمن هذا الحد.\nالافتراضي: 9999.";
+"CurrentSizeTooltip" = "حجم قاعدة البيانات الحالي وعدد عناصر السجل.";
+"HistoryCountSummary" = "%d عنصرًا (%d مثبتة، %d غير مثبتة)";
 "SortBy" = "الترتيب حسب:";
 "LastCopiedAt" = "وقت النسخة الأخيرة";
 "FirstCopiedAt" = "وقت النسخة الأولى";
 "NumberOfCopies" = "عدد النسخ";
 "SortByTooltip" = "الافتراضي: وقت النسخة الأخيرة.";
-"UnlimitedHistory" = "Unlimited";
-"UnlimitedHistoryTooltip" = "Do not limit the number of history items to keep. When enabled, the size field is disabled.";
+"UnlimitedHistory" = "غير محدود";
+"UnlimitedHistoryTooltip" = "لا تضع حدًا لعدد عناصر السجل المحفوظة. عند التفعيل، يتم تعطيل حقل العدد.";

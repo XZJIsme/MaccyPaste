@@ -5,12 +5,13 @@
 "Text" = "Текст";
 "SaveDescription" = "Изменить хранимые типы записей.";
 "Size" = "Размер:";
-"SizeTooltip" = "Количество записей в истории для хранения.\nПо умолчанию: 9999.";
-"CurrentSizeTooltip" = "Текущий размер на диске.";
+"SizeTooltip" = "Количество незакрепленных элементов истории для хранения. Закрепленные элементы не учитываются в этом лимите.\nПо умолчанию: 9999.";
+"CurrentSizeTooltip" = "Текущий размер базы данных и количество элементов истории.";
+"HistoryCountSummary" = "%d элементов (%d закреплено, %d не закреплено)";
 "SortBy" = "Сортировать:";
 "LastCopiedAt" = "Время последнего копирования";
 "FirstCopiedAt" = "Время первого копирования";
 "NumberOfCopies" = "Количество копирований";
 "SortByTooltip" = "По умолчанию: Время последнего копирования.";
-"UnlimitedHistory" = "Unlimited";
-"UnlimitedHistoryTooltip" = "Do not limit the number of history items to keep. When enabled, the size field is disabled.";
+"UnlimitedHistory" = "Без ограничений";
+"UnlimitedHistoryTooltip" = "Не ограничивать количество сохраняемых элементов истории. Если включено, поле количества отключается.";

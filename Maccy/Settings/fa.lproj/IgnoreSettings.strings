@@ -4,6 +4,6 @@
 "IgnoredAllAppsExceptListed" = "تمام برنامه‌ها را نادیده بگیر، مگر آن‌هایی که در لیست هستند";
 "PasteboardTypesTab" = "نوع‌های «پیست‌بورد» (Pasteboard)";
 "IgnoredPasteboardTypesDescription" = "امکان نادیده گرفتن بعضی نوع‌های آیتمِ پیست‌بورد وجود دارد.\nبه‌طور پیش‌فرض چند نوع مخصوص برنامه‌های مختلف تعریف شده‌اند. می‌توانید آن‌ها را حذف کنید یا نوع‌های دلخواه خودتان را اضافه کنید.";
-"IgnoredPasteboardTypesReset" = "Reset";
+"IgnoredPasteboardTypesReset" = "بازنشانی";
 "RegexpTab" = "عبارت‌های منظم (Regular expressions)";
 "IgnoredRegexpsDescription" = "می‌توان بعضی کپی‌ها را بر اساس عبارت‌های منظم تعریف‌شده نادیده گرفت.";

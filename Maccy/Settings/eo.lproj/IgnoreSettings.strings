@@ -1,9 +1,9 @@
 "Title" = "Ignori";
 "ApplicationsTab" = "Aplikaĵoj";
-"IgnoredAppsDescription" = "";
+"IgnoredAppsDescription" = "Eblas ignori kopiojn venantajn de certaj aplikaĵoj.\nBonvolu noti, ke tio ne estas tute perfekta, do estas pli bone uzi tondujajn tipojn kiam eblas.";
 "IgnoredAllAppsExceptListed" = "Ignori ĉiujn aplikaĵojn krom la listigitajn";
-"PasteboardTypesTab" = "";
-"IgnoredPasteboardTypesDescription" = "";
+"PasteboardTypesTab" = "Tondujaj tipoj";
+"IgnoredPasteboardTypesDescription" = "Eblas ignori certajn tondujajn tipojn por ke ili ne estu memorataj.\nDefaŭlte estas difinitaj kelkaj konataj aplikaĵ-specifaj tipoj. Vi povas forigi ilin kaj aldoni ajnajn proprajn tipojn.";
 "IgnoredPasteboardTypesReset" = "Restarigi";
 "RegexpTab" = "Regulaj esprimoj";
 "IgnoredRegexpsDescription" = "Eblas ignori iujn kopiojn de la memoro surbaze de difinitaj regulaj esprimoj.";

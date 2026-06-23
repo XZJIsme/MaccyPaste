@@ -5,8 +5,9 @@
 "Text" = "文本";
 "SaveDescription" = "设置何种类型的内容会被保存。";
 "Size" = "数量：";
-"SizeTooltip" = "保留的历史记录条数。\n默认：9999。";
-"CurrentSizeTooltip" = "磁盘上的当前大小。";
+"SizeTooltip" = "保留的非置顶历史记录条数。置顶记录不计入此上限。\n默认：9999。";
+"CurrentSizeTooltip" = "当前数据库大小和历史记录数量。";
+"HistoryCountSummary" = "%d 条（%d 条置顶，%d 条非置顶）";
 "SortBy" = "排序方式：";
 "LastCopiedAt" = "上次复制时间";
 "FirstCopiedAt" = "首次复制时间";

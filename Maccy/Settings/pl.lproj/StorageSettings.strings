@@ -5,12 +5,13 @@
 "Text" = "Tekst";
 "SaveDescription" = "Wybierz jakie typy kopiowanej treści powinny być przechowywane.";
 "Size" = "Rozmiar:";
-"SizeTooltip" = "Liczba pozycji przechowywana w historii.\nDomyślnie: 9999.";
-"CurrentSizeTooltip" = "Aktualny rozmiar na dysku.";
+"SizeTooltip" = "Liczba nieprzypiętych pozycji historii do zachowania. Przypięte pozycje nie wliczają się do tego limitu.\nDomyślnie: 9999.";
+"CurrentSizeTooltip" = "Aktualny rozmiar bazy danych i liczba pozycji historii.";
+"HistoryCountSummary" = "%d pozycji (%d przypiętych, %d nieprzypiętych)";
 "SortBy" = "Sortuj po:";
 "LastCopiedAt" = "Czas ostatniego kopiowania";
 "FirstCopiedAt" = "Czas pierwszego kopiowania";
 "NumberOfCopies" = "Liczba kopii";
 "SortByTooltip" = "Domyślnie: Czas ostatniego kopiowania.";
-"UnlimitedHistory" = "Unlimited";
-"UnlimitedHistoryTooltip" = "Do not limit the number of history items to keep. When enabled, the size field is disabled.";
+"UnlimitedHistory" = "Bez ograniczeń";
+"UnlimitedHistoryTooltip" = "Nie ograniczaj liczby przechowywanych pozycji historii. Gdy włączone, pole liczby jest nieaktywne.";

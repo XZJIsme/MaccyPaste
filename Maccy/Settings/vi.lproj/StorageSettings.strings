@@ -5,12 +5,13 @@
 "Text" = "Văn bản";
 "SaveDescription" = "Chọn loại nội dung sao chép nào sẽ được lưu trữ.";
 "Size" = "Kích thước:";
-"SizeTooltip" = "Số mục lịch sử cần giữ lại.\nMặc định: 9999.";
+"SizeTooltip" = "Số mục lịch sử chưa ghim cần giữ lại. Các mục đã ghim không được tính vào giới hạn này.\nMặc định: 9999.";
 "SortBy" = "Sắp xếp theo:";
 "LastCopiedAt" = "Sao chép mới nhất";
 "FirstCopiedAt" = "Sao chép cũ nhất";
 "NumberOfCopies" = "Sao chép nhiều nhất";
 "SortByTooltip" = "Mặc định: Sao chép mới nhất.";
-"CurrentSizeTooltip" = "Dung lượng hiện đang chiếm trên ổ đĩa.";
-"UnlimitedHistory" = "Unlimited";
-"UnlimitedHistoryTooltip" = "Do not limit the number of history items to keep. When enabled, the size field is disabled.";
+"CurrentSizeTooltip" = "Kích thước cơ sở dữ liệu hiện tại và số lượng mục lịch sử.";
+"HistoryCountSummary" = "%d mục (%d đã ghim, %d chưa ghim)";
+"UnlimitedHistory" = "Không giới hạn";
+"UnlimitedHistoryTooltip" = "Không giới hạn số mục lịch sử cần giữ lại. Khi bật, trường số lượng sẽ bị vô hiệu hóa.";

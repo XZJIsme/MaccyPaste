@@ -3,6 +3,6 @@
 "LastCopyTime" = "เวลาคัดลอกสุดท้าย:";
 "NumberOfCopies" = "จำนวนการคัดลอก:";
 "PinKey" = "กด {pinKey} เพื่อปักหมุด";
-"UnpinKey" = "กด {pinKy} เพื่อลบเข็มกลัด";
+"UnpinKey" = "กด {pinKey} เพื่อเลิกปักหมุด";
 "DeleteKey" = "กด {deleteKey} เพื่อลบ";
 "PreviewKey" = "กด {previewKey} เพื่อสลับตัวอย่าง";

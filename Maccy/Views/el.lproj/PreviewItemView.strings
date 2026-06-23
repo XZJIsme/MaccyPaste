@@ -1,8 +1,8 @@
-"Application" = "";
-"FirstCopyTime" = "";
-"LastCopyTime" = "";
-"NumberOfCopies" = "";
-"PinKey" = "";
-"DeleteKey" = "";
-"UnpinKey" = "";
-"PreviewKey" = "";
+"Application" = "Εφαρμογή:";
+"FirstCopyTime" = "Ώρα πρώτης αντιγραφής:";
+"LastCopyTime" = "Ώρα τελευταίας αντιγραφής:";
+"NumberOfCopies" = "Αριθμός αντιγραφών:";
+"PinKey" = "Πάτησε {pinKey} για καρφίτσωμα.";
+"DeleteKey" = "Πάτησε {deleteKey} για διαγραφή.";
+"UnpinKey" = "Πάτησε {pinKey} για ξεκαρφίτσωμα.";
+"PreviewKey" = "Πάτησε {previewKey} για εναλλαγή προεπισκόπησης.";

@@ -5,12 +5,13 @@
 "Text" = "テキスト";
 "SaveDescription" = "保管するコピーコンテンツタイプを変更します。";
 "Size" = "サイズ:";
-"SizeTooltip" = "保管する履歴の項目数。\nデフォルト：9999。";
-"CurrentSizeTooltip" = "ディスク上の現在のサイズ。";
+"SizeTooltip" = "保持するピン留めされていない履歴項目の数。ピン留めされた項目はこの上限に含まれません。\nデフォルト：9999。";
+"CurrentSizeTooltip" = "現在のデータベースサイズと履歴項目数。";
+"HistoryCountSummary" = "%d 項目（%d 件ピン留め、%d 件未ピン留め）";
 "SortBy" = "並び替え:";
 "LastCopiedAt" = "最後にコピーした日時";
 "FirstCopiedAt" = "最初にコピーした日時";
 "NumberOfCopies" = "コピー回数";
 "SortByTooltip" = "デフォルト：最後にコピーした日時。";
-"UnlimitedHistory" = "Unlimited";
-"UnlimitedHistoryTooltip" = "Do not limit the number of history items to keep. When enabled, the size field is disabled.";
+"UnlimitedHistory" = "無制限";
+"UnlimitedHistoryTooltip" = "保持する履歴項目数を制限しません。有効にすると、数値フィールドは無効になります。";

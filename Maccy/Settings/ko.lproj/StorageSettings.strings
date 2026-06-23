@@ -5,12 +5,13 @@
 "Text" = "텍스트";
 "SaveDescription" = "보관할 복사 컨텐츠 타입을 변경합니다.";
 "Size" = "크기:";
-"SizeTooltip" = "보관할 기록 항목 수.\n기본값: 9999.";
-"CurrentSizeTooltip" = "디스크의 현재 크기입니다.";
+"SizeTooltip" = "보관할 고정되지 않은 기록 항목 수입니다. 고정된 항목은 이 제한에 포함되지 않습니다.\n기본값: 9999.";
+"CurrentSizeTooltip" = "현재 데이터베이스 크기와 기록 항목 수입니다.";
+"HistoryCountSummary" = "%d개 항목(%d개 고정됨, %d개 고정되지 않음)";
 "SortBy" = "정렬 기준:";
 "LastCopiedAt" = "마지막 복사한 시간";
 "FirstCopiedAt" = "처음 복사한 시간";
 "NumberOfCopies" = "복사 횟수";
 "SortByTooltip" = "기본값: 마지막 복사한 시간.";
-"UnlimitedHistory" = "Unlimited";
-"UnlimitedHistoryTooltip" = "Do not limit the number of history items to keep. When enabled, the size field is disabled.";
+"UnlimitedHistory" = "무제한";
+"UnlimitedHistoryTooltip" = "보관할 기록 항목 수를 제한하지 않습니다. 활성화하면 크기 입력란이 비활성화됩니다.";

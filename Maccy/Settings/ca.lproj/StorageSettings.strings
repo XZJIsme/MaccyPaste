@@ -9,8 +9,9 @@
 "SaveDescription" = "Canvia quins tipus de contingut copiat ha de ser guardat.";
 "Size" = "Mida:";
 "SortBy" = "Ordenar per:";
-"SizeTooltip" = "Nombre d'elements guardats a l'històric.\nPer defecte: 9999.";
+"SizeTooltip" = "Nombre d’elements no fixats de l’historial que s’han de conservar. Els elements fixats no compten per a aquest límit.\nPer defecte: 9999.";
 "LastCopiedAt" = "Temps de l'última còpia";
-"CurrentSizeTooltip" = "";
-"UnlimitedHistory" = "Unlimited";
-"UnlimitedHistoryTooltip" = "Do not limit the number of history items to keep. When enabled, the size field is disabled.";
+"CurrentSizeTooltip" = "Mida actual de la base de dades i recompte d’elements de l’historial.";
+"HistoryCountSummary" = "%d elements (%d fixats, %d no fixats)";
+"UnlimitedHistory" = "Il·limitat";
+"UnlimitedHistoryTooltip" = "No limitis el nombre d’elements de l’historial que es conserven. Quan està activat, el camp de mida queda desactivat.";

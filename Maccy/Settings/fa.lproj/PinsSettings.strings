@@ -1,7 +1,7 @@
-"Title" = "";
-"Key" = "";
-"Alias" = "";
-"Content" = "";
-"ContentIsNotText" = "";
-"RichTextEditWarning" = "";
-"PinCustomizationDescription" = "";
+"Title" = "سنجاق‌ها";
+"Key" = "کلید";
+"Alias" = "عنوان";
+"Content" = "محتوا";
+"ContentIsNotText" = "محتوای غیرقابل ویرایش (تصویر یا فایل)";
+"RichTextEditWarning" = "ویرایش، همه قالب‌بندی را حذف می‌کند.";
+"PinCustomizationDescription" = "می‌توانید کلید میانبر، عنوان و محتوای هر مورد سنجاق‌شده را سفارشی کنید. برای ویرایش، روی مورد دوبار کلیک کنید و مقدار جدیدی وارد کنید.\nتوجه داشته باشید که فقط متن ساده قابل تغییر است.";

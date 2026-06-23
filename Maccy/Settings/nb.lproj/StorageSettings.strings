@@ -5,12 +5,13 @@
 "Text" = "Tekst";
 "SaveDescription" = "Endre hvilke typer kopiert innhold som skal lagres.";
 "Size" = "Størrelse:";
-"SizeTooltip" = "Antall ønskede elementer i historikk.\nStandard: 9999.";
-"CurrentSizeTooltip" = "Gjeldende størrelse på disken.";
+"SizeTooltip" = "Antall ikke-festede historikkelementer som skal beholdes. Festede elementer teller ikke mot denne grensen.\nStandard: 9999.";
+"CurrentSizeTooltip" = "Gjeldende databasestørrelse og antall historikkelementer.";
+"HistoryCountSummary" = "%d elementer (%d festet, %d ikke festet)";
 "SortBy" = "Sorter etter:";
 "LastCopiedAt" = "Tidspunkt siste kopiering";
 "FirstCopiedAt" = "Tidspunkt første kopiering";
 "NumberOfCopies" = "Antall ganger kopiert";
 "SortByTooltip" = "Standard: Tidspunkt siste kopiering.";
-"UnlimitedHistory" = "Unlimited";
-"UnlimitedHistoryTooltip" = "Do not limit the number of history items to keep. When enabled, the size field is disabled.";
+"UnlimitedHistory" = "Ubegrenset";
+"UnlimitedHistoryTooltip" = "Ikke begrens antall historikkelementer som beholdes. Når aktivert, deaktiveres størrelsesfeltet.";

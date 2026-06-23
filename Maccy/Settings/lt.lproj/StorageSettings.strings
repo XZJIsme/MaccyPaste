@@ -5,12 +5,13 @@
 "Text" = "Tekstas";
 "SaveDescription" = "Pakeiskite, kokių tipų nukopijuotas turinys turėtų būti išsaugomas.";
 "Size" = "Dydis:";
-"SizeTooltip" = "Išsaugotinų istorijos elementų skaičius.\nNumatytoji reikšmė: 9999.";
-"CurrentSizeTooltip" = "Dabartinis dydis diske.";
+"SizeTooltip" = "Saugotinų neprisegtų istorijos elementų skaičius. Prisegti elementai į šį limitą neįskaičiuojami.\nNumatytoji reikšmė: 9999.";
+"CurrentSizeTooltip" = "Dabartinis duomenų bazės dydis ir istorijos elementų skaičius.";
+"HistoryCountSummary" = "%d elementų (%d prisegta, %d neprisegta)";
 "SortBy" = "Rikiuoti pagal:";
 "LastCopiedAt" = "Paskutinės kopijos padarymo laikas";
 "FirstCopiedAt" = "Pirmosios kopijos laikas";
 "NumberOfCopies" = "Kopijų skaičius";
 "SortByTooltip" = "Numatytoji reikšmė: Paskutinės kopijos laikas.";
-"UnlimitedHistory" = "Unlimited";
-"UnlimitedHistoryTooltip" = "Do not limit the number of history items to keep. When enabled, the size field is disabled.";
+"UnlimitedHistory" = "Neribota";
+"UnlimitedHistoryTooltip" = "Neriboti saugomų istorijos elementų skaičiaus. Įjungus, skaičiaus laukas išjungiamas.";

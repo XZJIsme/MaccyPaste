@@ -117,7 +117,7 @@ defaults write com.zenga.MaccyPaste showFooter 1
 
 ## 翻译
 
-翻译继承自上游 Maccy 项目。MaccyPaste 目前没有单独的翻译流程。
+很多翻译继承自上游 Maccy 项目。MaccyPaste 缺失的翻译是用 AI 翻译补上的。
 
 ## 致谢
 

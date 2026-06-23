@@ -1,11 +1,12 @@
 import XCTest
 import Defaults
-@testable import Maccy
+@testable import MaccyPaste
 
 @MainActor
 class HistoryTests: XCTestCase {
   let savedSize = Defaults[.size]
   let savedSortBy = Defaults[.sortBy]
+  let savedUnlimitedHistory = Defaults[.unlimitedHistory]
   let history = History.shared
 
   override func setUp() {
@@ -13,12 +14,14 @@ class HistoryTests: XCTestCase {
     history.clearAll()
     Defaults[.size] = 10
     Defaults[.sortBy] = .firstCopiedAt
+    Defaults[.unlimitedHistory] = false
   }
 
   override func tearDown() {
     super.tearDown()
     Defaults[.size] = savedSize
     Defaults[.sortBy] = savedSortBy
+    Defaults[.unlimitedHistory] = savedUnlimitedHistory
   }
 
   func testDefaultIsEmpty() {
@@ -211,6 +214,47 @@ class HistoryTests: XCTestCase {
     XCTAssertTrue(history.items.contains(items[10]))
     XCTAssertTrue(history.items.contains(items[0]))
     XCTAssertFalse(history.items.contains(items[1]))
+  }
+
+  func testMaxSizeOnlyLimitsUnpinnedItemsInStorage() {
+    Defaults[.size] = 3
+
+    for index in 0..<5 {
+      let item = history.add(historyItem("pinned-\(index)"))
+      history.togglePin(item)
+    }
+
+    for index in 0..<4 {
+      history.add(historyItem("unpinned-\(index)"))
+    }
+
+    let counts = Storage.shared.historyCounts
+    XCTAssertEqual(counts.pinned, 5)
+    XCTAssertEqual(counts.unpinned, 3)
+    XCTAssertEqual(counts.total, 8)
+  }
+
+  func testUnpinningItemAppliesMaxSizeOnlyToUnpinnedItemsInStorage() {
+    Defaults[.size] = 3
+
+    var pinnedItems: [HistoryItemDecorator] = []
+    for index in 0..<5 {
+      let item = history.add(historyItem("pinned-\(index)"))
+      history.togglePin(item)
+      pinnedItems.append(item)
+    }
+
+    for index in 0..<3 {
+      history.add(historyItem("unpinned-\(index)"))
+    }
+
+    history.togglePin(pinnedItems[0])
+
+    let counts = Storage.shared.historyCounts
+    XCTAssertEqual(counts.pinned, 4)
+    XCTAssertEqual(counts.unpinned, 3)
+    XCTAssertEqual(counts.total, 7)
+    XCTAssertTrue(history.items.contains(pinnedItems[0]))
   }
 
   func testMaxSizeIsChanged() {

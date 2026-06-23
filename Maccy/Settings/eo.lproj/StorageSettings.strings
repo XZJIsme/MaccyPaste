@@ -6,11 +6,12 @@
 "Title" = "Konservado";
 "SaveDescription" = "Ŝanĝi la specojn de kopiita enhavo, kiuj estu konservitaj.";
 "Size" = "Grando:";
-"SizeTooltip" = "Nombro de historiaj eroj konservotaj.\nDefaŭlta: 9999.";
-"CurrentSizeTooltip" = "Nuna grando sur disko.";
+"SizeTooltip" = "Nombro de nefiksitaj historiaj eroj konservotaj. Fiksitaj eroj ne kalkuliĝas en ĉi tiu limo.\nDefaŭlte: 9999.";
+"CurrentSizeTooltip" = "Nuna datumbaza grando kaj nombroj de historiaj eroj.";
+"HistoryCountSummary" = "%d eroj (%d fiksitaj, %d nefiksitaj)";
 "LastCopiedAt" = "Momento de lasta kopio";
 "FirstCopiedAt" = "Momento de unua kopio";
 "NumberOfCopies" = "Nombro de kopioj";
 "SortByTooltip" = "Defaŭlta: Momento de lasta kopio.";
-"UnlimitedHistory" = "Unlimited";
-"UnlimitedHistoryTooltip" = "Do not limit the number of history items to keep. When enabled, the size field is disabled.";
+"UnlimitedHistory" = "Senlima";
+"UnlimitedHistoryTooltip" = "Ne limigi la nombron de konservotaj historiaj eroj. Kiam ŝaltita, la nombro-kampo estas malŝaltita.";

@@ -5,12 +5,13 @@
 "Text" = "Szöveg";
 "SaveDescription" = "Válaszd ki, milyen típusú másolt tartalom legyen tárolva.";
 "Size" = "Méret:";
-"SizeTooltip" = "A megtartott előzmények száma.\nAlapértelmezett: 9999.";
-"CurrentSizeTooltip" = "Jelenlegi méret a lemezen.";
+"SizeTooltip" = "A megtartandó nem rögzített előzményelemek száma. A rögzített elemek nem számítanak bele ebbe a korlátba.\nAlapértelmezett: 9999.";
+"CurrentSizeTooltip" = "Az adatbázis jelenlegi mérete és az előzményelemek száma.";
+"HistoryCountSummary" = "%d elem (%d rögzített, %d nem rögzített)";
 "SortBy" = "Rendezés:";
 "LastCopiedAt" = "Utolsó másolás ideje";
 "FirstCopiedAt" = "Első másolás ideje";
 "NumberOfCopies" = "Másolások száma";
 "SortByTooltip" = "Alapértelmezett: Utolsó másolás ideje.";
-"UnlimitedHistory" = "Unlimited";
-"UnlimitedHistoryTooltip" = "Do not limit the number of history items to keep. When enabled, the size field is disabled.";
+"UnlimitedHistory" = "Korlátlan";
+"UnlimitedHistoryTooltip" = "Ne korlátozza a megtartandó előzményelemek számát. Bekapcsolva a méretmező le van tiltva.";

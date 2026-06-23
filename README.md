@@ -148,7 +148,8 @@ If your shortcut produces a character (like `Option+C` -> "ç"), macOS security 
 
 ## Translations
 
-Translations are inherited from the upstream Maccy project. MaccyPaste does not currently have a separate translation workflow.
+Many translations are inherited from the upstream Maccy project. Missing MaccyPaste translations
+were filled in with AI translation.
 
 ## Credits
 

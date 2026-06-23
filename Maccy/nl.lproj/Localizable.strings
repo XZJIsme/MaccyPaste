@@ -1,6 +1,6 @@
 "search_placeholder" = "type om te zoeken…";
-"clear_tooltip" = "Wis niet vastgemaakte items.\nSelecteer met ⇧ om alles te wissen.";
-"clear_all_tooltip" = "Wis alle items.";
+"clear_tooltip" = "Wis niet-vastgemaakte objecten.\nSelecteer met ⇧ om alles te wissen.";
+"clear_all_tooltip" = "Wis alle objecten.";
 "about_tooltip" = "Lees meer over de app.";
 "quit_tooltip" = "Sluit app.";
 "clear" = "Wis";
@@ -16,7 +16,7 @@
 "accessibility_alert_message" = "“Maccy” wil deze computer bedienen met toegankelijkheidsfuncties.";
 "accessibility_alert_comment" = "Verleen toegang tot deze app in {pane}, te vinden in {settings}.\n\nKlik op de + knop, selecteer Maccy en schakel het selectievakje ernaast in.";
 "accessibility_alert_deny" = "Weiger";
-"accessibility_alert_open" = "Open Systeemvoorkeuren";
+"accessibility_alert_open" = "Open Systeeminstellingen";
 "clear_alert_message" = "Weet je zeker dat je de geschiedenis wilt wissen?";
 "clear_alert_comment" = "Je kan deze actie niet ongedaan maken.";
 "clear_alert_cancel" = "Annuleer";

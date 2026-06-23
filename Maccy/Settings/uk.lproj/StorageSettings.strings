@@ -5,12 +5,13 @@
 "Text" = "Текст";
 "SaveDescription" = "Змінити, які типи скопійованого вмісту слід зберігати.";
 "Size" = "Розмір:";
-"SizeTooltip" = "Кількість елементів історії, які потрібно зберегти.\nЗа замовчуванням: 9999.";
-"CurrentSizeTooltip" = "Поточний розмір на диску.";
+"SizeTooltip" = "Кількість незакріплених елементів історії для збереження. Закріплені елементи не враховуються в цьому ліміті.\nЗа замовчуванням: 9999.";
+"CurrentSizeTooltip" = "Поточний розмір бази даних і кількість елементів історії.";
+"HistoryCountSummary" = "%d елементів (%d закріплено, %d не закріплено)";
 "SortBy" = "Сортувати за:";
 "LastCopiedAt" = "Часом останньої копії";
 "FirstCopiedAt" = "Часом першої копії";
 "NumberOfCopies" = "Кількістю копій";
 "SortByTooltip" = "За замовчуванням: Час останньої копії.";
-"UnlimitedHistory" = "Unlimited";
-"UnlimitedHistoryTooltip" = "Do not limit the number of history items to keep. When enabled, the size field is disabled.";
+"UnlimitedHistory" = "Без обмежень";
+"UnlimitedHistoryTooltip" = "Не обмежувати кількість елементів історії для збереження. Якщо ввімкнено, поле кількості вимикається.";

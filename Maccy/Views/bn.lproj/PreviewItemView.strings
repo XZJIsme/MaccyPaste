@@ -1,8 +1,8 @@
-"Application" = "";
-"FirstCopyTime" = "";
-"LastCopyTime" = "";
-"NumberOfCopies" = "";
-"PinKey" = "";
-"DeleteKey" = "";
-"UnpinKey" = "";
-"PreviewKey" = "";
+"Application" = "অ্যাপ্লিকেশন:";
+"FirstCopyTime" = "প্রথম কপির সময়:";
+"LastCopyTime" = "শেষ কপির সময়:";
+"NumberOfCopies" = "কপির সংখ্যা:";
+"PinKey" = "পিন করতে {pinKey} চাপুন।";
+"DeleteKey" = "মুছতে {deleteKey} চাপুন।";
+"UnpinKey" = "পিন খুলতে {pinKey} চাপুন।";
+"PreviewKey" = "প্রিভিউ চালু/বন্ধ করতে {previewKey} চাপুন।";

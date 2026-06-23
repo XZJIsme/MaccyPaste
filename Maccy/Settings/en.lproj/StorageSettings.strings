@@ -5,8 +5,9 @@
 "Text" = "Text";
 "SaveDescription" = "Change what types of copied content should be stored.";
 "Size" = "Size:";
-"SizeTooltip" = "Number of history items to keep.\nDefault: 9999.";
-"CurrentSizeTooltip" = "Current size on disk.";
+"SizeTooltip" = "Number of unpinned history items to keep. Pinned items do not count toward this limit.\nDefault: 9999.";
+"CurrentSizeTooltip" = "Current database size and history item counts.";
+"HistoryCountSummary" = "%d items (%d pinned, %d unpinned)";
 "SortBy" = "Sort by:";
 "LastCopiedAt" = "Time of last copy";
 "FirstCopiedAt" = "Time of first copy";

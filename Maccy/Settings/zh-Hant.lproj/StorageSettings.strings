@@ -5,8 +5,9 @@
 "Text" = "文字";
 "SaveDescription" = "選擇應儲存的複製內容類型。";
 "Size" = "大小：";
-"SizeTooltip" = "要保留的歷史記錄項目數量。\n預設：9999。";
-"CurrentSizeTooltip" = "目前在磁碟上的大小。";
+"SizeTooltip" = "要保留的非置頂歷史記錄項目數量。置頂記錄不計入此上限。\n預設：9999。";
+"CurrentSizeTooltip" = "目前資料庫大小和歷史記錄數量。";
+"HistoryCountSummary" = "%d 條（%d 條置頂，%d 條非置頂）";
 "SortBy" = "排序方式：";
 "LastCopiedAt" = "上次拷貝時間";
 "FirstCopiedAt" = "首次拷貝時間";

@@ -1,8 +1,8 @@
-"Application" = "";
-"FirstCopyTime" = "";
-"LastCopyTime" = "";
-"NumberOfCopies" = "";
-"PinKey" = "";
-"UnpinKey" = "";
-"DeleteKey" = "";
-"PreviewKey" = "";
+"Application" = "App:";
+"FirstCopyTime" = "Tid för första kopian:";
+"LastCopyTime" = "Tid för senaste kopian:";
+"NumberOfCopies" = "Antal kopior:";
+"PinKey" = "Tryck på {pinKey} för att fästa.";
+"UnpinKey" = "Tryck på {pinKey} för att lossa.";
+"DeleteKey" = "Tryck på {deleteKey} för att radera.";
+"PreviewKey" = "Tryck på {previewKey} för att växla förhandsvisning.";

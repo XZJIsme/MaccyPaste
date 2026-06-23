@@ -1,5 +1,5 @@
 import XCTest
-@testable import Maccy
+@testable import MaccyPaste
 
 class ColorImageTests: XCTestCase {
   func testColorImageFromShortHex() {

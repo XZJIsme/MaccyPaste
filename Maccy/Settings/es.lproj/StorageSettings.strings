@@ -5,12 +5,13 @@
 "Text" = "Texto";
 "SaveDescription" = "Cambiar qué tipos de contenidos deben ser almacenados.";
 "Size" = "Tamaño máximo:";
-"SizeTooltip" = "Número de elementos a almacenar en el historial.\nPor defecto: 9999.";
-"CurrentSizeTooltip" = "Tamaño actual en disco.";
+"SizeTooltip" = "Número de elementos no fijados del historial que se conservarán. Los elementos fijados no cuentan para este límite.\nPor defecto: 9999.";
+"CurrentSizeTooltip" = "Tamaño actual de la base de datos y recuento de elementos del historial.";
+"HistoryCountSummary" = "%d elementos (%d fijados, %d no fijados)";
 "SortBy" = "Ordenar por:";
 "LastCopiedAt" = "Más nuevos, primero";
 "FirstCopiedAt" = "Más antiguos, primero";
 "NumberOfCopies" = "Número de copias";
 "SortByTooltip" = "Por defecto: Más nuevos, primero.";
-"UnlimitedHistory" = "Unlimited";
-"UnlimitedHistoryTooltip" = "Do not limit the number of history items to keep. When enabled, the size field is disabled.";
+"UnlimitedHistory" = "Ilimitado";
+"UnlimitedHistoryTooltip" = "No limitar el número de elementos del historial que se conservan. Al activarlo, se deshabilita el campo de tamaño.";

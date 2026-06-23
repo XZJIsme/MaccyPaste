@@ -1,8 +1,8 @@
-"Application" = "";
-"FirstCopyTime" = "";
-"LastCopyTime" = "";
-"NumberOfCopies" = "";
-"PinKey" = "";
-"DeleteKey" = "";
-"UnpinKey" = "";
-"PreviewKey" = "";
+"Application" = "ऐप्लिकेशन:";
+"FirstCopyTime" = "पहली कॉपी का समय:";
+"LastCopyTime" = "आखिरी कॉपी का समय:";
+"NumberOfCopies" = "कॉपी की संख्या:";
+"PinKey" = "पिन करने के लिए {pinKey} दबाएं।";
+"DeleteKey" = "हटाने के लिए {deleteKey} दबाएं।";
+"UnpinKey" = "पिन हटाने के लिए {pinKey} दबाएं।";
+"PreviewKey" = "पूर्वावलोकन चालू/बंद करने के लिए {previewKey} दबाएं।";

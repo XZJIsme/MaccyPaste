@@ -5,12 +5,13 @@
 "Text" = "טקסט";
 "SaveDescription" = "לשנות אילו סוגים של תוכן מועתק יאוחסנו.";
 "Size" = "גודל:";
-"SizeTooltip" = "מספר פריטי ההיסטוריה לשמירה.\nברירת מחדל: 9999.";
+"SizeTooltip" = "מספר פריטי היסטוריה שאינם מוצמדים לשמירה. פריטים מוצמדים אינם נספרים במגבלה זו.\nברירת מחדל: 9999.";
 "SortBy" = "סידור לפי:";
 "LastCopiedAt" = "מועד העותק האחרון";
 "FirstCopiedAt" = "מועד העותק הראשון";
 "NumberOfCopies" = "מספר עותקים";
 "SortByTooltip" = "ברירת מחדל: מועד העותק האחרון.";
-"CurrentSizeTooltip" = "גודל נוכחי בדיסק.";
-"UnlimitedHistory" = "Unlimited";
-"UnlimitedHistoryTooltip" = "Do not limit the number of history items to keep. When enabled, the size field is disabled.";
+"CurrentSizeTooltip" = "גודל מסד הנתונים הנוכחי ומספר פריטי ההיסטוריה.";
+"HistoryCountSummary" = "%d פריטים (%d מוצמדים, %d לא מוצמדים)";
+"UnlimitedHistory" = "ללא הגבלה";
+"UnlimitedHistoryTooltip" = "לא להגביל את מספר פריטי ההיסטוריה לשמירה. כאשר האפשרות מופעלת, שדה הגודל מושבת.";

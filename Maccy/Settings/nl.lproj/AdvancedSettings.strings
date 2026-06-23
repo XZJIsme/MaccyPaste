@@ -5,6 +5,6 @@
 "TurnOffViaMenuIconDescription" = "Je kunt ook op het menu-icoontje klikken terwijl je ⌥ ingedrukt houdt.\nOm alleen de volgende kopie te negeren, klik met ⌥⇧.";
 "TurnOffNextShellScript" = "defaults write org.p0deje.Maccy ignoreOnlyNextEvent true\n# kopieer data";
 "ClearHistoryOnQuit" = "Wis geschiedenis bij afsluiten";
-"ClearHistoryOnQuitTooltip" = "Verwijder automatisch alle niet vastgemaakte items voordat u de app afsluit.";
+"ClearHistoryOnQuitTooltip" = "Verwijder automatisch alle niet-vastgemaakte objecten voordat u de app afsluit.";
 "ClearSystemClipboard" = "Wis ook het systeemklembord";
 "ClearSystemClipboardTooltip" = "Als dit is ingeschakeld, wordt bij het wissen van de geschiedenis ook het huidige klembord van het systeem gewist..";

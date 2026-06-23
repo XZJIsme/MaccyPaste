@@ -5,12 +5,13 @@
 "Text" = "Besedilo";
 "SaveDescription" = "Spremenite, katere vrste kopirane vsebine naj bodo shranjene.";
 "Size" = "Velikost:";
-"SizeTooltip" = "Število zgodovinskih elementov za ohranjanje.\nPrivzeto: 9999.";
-"CurrentSizeTooltip" = "Trenutna velikost na disku.";
+"SizeTooltip" = "Število nepripetih elementov zgodovine za hranjenje. Pripeti elementi se ne štejejo v to omejitev.\nPrivzeto: 9999.";
+"CurrentSizeTooltip" = "Trenutna velikost zbirke podatkov in število elementov zgodovine.";
+"HistoryCountSummary" = "%d elementov (%d pripetih, %d nepripetih)";
 "SortBy" = "Razvrsti po:";
 "LastCopiedAt" = "Čas zadnjega kopiranja";
 "FirstCopiedAt" = "Čas prvega kopiranja";
 "NumberOfCopies" = "Število kopiranj";
 "SortByTooltip" = "Privzeto: Čas zadnjega kopiranja.";
-"UnlimitedHistory" = "Unlimited";
-"UnlimitedHistoryTooltip" = "Do not limit the number of history items to keep. When enabled, the size field is disabled.";
+"UnlimitedHistory" = "Neomejeno";
+"UnlimitedHistoryTooltip" = "Ne omejuj števila shranjenih elementov zgodovine. Ko je omogočeno, je polje za število onemogočeno.";

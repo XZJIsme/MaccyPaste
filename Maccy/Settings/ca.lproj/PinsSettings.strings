@@ -1,7 +1,7 @@
-"Title" = "";
-"Key" = "";
-"Alias" = "";
-"Content" = "";
-"ContentIsNotText" = "";
-"RichTextEditWarning" = "";
-"PinCustomizationDescription" = "";
+"Title" = "Fixats";
+"Key" = "Tecla";
+"Alias" = "Títol";
+"Content" = "Contingut";
+"ContentIsNotText" = "Contingut no editable (imatge o fitxer)";
+"RichTextEditWarning" = "En editar es descartarà tot el format.";
+"PinCustomizationDescription" = "Pots personalitzar la drecera, el títol i el contingut de qualsevol element fixat. Per editar-lo, fes doble clic a l’element i introdueix un valor nou.\nTingues en compte que només es pot modificar text pla.";

@@ -62,12 +62,28 @@ struct StorageSettingsPane: View {
 
   @State private var viewModel = ViewModel()
   @State private var storageSize = Storage.shared.size
+  @State private var historyCounts = Storage.shared.historyCounts
 
   private let sizeFormatter: NumberFormatter = {
     let formatter = NumberFormatter()
     formatter.allowsFloats = false
     return formatter
   }()
+
+  private var storageUsageSummary: String {
+    let countSummary = String(
+      format: NSLocalizedString("HistoryCountSummary", tableName: "StorageSettings", comment: ""),
+      historyCounts.total,
+      historyCounts.pinned,
+      historyCounts.unpinned
+    )
+
+    guard !storageSize.isEmpty else {
+      return countSummary
+    }
+
+    return "\(storageSize)  \(countSummary)"
+  }
 
   private var limitedSize: Binding<Int> {
     Binding(
@@ -113,12 +129,13 @@ struct StorageSettingsPane: View {
             Text("UnlimitedHistory", tableName: "StorageSettings")
           }
           .help(Text("UnlimitedHistoryTooltip", tableName: "StorageSettings"))
-          Text(storageSize)
+          Text(storageUsageSummary)
             .controlSize(.small)
             .foregroundStyle(.gray)
+            .fixedSize(horizontal: false, vertical: true)
             .help(Text("CurrentSizeTooltip", tableName: "StorageSettings"))
             .onAppear {
-              storageSize = Storage.shared.size
+              refreshStorageUsage()
             }
         }
       }
@@ -134,6 +151,11 @@ struct StorageSettingsPane: View {
         .help(Text("SortByTooltip", tableName: "StorageSettings"))
       }
     }
+  }
+
+  private func refreshStorageUsage() {
+    storageSize = Storage.shared.size
+    historyCounts = Storage.shared.historyCounts
   }
 }
 

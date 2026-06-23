@@ -2,7 +2,7 @@
 "FirstCopiedAt" = "Data primei copii";
 "Title" = "Stocare";
 "Images" = "Imagini";
-"SizeTooltip" = "Numărul de elemente din istoric de păstrat.\nImplicit: 9999.";
+"SizeTooltip" = "Numărul de elemente nefixate din istoric de păstrat. Elementele fixate nu se iau în calcul pentru această limită.\nImplicit: 9999.";
 "LastCopiedAt" = "Data ultimei copii";
 "NumberOfCopies" = "Numărul de copii";
 "SortBy" = "Sortare după:";
@@ -11,6 +11,7 @@
 "Text" = "Text";
 "Files" = "Fișiere";
 "SortByTooltip" = "Implicit: Data ultimei copii.";
-"CurrentSizeTooltip" = "Dimensiunea curentă pe disc.";
-"UnlimitedHistory" = "Unlimited";
-"UnlimitedHistoryTooltip" = "Do not limit the number of history items to keep. When enabled, the size field is disabled.";
+"CurrentSizeTooltip" = "Dimensiunea curentă a bazei de date și numărul de elemente din istoric.";
+"HistoryCountSummary" = "%d elemente (%d fixate, %d nefixate)";
+"UnlimitedHistory" = "Nelimitat";
+"UnlimitedHistoryTooltip" = "Nu limita numărul de elemente din istoric de păstrat. Când este activat, câmpul pentru număr este dezactivat.";

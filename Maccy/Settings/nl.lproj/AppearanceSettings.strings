@@ -13,7 +13,7 @@
 "PinTo" = "Maak vast:";
 "PinToTop" = "Boven";
 "PinToBottom" = "Onder";
-"PinToTooltip" = "Wijzig de locatie van vastgemaakte items.\nStandaard: Boven.";
+"PinToTooltip" = "Wijzig de locatie van vastgemaakte objecten.\nStandaard: Boven.";
 "ImageHeight" = "Afbeeldingshoogte:";
 "ImageHeightTooltip" = "Maximale hoogte afbeeldingsvoorbeeld.\nStandaard: 40.\nHint: Stel in op 16 zodat het lijkt op tekstitems.";
 "PreviewDelay" = "Vertraging:";

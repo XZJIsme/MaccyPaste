@@ -5,12 +5,13 @@
 "Text" = "دەق";
 "SaveDescription" = "دیاریبکە کام جۆرە ناوەڕۆکی کۆپیکراو پاشەکەوت بکرێت.";
 "Size" = "قەبارە:";
-"SizeTooltip" = "ژمارەی ئەو ئایتەمە مێژووییانەی کە دەهێڵرێنەوە.\nبنەڕەت: ٢٠٠.";
-"CurrentSizeTooltip" = "قەبارەی ئێستا لەسەر دیسک.";
+"SizeTooltip" = "ژمارەی ئەو ئایتەمە مێژووییانەی دانەچەسپێنراون و دەهێڵرێنەوە. ئایتەمە چەسپێنراوەکان ناچنە ناو ئەم سنوورە.\nبنەڕەت: 9999.";
+"CurrentSizeTooltip" = "قەبارەی ئێستای بنکەدراوە و ژمارەی ئایتەمە مێژووییەکان.";
+"HistoryCountSummary" = "%d ئایتەم (%d چەسپێنراو، %d نەچەسپێنراو)";
 "SortBy" = "ڕیزکردن بەپێی:";
 "LastCopiedAt" = "کاتی دوایین کۆپی";
 "FirstCopiedAt" = "کاتی یەکەم کۆپی";
 "NumberOfCopies" = "ژمارەی کۆپییەکان";
 "SortByTooltip" = "بنەڕەت: کاتی دوایین کۆپی.";
-"UnlimitedHistory" = "Unlimited";
-"UnlimitedHistoryTooltip" = "Do not limit the number of history items to keep. When enabled, the size field is disabled.";
+"UnlimitedHistory" = "بێسنوور";
+"UnlimitedHistoryTooltip" = "ژمارەی ئایتەمە مێژووییە پارێزراوەکان سنووردار مەکە. کاتێک چالاک بێت، خانەی ژمارە ناچالاک دەبێت.";

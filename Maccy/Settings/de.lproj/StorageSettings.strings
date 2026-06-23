@@ -5,12 +5,13 @@
 "Text" = "Text";
 "SaveDescription" = "Ändere, welche Dateitypen kopierter Inhalte gesichert werden sollen.";
 "Size" = "Verlauf:";
-"SizeTooltip" = "Maximale Anzahl von Einträgen.\nStandard: 9999.";
-"CurrentSizeTooltip" = "Aktuelle Größe auf der Festplatte.";
+"SizeTooltip" = "Anzahl der nicht angehefteten Verlaufseinträge, die behalten werden. Angeheftete Einträge zählen nicht zu diesem Limit.\nStandard: 9999.";
+"CurrentSizeTooltip" = "Aktuelle Datenbankgröße und Anzahl der Verlaufseinträge.";
+"HistoryCountSummary" = "%d Einträge (%d angeheftet, %d nicht angeheftet)";
 "SortBy" = "Sortieren:";
 "LastCopiedAt" = "Zeitpunkt des letzten Eintrags";
 "FirstCopiedAt" = "Zeitpunkt des ersten Eintrags";
 "NumberOfCopies" = "Häufigkeit der Einträge";
 "SortByTooltip" = "Standard: Zeitpunkt des letzten Eintrags.";
-"UnlimitedHistory" = "Unlimited";
-"UnlimitedHistoryTooltip" = "Do not limit the number of history items to keep. When enabled, the size field is disabled.";
+"UnlimitedHistory" = "Unbegrenzt";
+"UnlimitedHistoryTooltip" = "Die Anzahl der zu behaltenden Verlaufseinträge nicht begrenzen. Wenn aktiviert, ist das Zahlenfeld deaktiviert.";

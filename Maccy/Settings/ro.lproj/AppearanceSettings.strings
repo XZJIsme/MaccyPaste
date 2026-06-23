@@ -21,7 +21,7 @@
 "HighlightMatches" = "Evidențiere potriviri:";
 "HighlightMatchColor" = "Culoare";
 "HighlightMatchBold" = "Aldin (bold)";
-"HighlightMatchItalic" = "Italic";
+"HighlightMatchItalic" = "Cursiv";
 "HighlightMatchUnderline" = "Subliniat";
 "HighlightMatchesTooltip" = "Schimbă stilul de evidențiere pentru potrivirile din căutare.\nImplicit: Aldin (bold).";
 "ShowSpecialSymbols" = "Afișează simboluri speciale";
