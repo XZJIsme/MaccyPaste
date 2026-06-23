@@ -6,9 +6,11 @@
 "Title" = "Konservado";
 "SaveDescription" = "Ŝanĝi la specojn de kopiita enhavo, kiuj estu konservitaj.";
 "Size" = "Grando:";
-"SizeTooltip" = "Nombro de historiaj eroj konservotaj.\nDefaŭlta: 200.";
+"SizeTooltip" = "Nombro de historiaj eroj konservotaj.\nDefaŭlta: 9999.";
 "CurrentSizeTooltip" = "Nuna grando sur disko.";
 "LastCopiedAt" = "Momento de lasta kopio";
 "FirstCopiedAt" = "Momento de unua kopio";
 "NumberOfCopies" = "Nombro de kopioj";
 "SortByTooltip" = "Defaŭlta: Momento de lasta kopio.";
+"UnlimitedHistory" = "Unlimited";
+"UnlimitedHistoryTooltip" = "Do not limit the number of history items to keep. When enabled, the size field is disabled.";

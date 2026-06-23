@@ -9,6 +9,8 @@
 "LastCopiedAt" = "Час апошняга капіявання";
 "SortByTooltip" = "Падставова: час апошняга капіявання.";
 "Title" = "Захоўванне";
-"SizeTooltip" = "Колькасць элементаў, якія будуць захоўвацца.\nПадставова: 200.";
+"SizeTooltip" = "Колькасць элементаў, якія будуць захоўвацца.\nПадставова: 9999.";
 "SortBy" = "Сартаваць па:";
 "CurrentSizeTooltip" = "Бягучы памер на дыску.";
+"UnlimitedHistory" = "Unlimited";
+"UnlimitedHistoryTooltip" = "Do not limit the number of history items to keep. When enabled, the size field is disabled.";

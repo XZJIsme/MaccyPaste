@@ -5,10 +5,12 @@
 "Text" = "文字";
 "SaveDescription" = "選擇應儲存的複製內容類型。";
 "Size" = "大小：";
-"SizeTooltip" = "要保留的歷史記錄項目數量。\n預設：200。";
+"SizeTooltip" = "要保留的歷史記錄項目數量。\n預設：9999。";
 "CurrentSizeTooltip" = "目前在磁碟上的大小。";
 "SortBy" = "排序方式：";
 "LastCopiedAt" = "上次拷貝時間";
 "FirstCopiedAt" = "首次拷貝時間";
 "NumberOfCopies" = "拷貝次數";
 "SortByTooltip" = "預設：上次拷貝時間。";
+"UnlimitedHistory" = "無限";
+"UnlimitedHistoryTooltip" = "不限制保留的歷史記錄數量。開啟後，左側數量設定將不可編輯。";

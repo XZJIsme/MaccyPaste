@@ -5,10 +5,12 @@
 "Text" = "טקסט";
 "SaveDescription" = "לשנות אילו סוגים של תוכן מועתק יאוחסנו.";
 "Size" = "גודל:";
-"SizeTooltip" = "מספר פריטי ההיסטוריה לשמירה.\nברירת מחדל: 200.";
+"SizeTooltip" = "מספר פריטי ההיסטוריה לשמירה.\nברירת מחדל: 9999.";
 "SortBy" = "סידור לפי:";
 "LastCopiedAt" = "מועד העותק האחרון";
 "FirstCopiedAt" = "מועד העותק הראשון";
 "NumberOfCopies" = "מספר עותקים";
 "SortByTooltip" = "ברירת מחדל: מועד העותק האחרון.";
 "CurrentSizeTooltip" = "גודל נוכחי בדיסק.";
+"UnlimitedHistory" = "Unlimited";
+"UnlimitedHistoryTooltip" = "Do not limit the number of history items to keep. When enabled, the size field is disabled.";

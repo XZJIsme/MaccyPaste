@@ -5,10 +5,12 @@
 "Text" = "ข้อความ";
 "SaveDescription" = "เปลี่ยนประเภทการคัดลอก ที่ต้องการเก็บ";
 "Size" = "ขนาด:";
-"SizeTooltip" = "จำนวนประวัติรายการที่ต้องการเก็บ.\nค่าเริ่มต้น: 200.";
+"SizeTooltip" = "จำนวนประวัติรายการที่ต้องการเก็บ.\nค่าเริ่มต้น: 9999.";
 "SortBy" = "เรียงตาม:";
 "LastCopiedAt" = "เวลาคัดลอกสุดท้าย";
 "FirstCopiedAt" = "เวลาคัดลอกครั้งแรก";
 "NumberOfCopies" = "จำนวนการคัดลอก";
 "SortByTooltip" = "ค่าเริ่มต้น: เวลาคัดลอกสุดท้าย";
 "CurrentSizeTooltip" = "ขนาดปัจจุบันบนดิสก์";
+"UnlimitedHistory" = "Unlimited";
+"UnlimitedHistoryTooltip" = "Do not limit the number of history items to keep. When enabled, the size field is disabled.";

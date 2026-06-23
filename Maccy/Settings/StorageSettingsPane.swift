@@ -57,6 +57,7 @@ struct StorageSettingsPane: View {
   }
 
   @Default(.size) private var size
+  @Default(.unlimitedHistory) private var unlimitedHistory
   @Default(.sortBy) private var sortBy
 
   @State private var viewModel = ViewModel()
@@ -64,10 +65,16 @@ struct StorageSettingsPane: View {
 
   private let sizeFormatter: NumberFormatter = {
     let formatter = NumberFormatter()
-    formatter.minimum = 1
-    formatter.maximum = 999
+    formatter.allowsFloats = false
     return formatter
   }()
+
+  private var limitedSize: Binding<Int> {
+    Binding(
+      get: { size },
+      set: { size = min(max($0, 1), 9999) }
+    )
+  }
 
   var body: some View {
     Settings.Container(contentWidth: 450) {
@@ -94,11 +101,18 @@ struct StorageSettingsPane: View {
 
       Settings.Section(label: { Text("Size", tableName: "StorageSettings") }) {
         HStack {
-          TextField("", value: $size, formatter: sizeFormatter)
-            .frame(width: 80)
-            .help(Text("SizeTooltip", tableName: "StorageSettings"))
-          Stepper("", value: $size, in: 1...999)
-            .labelsHidden()
+          HStack {
+            TextField("", value: limitedSize, formatter: sizeFormatter)
+              .frame(width: 80)
+              .help(Text("SizeTooltip", tableName: "StorageSettings"))
+            Stepper("", value: limitedSize, in: 1...9999)
+              .labelsHidden()
+          }
+          .disabled(unlimitedHistory)
+          Defaults.Toggle(key: .unlimitedHistory) {
+            Text("UnlimitedHistory", tableName: "StorageSettings")
+          }
+          .help(Text("UnlimitedHistoryTooltip", tableName: "StorageSettings"))
           Text(storageSize)
             .controlSize(.small)
             .foregroundStyle(.gray)

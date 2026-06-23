@@ -5,10 +5,12 @@
 "Text" = "Teks";
 "SaveDescription" = "Mengubah jenis konten tersalin yang disimpan.";
 "Size" = "Ukuran:";
-"SizeTooltip" = "Jumlah item riwayat untuk disimpan.\nDefault: 200.";
+"SizeTooltip" = "Jumlah item riwayat untuk disimpan.\nDefault: 9999.";
 "CurrentSizeTooltip" = "Ukuran saat ini pada disk.";
 "SortBy" = "Menurut:";
 "LastCopiedAt" = "Waktu disalin terakhir";
 "FirstCopiedAt" = "Waktu salinan pertama";
 "NumberOfCopies" = "";
 "SortByTooltip" = "";
+"UnlimitedHistory" = "Unlimited";
+"UnlimitedHistoryTooltip" = "Do not limit the number of history items to keep. When enabled, the size field is disabled.";

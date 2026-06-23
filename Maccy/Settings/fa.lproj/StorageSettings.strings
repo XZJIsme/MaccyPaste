@@ -12,3 +12,5 @@
 "FirstCopiedAt" = "";
 "NumberOfCopies" = "";
 "SortByTooltip" = "";
+"UnlimitedHistory" = "Unlimited";
+"UnlimitedHistoryTooltip" = "Do not limit the number of history items to keep. When enabled, the size field is disabled.";

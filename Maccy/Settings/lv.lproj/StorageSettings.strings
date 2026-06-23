@@ -5,10 +5,12 @@
 "Text" = "Tekstus";
 "SaveDescription" = "Mainiet, kāda veida kopētais saturs ir jāsaglabā.";
 "Size" = "Vienumu skaits:";
-"SizeTooltip" = "Saglabājamo vēstures vienumu skaits.\nNoklusējums: 200.";
+"SizeTooltip" = "Saglabājamo vēstures vienumu skaits.\nNoklusējums: 9999.";
 "CurrentSizeTooltip" = "Pašreizējais izmērs diskā.";
 "SortBy" = "Kārtot pēc:";
 "LastCopiedAt" = "Pēdējās kopijas laiks";
 "FirstCopiedAt" = "Pirmās kopijas laiks";
 "NumberOfCopies" = "Kopiju skaits";
 "SortByTooltip" = "Noklusējums: pēdējās kopijas laiks.";
+"UnlimitedHistory" = "Unlimited";
+"UnlimitedHistoryTooltip" = "Do not limit the number of history items to keep. When enabled, the size field is disabled.";

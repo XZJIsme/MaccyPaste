@@ -9,6 +9,8 @@
 "SaveDescription" = "Canvia quins tipus de contingut copiat ha de ser guardat.";
 "Size" = "Mida:";
 "SortBy" = "Ordenar per:";
-"SizeTooltip" = "Nombre d'elements guardats a l'històric.\nPer defecte: 200.";
+"SizeTooltip" = "Nombre d'elements guardats a l'històric.\nPer defecte: 9999.";
 "LastCopiedAt" = "Temps de l'última còpia";
 "CurrentSizeTooltip" = "";
+"UnlimitedHistory" = "Unlimited";
+"UnlimitedHistoryTooltip" = "Do not limit the number of history items to keep. When enabled, the size field is disabled.";

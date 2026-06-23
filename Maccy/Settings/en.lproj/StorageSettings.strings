@@ -5,10 +5,12 @@
 "Text" = "Text";
 "SaveDescription" = "Change what types of copied content should be stored.";
 "Size" = "Size:";
-"SizeTooltip" = "Number of history items to keep.\nDefault: 200.";
+"SizeTooltip" = "Number of history items to keep.\nDefault: 9999.";
 "CurrentSizeTooltip" = "Current size on disk.";
 "SortBy" = "Sort by:";
 "LastCopiedAt" = "Time of last copy";
 "FirstCopiedAt" = "Time of first copy";
 "NumberOfCopies" = "Number of copies";
 "SortByTooltip" = "Default: Time of last copy.";
+"UnlimitedHistory" = "Unlimited";
+"UnlimitedHistoryTooltip" = "Do not limit the number of history items to keep. When enabled, the size field is disabled.";

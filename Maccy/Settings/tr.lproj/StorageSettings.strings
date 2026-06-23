@@ -5,10 +5,12 @@
 "Text" = "Metin";
 "SaveDescription" = "Ne tür kopyalanmış içerik türlerinin depolanacağını değiştirin.";
 "Size" = "Sayı:";
-"SizeTooltip" = "Tutulacak geçmiş ögesi sayısı.\nSaptanmış: 200.";
+"SizeTooltip" = "Tutulacak geçmiş ögesi sayısı.\nSaptanmış: 9999.";
 "CurrentSizeTooltip" = "Diskteki geçerli boyut.";
 "SortBy" = "Şuna göre sırala:";
 "LastCopiedAt" = "Son kopyanın zamanı";
 "FirstCopiedAt" = "İlk kopyanın zamanı";
 "NumberOfCopies" = "Kopya sayısı";
 "SortByTooltip" = "Saptanmış: Son kopyanın zamanı.";
+"UnlimitedHistory" = "Unlimited";
+"UnlimitedHistoryTooltip" = "Do not limit the number of history items to keep. When enabled, the size field is disabled.";

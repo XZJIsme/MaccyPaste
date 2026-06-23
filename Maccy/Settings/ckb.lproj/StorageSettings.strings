@@ -12,3 +12,5 @@
 "FirstCopiedAt" = "کاتی یەکەم کۆپی";
 "NumberOfCopies" = "ژمارەی کۆپییەکان";
 "SortByTooltip" = "بنەڕەت: کاتی دوایین کۆپی.";
+"UnlimitedHistory" = "Unlimited";
+"UnlimitedHistoryTooltip" = "Do not limit the number of history items to keep. When enabled, the size field is disabled.";

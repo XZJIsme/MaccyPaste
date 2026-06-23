@@ -3,7 +3,7 @@
 "Files" = "Fayllar";
 "SaveDescription" = "Qaysi turdagi nusxalangan kontentni saqlash kerakligini o'zgartiring.";
 "Size" = "Hajmi:";
-"SizeTooltip" = "Saqlanishi kerak bo'lgan tarix elementlari soni.\nStandart: 200.";
+"SizeTooltip" = "Saqlanishi kerak bo'lgan tarix elementlari soni.\nStandart: 9999.";
 "CurrentSizeTooltip" = "Diskdagi joriy o'lcham.";
 "SortBy" = "Saralash turi:";
 "LastCopiedAt" = "Oxirgi nusxa vaqti";
@@ -12,3 +12,5 @@
 "SortByTooltip" = "Standart: Oxirgi nusxa vaqti.";
 "Title" = "Hotira";
 "Text" = "Matn";
+"UnlimitedHistory" = "Unlimited";
+"UnlimitedHistoryTooltip" = "Do not limit the number of history items to keep. When enabled, the size field is disabled.";

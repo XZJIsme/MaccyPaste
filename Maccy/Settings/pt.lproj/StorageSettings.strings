@@ -4,7 +4,7 @@
 "Text" = "Texto";
 "SaveDescription" = "Alterar que tipos de conteúdo copiados devem ser armazenados.";
 "Size" = "Tamanho:";
-"SizeTooltip" = "Número de elementos do histórico a manter.\nPadrão: 200.";
+"SizeTooltip" = "Número de elementos do histórico a manter.\nPadrão: 9999.";
 "CurrentSizeTooltip" = "Tamanho atual no disco.";
 "SortBy" = "Ordenar por:";
 "LastCopiedAt" = "Data da última cópia";
@@ -12,3 +12,5 @@
 "NumberOfCopies" = "Número de cópias";
 "SortByTooltip" = "Padrão: Data de última cópia.";
 "Title" = "Armazenamento";
+"UnlimitedHistory" = "Unlimited";
+"UnlimitedHistoryTooltip" = "Do not limit the number of history items to keep. When enabled, the size field is disabled.";
