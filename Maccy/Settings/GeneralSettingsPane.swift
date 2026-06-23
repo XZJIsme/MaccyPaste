@@ -17,7 +17,7 @@ struct GeneralSettingsPane: View {
   @State private var pasteWithoutFormatting = HistoryItemAction.pasteWithoutFormatting.modifierFlags.description
 
   var body: some View {
-    Settings.Container(contentWidth: 450) {
+    Settings.Container(contentWidth: 650) {
       Settings.Section(title: "", bottomDivider: true) {
         LaunchAtLogin.Toggle {
           Text("LaunchAtLogin", tableName: "GeneralSettings")
@@ -107,6 +107,7 @@ struct GeneralSettingsPane: View {
           format: AppLocalization.shared.localizedString("Modifiers", tableName: "GeneralSettings"),
           copyModifier, pasteModifier, pasteWithoutFormatting
         ))
+        .frame(maxWidth: .infinity, alignment: .leading)
         .fixedSize(horizontal: false, vertical: true)
         .foregroundStyle(.gray)
         .controlSize(.small)

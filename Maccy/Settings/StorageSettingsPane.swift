@@ -116,19 +116,21 @@ struct StorageSettingsPane: View {
       }
 
       Settings.Section(label: { Text("Size", tableName: "StorageSettings") }) {
-        HStack {
+        VStack(alignment: .leading) {
           HStack {
-            TextField("", value: limitedSize, formatter: sizeFormatter)
-              .frame(width: 80)
-              .help(Text("SizeTooltip", tableName: "StorageSettings"))
-            Stepper("", value: limitedSize, in: 1...9999)
-              .labelsHidden()
+            HStack {
+              TextField("", value: limitedSize, formatter: sizeFormatter)
+                .frame(width: 80)
+                .help(Text("SizeTooltip", tableName: "StorageSettings"))
+              Stepper("", value: limitedSize, in: 1...9999)
+                .labelsHidden()
+            }
+            .disabled(unlimitedHistory)
+            Defaults.Toggle(key: .unlimitedHistory) {
+              Text("UnlimitedHistory", tableName: "StorageSettings")
+            }
+            .help(Text("UnlimitedHistoryTooltip", tableName: "StorageSettings"))
           }
-          .disabled(unlimitedHistory)
-          Defaults.Toggle(key: .unlimitedHistory) {
-            Text("UnlimitedHistory", tableName: "StorageSettings")
-          }
-          .help(Text("UnlimitedHistoryTooltip", tableName: "StorageSettings"))
           Text(storageUsageSummary)
             .controlSize(.small)
             .foregroundStyle(.gray)
