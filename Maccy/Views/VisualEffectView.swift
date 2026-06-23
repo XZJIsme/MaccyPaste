@@ -16,18 +16,19 @@ struct VisualEffectView: NSViewRepresentable {
   }
 }
 
-@available(macOS 26.0, *)
 struct GlassEffectView: NSViewRepresentable {
-  let glassEffectView = NSGlassEffectView()
+  let visualEffectView = NSVisualEffectView()
 
-  var style: NSGlassEffectView.Style = .regular
+  var material: NSVisualEffectView.Material = .hudWindow
+  var blendingMode: NSVisualEffectView.BlendingMode = .behindWindow
 
-  func makeNSView(context: Context) -> NSGlassEffectView {
-    return glassEffectView
+  func makeNSView(context: Context) -> NSVisualEffectView {
+    return visualEffectView
   }
 
-  func updateNSView(_ view: NSGlassEffectView, context: Context) {
-    glassEffectView.style = style
+  func updateNSView(_ view: NSVisualEffectView, context: Context) {
+    visualEffectView.material = material
+    visualEffectView.blendingMode = blendingMode
   }
 }
 

@@ -1,8 +1,10 @@
 # Keyboard Shortcut Not Working in Password Fields
 
+Language: [简体中文](keyboard-shortcut-password-fields.zh-CN.md)
+
 ## Problem Description
 
-Some users may experience issues where their Maccy keyboard shortcut stops working, particularly in password fields or secure input contexts. This commonly occurs when using shortcuts that produce visible characters, such as `Option+C` which generates the "ç" character.
+Some users may experience issues where their MaccyPaste keyboard shortcut stops working, particularly in password fields or secure input contexts. This commonly occurs when using shortcuts that produce visible characters, such as `Option+C` which generates the "ç" character.
 
 ## Root Cause
 
@@ -12,7 +14,7 @@ macOS blocks keyboard event listeners that output text in secure fields. When a 
 
 Choose Different Shortcut: Select a keyboard combination that doesn't produce visible characters (e.g., Cmd+Shift+V)
 
-## Detailed Solution: If you really want to continue using your current kb shortcut
+## Detailed Solution: If you really want to continue using your current keyboard shortcut
 
 If you want to use a keyboard shortcut that is used by the system (and produces text output), you can use Karabiner-Elements to remap this shortcut to another keyboard shortcut. For example, remapping `Option+C` to `Cmd+Shift+C`.
 
@@ -38,7 +40,7 @@ If you want to use a keyboard shortcut that is used by the system (and produces 
 
    ```json
    {
-     "description": "Remap option+c to cmd+shift+c for Maccy trigger",
+     "description": "Remap option+c to cmd+shift+c for MaccyPaste trigger",
      "manipulators": [
        {
          "from": {
@@ -60,8 +62,8 @@ If you want to use a keyboard shortcut that is used by the system (and produces 
    }
    ```
 
-4. **Update Maccy Settings**
-   - Open Maccy preferences
+4. **Update MaccyPaste Settings**
+   - Open MaccyPaste preferences
    - Set the keyboard shortcut to match your Karabiner remapping (in this example: `Cmd+Shift+C`)
    - Test the shortcut in various contexts, including password fields
 
@@ -77,6 +79,6 @@ After implementing the solution:
 1. Test the shortcut in regular text fields
 2. Test the shortcut in password fields
 3. Test the shortcut in secure applications (banking apps, password managers)
-4. Verify Maccy responds consistently across all contexts
+4. Verify MaccyPaste responds consistently across all contexts
 
 This approach allows you to continue using your preferred key combination while ensuring compatibility with macOS security features.
