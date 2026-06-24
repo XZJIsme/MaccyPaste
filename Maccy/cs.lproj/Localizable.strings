@@ -28,3 +28,9 @@
 "about" = "O aplikaci";
 "copy_modifiers_config" = "• Vyber se stisknutím %@ pro zkopírování položky.";
 "format_modifiers_config" = "• Vyber se stisknutím %@ pro zkopírování, odstranění formátování a vložení položky.";
+"context_menu_save_as" = "Uložit jako";
+"context_menu_markdown" = "Markdown";
+"context_menu_plain_text" = "Prostý text";
+"context_menu_pin" = "Připnout";
+"context_menu_unpin" = "Odepnout";
+"context_menu_delete" = "Smazat";

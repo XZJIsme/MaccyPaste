@@ -28,3 +28,9 @@
 "system_settings_pane" = "Privacy- en Beveiligingsinstellingen";
 "system_preferences_name" = "Systeemvoorkeuren";
 "system_preferences_pane" = "Beveiliging en Privacyvoorkeuren";
+"context_menu_save_as" = "Bewaar als";
+"context_menu_markdown" = "Markdown";
+"context_menu_plain_text" = "Platte tekst";
+"context_menu_pin" = "Maak vast";
+"context_menu_unpin" = "Maak los";
+"context_menu_delete" = "Verwijder";

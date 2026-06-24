@@ -28,3 +28,9 @@
 "system_settings_pane" = "Maxfiylik va Xavfsizlik sozlamalari";
 "system_preferences_name" = "Tizim sozlamalari";
 "system_preferences_pane" = "Xavfsizlik va Maxfiylik sozlamalari";
+"context_menu_save_as" = "Boshqa nom bilan saqlash";
+"context_menu_markdown" = "Markdown";
+"context_menu_plain_text" = "Oddiy matn";
+"context_menu_pin" = "Qadash";
+"context_menu_unpin" = "Qadashni olib tashlash";
+"context_menu_delete" = "Oʻchirish";

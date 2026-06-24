@@ -28,3 +28,9 @@
 "system_settings_pane" = "Gizlilik ve Güvenlik";
 "system_preferences_name" = "Sistem Tercihleri";
 "system_preferences_pane" = "Güvenlik ve Gizlilik Tercihleri";
+"context_menu_save_as" = "Farklı Kaydet";
+"context_menu_markdown" = "Markdown";
+"context_menu_plain_text" = "Düz Metin";
+"context_menu_pin" = "Sabitle";
+"context_menu_unpin" = "Sabitlemeyi kaldır";
+"context_menu_delete" = "Sil";

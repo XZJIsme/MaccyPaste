@@ -28,3 +28,9 @@
 "preferences_advanced" = "Napredno";
 "format_modifiers_config" = "• Izberite s pritisnjenim %@, da kopirate, počistite oblikovanje in prilepite element.";
 "accessibility_alert_comment" = "Odobrite dostop do te aplikacije v {pane}, ki se nahaja v {settings}.\n\nKliknite gumb +, izberite Maccy in vklopite potrditveno polje poleg njega.";
+"context_menu_save_as" = "Shrani kot";
+"context_menu_markdown" = "Markdown";
+"context_menu_plain_text" = "Navadno besedilo";
+"context_menu_pin" = "Pripni";
+"context_menu_unpin" = "Odpni";
+"context_menu_delete" = "Izbriši";

@@ -28,3 +28,9 @@
 "system_settings_pane" = "தனியுரிமை மற்றும் பாதுகாப்பு அமைப்புகள்";
 "system_preferences_name" = "கணினி விருப்பத்தேர்வுகள்";
 "system_preferences_pane" = "பாதுகாப்பு மற்றும் தனியுரிமை விருப்பத்தேர்வுகள்";
+"context_menu_save_as" = "இவ்வாறு சேமி";
+"context_menu_markdown" = "Markdown";
+"context_menu_plain_text" = "எளிய உரை";
+"context_menu_pin" = "பின் செய்";
+"context_menu_unpin" = "பின் நீக்கு";
+"context_menu_delete" = "நீக்கு";

@@ -28,3 +28,9 @@
 "accessibility_alert_open" = "Άνοιγμα Προτιμήσεων Συστήματος";
 "screen" = "Οθόνη";
 "system_settings_name" = "Ρυθμίσεις Συστήματος";
+"context_menu_save_as" = "Αποθήκευση ως";
+"context_menu_markdown" = "Markdown";
+"context_menu_plain_text" = "Απλό κείμενο";
+"context_menu_pin" = "Καρφίτσωμα";
+"context_menu_unpin" = "Ξεκαρφίτσωμα";
+"context_menu_delete" = "Διαγραφή";

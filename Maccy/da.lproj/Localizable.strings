@@ -28,3 +28,9 @@
 "system_settings_pane" = "Privacy & Security-indstillinger";
 "system_preferences_name" = "System Preferences";
 "system_preferences_pane" = "Security & Privacy-indstillinger";
+"context_menu_save_as" = "Gem som";
+"context_menu_markdown" = "Markdown";
+"context_menu_plain_text" = "Almindelig tekst";
+"context_menu_pin" = "Fastgør";
+"context_menu_unpin" = "Frigør";
+"context_menu_delete" = "Slet";

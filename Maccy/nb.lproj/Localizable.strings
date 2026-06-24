@@ -28,3 +28,9 @@
 "system_settings_pane" = "Personvern og sikkerhet";
 "system_preferences_name" = "System Valg";
 "system_preferences_pane" = "Sikkerhet & Personvern";
+"context_menu_save_as" = "Arkiver som";
+"context_menu_markdown" = "Markdown";
+"context_menu_plain_text" = "Ren tekst";
+"context_menu_pin" = "Fest";
+"context_menu_unpin" = "Løsne";
+"context_menu_delete" = "Slett";

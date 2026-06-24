@@ -28,3 +28,9 @@
 "system_settings_pane" = "“隐私与安全性“";
 "system_preferences_name" = "“系统偏好设置”";
 "system_preferences_pane" = "“安全性和隐私”";
+"context_menu_save_as" = "另存为";
+"context_menu_markdown" = "Markdown";
+"context_menu_plain_text" = "纯文本";
+"context_menu_pin" = "固定";
+"context_menu_unpin" = "取消固定";
+"context_menu_delete" = "删除";

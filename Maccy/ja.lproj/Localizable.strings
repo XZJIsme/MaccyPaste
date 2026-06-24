@@ -28,3 +28,9 @@
 "system_settings_pane" = "“プライバシーとセキュリティ”";
 "system_preferences_name" = "システム環境設定の";
 "system_preferences_pane" = "“セキュリティとプライバシー”";
+"context_menu_save_as" = "別名で保存";
+"context_menu_markdown" = "Markdown";
+"context_menu_plain_text" = "標準テキスト";
+"context_menu_pin" = "ピン留め";
+"context_menu_unpin" = "ピン留めを解除";
+"context_menu_delete" = "削除";

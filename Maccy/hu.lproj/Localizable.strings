@@ -28,3 +28,9 @@
 "screen" = "Képernyő";
 "system_settings_pane" = "Adatvédelem és biztonság";
 "system_preferences_name" = "Rendszerbeállítások";
+"context_menu_save_as" = "Mentés másként";
+"context_menu_markdown" = "Markdown";
+"context_menu_plain_text" = "Egyszerű szöveg";
+"context_menu_pin" = "Rögzítés";
+"context_menu_unpin" = "Rögzítés feloldása";
+"context_menu_delete" = "Törlés";

@@ -28,3 +28,9 @@
 "system_settings_pane" = "Datenschutz & Sicherheit";
 "system_preferences_name" = "Systemeinstellungen";
 "system_preferences_pane" = "Sicherheit & Datenschutz";
+"context_menu_save_as" = "Sichern unter";
+"context_menu_markdown" = "Markdown";
+"context_menu_plain_text" = "Reiner Text";
+"context_menu_pin" = "Anheften";
+"context_menu_unpin" = "Lösen";
+"context_menu_delete" = "Löschen";

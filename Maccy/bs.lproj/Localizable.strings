@@ -28,3 +28,9 @@
 "system_settings_pane" = "Privatnosti i sigurnosti";
 "system_preferences_name" = "Postavki sustava";
 "system_preferences_pane" = "Sigurnosti i privatnosti";
+"context_menu_save_as" = "Spremi kao";
+"context_menu_markdown" = "Markdown";
+"context_menu_plain_text" = "Obični tekst";
+"context_menu_pin" = "Prikvači";
+"context_menu_unpin" = "Otkvači";
+"context_menu_delete" = "Izbriši";

@@ -28,3 +28,9 @@
 "system_settings_pane" = "Privacy & Security ترتیبات";
 "system_preferences_name" = "System Preferences";
 "system_preferences_pane" = "Security & Privacy ترجیحات";
+"context_menu_save_as" = "اس نام سے محفوظ کریں";
+"context_menu_markdown" = "Markdown";
+"context_menu_plain_text" = "سادہ متن";
+"context_menu_pin" = "پن کریں";
+"context_menu_unpin" = "ان پن کریں";
+"context_menu_delete" = "حذف کریں";

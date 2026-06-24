@@ -28,3 +28,9 @@
 "system_settings_pane" = "رێکخستنەکانی تایبەتێتی و ئاسایش";
 "system_preferences_name" = "هەڵبژاردەکانی سیستەم";
 "system_preferences_pane" = "هەڵبژاردەکانی ئاسایش و تایبەتێti";
+"context_menu_save_as" = "پاشەکەوتکردن وەک";
+"context_menu_markdown" = "Markdown";
+"context_menu_plain_text" = "دەقی سادە";
+"context_menu_pin" = "چەسپاندن";
+"context_menu_unpin" = "لابردنی چەسپاندن";
+"context_menu_delete" = "سڕینەوە";

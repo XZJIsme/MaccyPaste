@@ -28,3 +28,9 @@
 "system_settings_pane" = "nastavenia Privacy & Security";
 "system_preferences_name" = "System Preferences";
 "system_preferences_pane" = "nastavenia Security & Privacy";
+"context_menu_save_as" = "Uložiť ako";
+"context_menu_markdown" = "Markdown";
+"context_menu_plain_text" = "Obyčajný text";
+"context_menu_pin" = "Pripnúť";
+"context_menu_unpin" = "Odopnúť";
+"context_menu_delete" = "Vymazať";

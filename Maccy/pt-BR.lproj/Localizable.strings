@@ -28,3 +28,9 @@
 "format_modifiers_config" = "• Selecione com %@ pressionado para copiar, limpar a formatação e colar o item.";
 "accessibility_alert_comment" = "Conceda acesso a este aplicativo em {pane}, localizado em {settings}.\n\nClique + botão, selecione Maccy e ative a caixa de seleção próxima a ele.";
 "system_preferences_name" = "Preferências do Sistema";
+"context_menu_save_as" = "Salvar como";
+"context_menu_markdown" = "Markdown";
+"context_menu_plain_text" = "Texto sem formatação";
+"context_menu_pin" = "Fixar";
+"context_menu_unpin" = "Desafixar";
+"context_menu_delete" = "Apagar";

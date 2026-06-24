@@ -28,3 +28,9 @@
 "system_settings_pane" = "Integritet och säkerhet";
 "system_preferences_name" = "Systeminställningar";
 "system_preferences_pane" = "Säkerhet och integritet";
+"context_menu_save_as" = "Spara som";
+"context_menu_markdown" = "Markdown";
+"context_menu_plain_text" = "Oformaterad text";
+"context_menu_pin" = "Fäst";
+"context_menu_unpin" = "Lossa";
+"context_menu_delete" = "Radera";

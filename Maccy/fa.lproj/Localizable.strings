@@ -28,3 +28,9 @@
 "system_settings_pane" = "تنظیمات حریم خصوصی و امنیت";
 "system_preferences_name" = "ترجیحات سیستم";
 "system_preferences_pane" = "ترجیحات امنیت و حریم خصوصی";
+"context_menu_save_as" = "ذخیره به‌عنوان";
+"context_menu_markdown" = "Markdown";
+"context_menu_plain_text" = "متن ساده";
+"context_menu_pin" = "سنجاق کردن";
+"context_menu_unpin" = "برداشتن سنجاق";
+"context_menu_delete" = "حذف";

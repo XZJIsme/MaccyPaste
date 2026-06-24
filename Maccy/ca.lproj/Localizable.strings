@@ -28,3 +28,9 @@
 "system_settings_pane" = "Ajustaments de Privacitat & Seguretat";
 "system_preferences_name" = "Ajustaments del Sistema";
 "system_preferences_pane" = "Ajustaments de Seguretat & Privacitat";
+"context_menu_save_as" = "Desa com";
+"context_menu_markdown" = "Markdown";
+"context_menu_plain_text" = "Text sense format";
+"context_menu_pin" = "Fixa";
+"context_menu_unpin" = "Desfixa";
+"context_menu_delete" = "Suprimeix";

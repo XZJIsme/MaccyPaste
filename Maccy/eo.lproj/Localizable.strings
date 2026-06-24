@@ -28,3 +28,9 @@
 "paste_modifiers_config" = "• Elekti premante %@ por kopii kaj alglui la eron.";
 "format_modifiers_config" = "• Elekti premante %@ por kopii, forigi tekstaranĝon, alglui la eron.";
 "accessibility_alert_comment" = "Donu aliron al la aplikaĵo en {pane}, trovebla en {settings}.\n\nAlklaku la butonon +, elektu Maccy, kaj ŝaltu la elektobutonon apud ĝi.";
+"context_menu_save_as" = "Konservi kiel";
+"context_menu_markdown" = "Markdown";
+"context_menu_plain_text" = "Simpla teksto";
+"context_menu_pin" = "Alpingli";
+"context_menu_unpin" = "Depingli";
+"context_menu_delete" = "Forigi";

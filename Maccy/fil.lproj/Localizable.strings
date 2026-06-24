@@ -28,3 +28,9 @@
 "system_settings_pane" = "mga setting ng Privacy & Security";
 "system_preferences_name" = "System Preferences";
 "system_preferences_pane" = "mga kagustuhan ng Security & Privacy";
+"context_menu_save_as" = "I-save Bilang";
+"context_menu_markdown" = "Markdown";
+"context_menu_plain_text" = "Payak na Teksto";
+"context_menu_pin" = "I-pin";
+"context_menu_unpin" = "Alisin ang pin";
+"context_menu_delete" = "Tanggalin";

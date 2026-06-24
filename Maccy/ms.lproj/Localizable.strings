@@ -28,3 +28,9 @@
 "system_settings_pane" = "tetapan Privacy & Security";
 "system_preferences_name" = "System Preferences";
 "system_preferences_pane" = "keutamaan Security & Privacy";
+"context_menu_save_as" = "Simpan Sebagai";
+"context_menu_markdown" = "Markdown";
+"context_menu_plain_text" = "Teks Biasa";
+"context_menu_pin" = "Semat";
+"context_menu_unpin" = "Nyahsemat";
+"context_menu_delete" = "Padam";

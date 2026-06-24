@@ -28,3 +28,9 @@
 "clear_tooltip" = "Ачысціць незамацаваныя элементы.\nВыберыце з ⇧, каб выдаліць усе.";
 "clear_all_tooltip" = "Ачысціць усе элементы.";
 "system_preferences_name" = "Сістэмных наладах";
+"context_menu_save_as" = "Захаваць як";
+"context_menu_markdown" = "Markdown";
+"context_menu_plain_text" = "Звычайны тэкст";
+"context_menu_pin" = "Замацаваць";
+"context_menu_unpin" = "Адмацаваць";
+"context_menu_delete" = "Выдаліць";

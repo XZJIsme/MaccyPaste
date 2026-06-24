@@ -28,3 +28,9 @@
 "system_settings_pane" = "Pengaturan Privasi & Keamanan";
 "system_preferences_name" = "Preferensi Sistem";
 "system_preferences_pane" = "Preferensi Keamanan & Privasi";
+"context_menu_save_as" = "Simpan Sebagai";
+"context_menu_markdown" = "Markdown";
+"context_menu_plain_text" = "Teks Biasa";
+"context_menu_pin" = "Sematkan";
+"context_menu_unpin" = "Lepas sematan";
+"context_menu_delete" = "Hapus";

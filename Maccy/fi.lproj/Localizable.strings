@@ -28,3 +28,9 @@
 "system_settings_pane" = "Privacy & Security -asetukset";
 "system_preferences_name" = "System Preferences";
 "system_preferences_pane" = "Security & Privacy -asetukset";
+"context_menu_save_as" = "Tallenna nimellä";
+"context_menu_markdown" = "Markdown";
+"context_menu_plain_text" = "Pelkkä teksti";
+"context_menu_pin" = "Kiinnitä";
+"context_menu_unpin" = "Poista kiinnitys";
+"context_menu_delete" = "Poista";

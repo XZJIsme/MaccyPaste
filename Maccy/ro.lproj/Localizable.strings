@@ -28,3 +28,9 @@
 "clear_alert_confirm" = "Șterge";
 "active_screen" = "Ecranul activ";
 "accessibility_alert_comment" = "Acordă acces acestei aplicații în {pane}, aflat în {settings}.\n\nFă clic pe butonul +, selectează Maccy și bifează caseta de selectare de lânga aceasta.";
+"context_menu_save_as" = "Salvează ca";
+"context_menu_markdown" = "Markdown";
+"context_menu_plain_text" = "Text simplu";
+"context_menu_pin" = "Fixează";
+"context_menu_unpin" = "Anulează fixarea";
+"context_menu_delete" = "Șterge";

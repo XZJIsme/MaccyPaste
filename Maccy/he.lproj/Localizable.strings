@@ -28,3 +28,9 @@
 "system_settings_pane" = "הגדרות פרטיות ואבטחה";
 "system_preferences_name" = "העדפות מערכת";
 "system_preferences_pane" = "העדפות אבטחה ופרטיות";
+"context_menu_save_as" = "שמירה בשם";
+"context_menu_markdown" = "Markdown";
+"context_menu_plain_text" = "טקסט פשוט";
+"context_menu_pin" = "נעיצה";
+"context_menu_unpin" = "ביטול נעיצה";
+"context_menu_delete" = "מחיקה";

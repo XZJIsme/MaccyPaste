@@ -28,3 +28,9 @@
 "system_settings_pane" = "ความเป็นส่วนตัวและความปลอดภัย";
 "system_preferences_name" = "การตั้งค่าระบบ";
 "system_preferences_pane" = "ความปลอดภัยและความเป็นส่วนตัว";
+"context_menu_save_as" = "บันทึกเป็น";
+"context_menu_markdown" = "Markdown";
+"context_menu_plain_text" = "ข้อความธรรมดา";
+"context_menu_pin" = "ปักหมุด";
+"context_menu_unpin" = "เลิกปักหมุด";
+"context_menu_delete" = "ลบ";

@@ -28,3 +28,9 @@
 "paste_modifiers_config" = "• Pasirinkite paspaudę %@, kad nukopijuotumėte ir įklijuotumėte elementą.";
 "accessibility_alert_comment" = "Suteikite prieigą šiai programai {pane}, esančiai {settings}.\n\nSpustelėjimas + mygtukas, pasirinkite Maccy ir pažymėkite šalia esantį žymimąjį langelį.";
 "clear_alert_confirm" = "Išvalyti";
+"context_menu_save_as" = "Įrašyti kaip";
+"context_menu_markdown" = "Markdown";
+"context_menu_plain_text" = "Paprastas tekstas";
+"context_menu_pin" = "Prisegti";
+"context_menu_unpin" = "Atsegti";
+"context_menu_delete" = "Ištrinti";

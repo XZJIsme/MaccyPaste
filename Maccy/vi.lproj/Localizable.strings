@@ -28,3 +28,9 @@
 "system_settings_pane" = "Cài đặt bảo mật và quyền riêng tư";
 "system_preferences_name" = "Thiết lập Hệ thống";
 "system_preferences_pane" = "Tùy chọn Bảo mật & Quyền riêng tư";
+"context_menu_save_as" = "Lưu thành";
+"context_menu_markdown" = "Markdown";
+"context_menu_plain_text" = "Văn bản thuần";
+"context_menu_pin" = "Ghim";
+"context_menu_unpin" = "Bỏ ghim";
+"context_menu_delete" = "Xóa";

@@ -28,3 +28,9 @@
 "system_settings_pane" = "「隱私權與安全性」";
 "system_preferences_name" = "「系統偏好設定」";
 "system_preferences_pane" = "「安全性和隱私權」";
+"context_menu_save_as" = "另存為";
+"context_menu_markdown" = "Markdown";
+"context_menu_plain_text" = "純文字";
+"context_menu_pin" = "釘選";
+"context_menu_unpin" = "取消釘選";
+"context_menu_delete" = "刪除";

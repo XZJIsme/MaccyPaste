@@ -28,3 +28,9 @@
 "system_settings_pane" = "подешавања Privacy & Security";
 "system_preferences_name" = "System Preferences";
 "system_preferences_pane" = "подешавања Security & Privacy";
+"context_menu_save_as" = "Сачувај као";
+"context_menu_markdown" = "Markdown";
+"context_menu_plain_text" = "Обичан текст";
+"context_menu_pin" = "Прикачи";
+"context_menu_unpin" = "Откачи";
+"context_menu_delete" = "Обриши";
