@@ -1,0 +1,9 @@
+"Title" = "Balewalain";
+"ApplicationsTab" = "Mga application";
+"IgnoredAppsDescription" = "Puwedeng balewalain ang mga kopyang galing sa ilang application.\nTandaan na hindi ito ganap na siguradong paraan, kaya mas mabuting gumamit ng mga uri ng pasteboard kapag posible.";
+"IgnoredAllAppsExceptListed" = "Balewalain ang lahat ng application maliban sa nakalista";
+"PasteboardTypesTab" = "Mga uri ng pasteboard";
+"IgnoredPasteboardTypesDescription" = "Puwedeng balewalain ang ilang uri ng pasteboard item para hindi maalala.\nBilang default, nakatakda ang ilang kilalang uri na partikular sa application. Maaari mong alisin ang mga ito at magdagdag ng anumang custom na uri.";
+"IgnoredPasteboardTypesReset" = "I-reset";
+"RegexpTab" = "Mga regular expression";
+"IgnoredRegexpsDescription" = "Puwedeng balewalain ang ilang kopya batay sa itinakdang regular expressions.";

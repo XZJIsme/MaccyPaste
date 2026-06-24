@@ -1,0 +1,17 @@
+"Title" = "Úložisko";
+"Save" = "Ukladať:";
+"Files" = "Súbory";
+"Images" = "Obrázky";
+"Text" = "Text";
+"SaveDescription" = "Zmeniť, aké typy kopírovaného obsahu sa majú ukladať.";
+"Size" = "Veľkosť:";
+"SizeTooltip" = "Počet nepripnutých položiek histórie, ktoré sa majú ponechať. Pripnuté položky sa do tohto limitu nezapočítavajú.\nPredvolené: 9999.";
+"CurrentSizeTooltip" = "Aktuálna veľkosť databázy a počty položiek histórie.";
+"HistoryCountSummary" = "%d položiek (%d pripnutých, %d nepripnutých)";
+"SortBy" = "Zoradiť podľa:";
+"LastCopiedAt" = "Času posledného kopírovania";
+"FirstCopiedAt" = "Času prvého kopírovania";
+"NumberOfCopies" = "Počet kopírovaní";
+"SortByTooltip" = "Predvolené: Čas posledného kopírovania.";
+"UnlimitedHistory" = "Neobmedzene";
+"UnlimitedHistoryTooltip" = "Neobmedzovať počet uchovávaných položiek histórie. Keď je zapnuté, pole veľkosti je vypnuté.";

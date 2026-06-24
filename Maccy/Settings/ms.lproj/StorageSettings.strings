@@ -1,0 +1,17 @@
+"Title" = "Storan";
+"Save" = "Simpan:";
+"Files" = "Fail";
+"Images" = "Imej";
+"Text" = "Teks";
+"SaveDescription" = "Tukar jenis kandungan yang disalin yang patut disimpan.";
+"Size" = "Saiz:";
+"SizeTooltip" = "Bilangan item sejarah yang tidak disemat untuk disimpan. Item yang disemat tidak dikira dalam had ini.\nLalai: 9999.";
+"CurrentSizeTooltip" = "Saiz pangkalan data semasa dan kiraan item sejarah.";
+"HistoryCountSummary" = "%d item (%d disemat, %d tidak disemat)";
+"SortBy" = "Isih mengikut:";
+"LastCopiedAt" = "Masa salinan terakhir";
+"FirstCopiedAt" = "Masa salinan pertama";
+"NumberOfCopies" = "Bilangan salinan";
+"SortByTooltip" = "Lalai: Masa salinan terakhir.";
+"UnlimitedHistory" = "Tanpa had";
+"UnlimitedHistoryTooltip" = "Jangan hadkan bilangan item sejarah untuk disimpan. Apabila dihidupkan, medan saiz dinyahdayakan.";

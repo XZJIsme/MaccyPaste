@@ -1,0 +1,8 @@
+"Application" = "Приложение:";
+"FirstCopyTime" = "Час на първото копиране:";
+"LastCopyTime" = "Час на последното копиране:";
+"NumberOfCopies" = "Брой копирания:";
+"PinKey" = "Натиснете {pinKey}, за да закрепите.";
+"UnpinKey" = "Натиснете {pinKey}, за да откачите.";
+"DeleteKey" = "Натиснете {deleteKey}, за да изтриете.";
+"PreviewKey" = "Натиснете {previewKey}, за да превключите визуализацията.";

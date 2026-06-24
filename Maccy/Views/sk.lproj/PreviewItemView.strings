@@ -1,0 +1,8 @@
+"Application" = "Aplikácia:";
+"FirstCopyTime" = "Čas prvého kopírovania:";
+"LastCopyTime" = "Čas posledného kopírovania:";
+"NumberOfCopies" = "Počet kopírovaní:";
+"PinKey" = "Stlačením {pinKey} pripnete.";
+"UnpinKey" = "Stlačením {pinKey} odopnete.";
+"DeleteKey" = "Stlačením {deleteKey} vymažete.";
+"PreviewKey" = "Stlačením {previewKey} prepnete náhľad.";

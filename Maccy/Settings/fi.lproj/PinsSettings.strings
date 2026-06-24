@@ -1,0 +1,7 @@
+"Title" = "Kiinnitetyt";
+"Key" = "Näppäin";
+"Alias" = "Otsikko";
+"Content" = "Sisältö";
+"ContentIsNotText" = "Ei-muokattava sisältö (kuva tai tiedosto)";
+"RichTextEditWarning" = "Muokkaaminen poistaa kaiken muotoilun.";
+"PinCustomizationDescription" = "Voit mukauttaa minkä tahansa kiinnitetyn kohteen otsikkoa ja sisältöä. Muokkaa kaksoisnapsauttamalla kohdetta ja kirjoittamalla uusi arvo.\nHuomaa, että vain pelkkää tekstiä voi muuttaa.";

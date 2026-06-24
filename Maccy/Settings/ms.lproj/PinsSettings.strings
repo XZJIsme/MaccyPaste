@@ -1,0 +1,7 @@
+"Title" = "Sematan";
+"Key" = "Kekunci";
+"Alias" = "Tajuk";
+"Content" = "Kandungan";
+"ContentIsNotText" = "Kandungan tidak boleh diedit (imej atau fail)";
+"RichTextEditWarning" = "Pengeditan akan membuang semua pemformatan.";
+"PinCustomizationDescription" = "Anda boleh menyesuaikan tajuk dan kandungan mana-mana item yang disemat. Untuk mengedit, klik dua kali item dan masukkan nilai baharu.\nSila ambil perhatian bahawa hanya teks biasa boleh diubah.";

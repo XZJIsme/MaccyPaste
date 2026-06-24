@@ -1,0 +1,10 @@
+"Title" = "اعلیٰ";
+"TurnOff" = "بند کریں";
+"TurnOffDescription" = "تمام نئی کاپیز کو عارضی طور پر نظر انداز کریں۔\nممکن ہے آپ اسے پروگرام کے ذریعے استعمال کریں اور حساس ڈیٹا کاپی کرتے وقت ایپلیکیشن کو غیر فعال کریں۔";
+"TurnOffShellScript" = "defaults write org.p0deje.Maccy ignoreEvents true\n# ڈیٹا کاپی کریں\ndefaults write org.p0deje.Maccy ignoreEvents false";
+"TurnOffViaMenuIconDescription" = "آپ ⌥ دبائے رکھ کر مینو آئیکن پر بھی کلک کر سکتے ہیں۔\nصرف اگلی کاپی نظر انداز کرنے کے لیے ⌥⇧ کے ساتھ کلک کریں۔";
+"TurnOffNextShellScript" = "defaults write org.p0deje.Maccy ignoreOnlyNextEvent true\n# ڈیٹا کاپی کریں";
+"ClearHistoryOnQuit" = "بند کرتے وقت تاریخ صاف کریں";
+"ClearHistoryOnQuitTooltip" = "ایپلیکیشن بند کرنے سے پہلے تمام غیر پن شدہ آئٹمز خودکار طور پر ہٹا دیں۔";
+"ClearSystemClipboard" = "سسٹم کلپ بورڈ بھی صاف کریں";
+"ClearSystemClipboardTooltip" = "فعال ہونے پر، تاریخ صاف کرنے سے موجودہ سسٹم کلپ بورڈ بھی صاف ہو جائے گا۔";

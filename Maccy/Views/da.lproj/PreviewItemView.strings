@@ -1,0 +1,8 @@
+"Application" = "Program:";
+"FirstCopyTime" = "Tidspunkt for første kopiering:";
+"LastCopyTime" = "Tidspunkt for seneste kopiering:";
+"NumberOfCopies" = "Antal kopieringer:";
+"PinKey" = "Tryk på {pinKey} for at fastgøre.";
+"UnpinKey" = "Tryk på {pinKey} for at frigøre.";
+"DeleteKey" = "Tryk på {deleteKey} for at slette.";
+"PreviewKey" = "Tryk på {previewKey} for at slå forhåndsvisning til eller fra.";

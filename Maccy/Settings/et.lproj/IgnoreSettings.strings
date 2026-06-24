@@ -1,0 +1,9 @@
+"Title" = "Eira";
+"ApplicationsTab" = "Rakendused";
+"IgnoredAppsDescription" = "On võimalik eirata teatud rakendustest tulevaid kopeerimisi.\nPane tähele, et see ei ole täiesti kindel meetod, seega on võimalusel parem kasutada lõikelaua tüüpe.";
+"IgnoredAllAppsExceptListed" = "Eira kõiki rakendusi peale loetletute";
+"PasteboardTypesTab" = "Lõikelaua tüübid";
+"IgnoredPasteboardTypesDescription" = "On võimalik eirata teatud lõikelaua üksuste tüüpe, et neid ei salvestataks.\nVaikimisi on määratud mõned tuntud rakendusepõhised tüübid. Võid need eemaldada ja lisada soovitud kohandatud tüübid.";
+"IgnoredPasteboardTypesReset" = "Lähtesta";
+"RegexpTab" = "Regulaaravaldised";
+"IgnoredRegexpsDescription" = "On võimalik eirata teatud kopeerimisi määratud regulaaravaldiste põhjal.";

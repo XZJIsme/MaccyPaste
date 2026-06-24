@@ -1,0 +1,8 @@
+"Application" = "Rakendus:";
+"FirstCopyTime" = "Esimese kopeerimise aeg:";
+"LastCopyTime" = "Viimase kopeerimise aeg:";
+"NumberOfCopies" = "Kopeerimiste arv:";
+"PinKey" = "Kinnitamiseks vajuta {pinKey}.";
+"UnpinKey" = "Kinnituse eemaldamiseks vajuta {pinKey}.";
+"DeleteKey" = "Kustutamiseks vajuta {deleteKey}.";
+"PreviewKey" = "Eelvaate lülitamiseks vajuta {previewKey}.";

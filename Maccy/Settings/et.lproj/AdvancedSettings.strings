@@ -1,0 +1,10 @@
+"Title" = "Täpsem";
+"TurnOff" = "Lülita välja";
+"TurnOffDescription" = "Eira ajutiselt kõiki uusi kopeerimisi.\nTõenäoliselt kasutad seda programmiliselt ja keelad rakenduse tundlike andmete kopeerimise ajaks.";
+"TurnOffShellScript" = "defaults write org.p0deje.Maccy ignoreEvents true\n# kopeeri andmed\ndefaults write org.p0deje.Maccy ignoreEvents false";
+"TurnOffViaMenuIconDescription" = "Võid klõpsata ka menüüikoonil, hoides all ⌥.\nAinult järgmise kopeerimise eiramiseks klõpsa koos ⌥⇧-ga.";
+"TurnOffNextShellScript" = "defaults write org.p0deje.Maccy ignoreOnlyNextEvent true\n# kopeeri andmed";
+"ClearHistoryOnQuit" = "Tühjenda ajalugu väljumisel";
+"ClearHistoryOnQuitTooltip" = "Eemalda enne rakendusest väljumist automaatselt kõik kinnitamata üksused.";
+"ClearSystemClipboard" = "Tühjenda ka süsteemi lõikelaud";
+"ClearSystemClipboardTooltip" = "Kui see on sisse lülitatud, tühjendab ajaloo tühjendamine ka praeguse süsteemi lõikelaua.";

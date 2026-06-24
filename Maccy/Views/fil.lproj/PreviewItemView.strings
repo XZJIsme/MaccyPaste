@@ -1,0 +1,8 @@
+"Application" = "Application:";
+"FirstCopyTime" = "Oras ng unang pagkopya:";
+"LastCopyTime" = "Oras ng huling pagkopya:";
+"NumberOfCopies" = "Bilang ng mga kopya:";
+"PinKey" = "Pindutin ang {pinKey} para i-pin.";
+"UnpinKey" = "Pindutin ang {pinKey} para alisin ang pin.";
+"DeleteKey" = "Pindutin ang {deleteKey} para tanggalin.";
+"PreviewKey" = "Pindutin ang {previewKey} para i-toggle ang preview.";

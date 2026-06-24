@@ -1,0 +1,7 @@
+"Title" = "Fastgjorte";
+"Key" = "Tast";
+"Alias" = "Titel";
+"Content" = "Indhold";
+"ContentIsNotText" = "Ikke-redigerbart indhold (billede eller fil)";
+"RichTextEditWarning" = "Redigering fjerner al formatering.";
+"PinCustomizationDescription" = "Du kan tilpasse titel og indhold for ethvert fastgjort emne. Dobbeltklik på emnet og indtast en ny værdi for at redigere.\nBemærk, at kun almindelig tekst kan ændres.";

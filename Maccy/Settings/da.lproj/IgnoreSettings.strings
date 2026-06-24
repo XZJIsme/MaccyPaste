@@ -1,0 +1,9 @@
+"Title" = "Ignorer";
+"ApplicationsTab" = "Programmer";
+"IgnoredAppsDescription" = "Det er muligt at ignorere kopieringer fra bestemte programmer.\nBemærk, at metoden ikke er skudsikker, så det er bedre at bruge udklipsholdertyper, når det er muligt.";
+"IgnoredAllAppsExceptListed" = "Ignorer alle programmer undtagen de viste";
+"PasteboardTypesTab" = "Udklipsholdertyper";
+"IgnoredPasteboardTypesDescription" = "Det er muligt at ignorere bestemte typer udklipsholderelementer, så de ikke gemmes.\nSom standard er nogle kendte programspecifikke typer defineret. Du kan fjerne dem og tilføje alle de egne typer, du ønsker.";
+"IgnoredPasteboardTypesReset" = "Nulstil";
+"RegexpTab" = "Regulære udtryk";
+"IgnoredRegexpsDescription" = "Det er muligt at ignorere bestemte kopieringer fra lagring ud fra definerede regulære udtryk.";

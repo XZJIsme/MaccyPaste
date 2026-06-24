@@ -1,0 +1,9 @@
+"Title" = "Abaikan";
+"ApplicationsTab" = "Aplikasi";
+"IgnoredAppsDescription" = "Anda boleh mengabaikan salinan daripada aplikasi tertentu.\nSila ambil perhatian bahawa cara ini tidak sepenuhnya kalis, jadi lebih baik gunakan jenis papan klip apabila boleh.";
+"IgnoredAllAppsExceptListed" = "Abaikan semua aplikasi kecuali yang disenaraikan";
+"PasteboardTypesTab" = "Jenis papan klip";
+"IgnoredPasteboardTypesDescription" = "Anda boleh mengabaikan jenis item papan klip tertentu daripada diingati.\nSecara lalai, beberapa jenis khusus aplikasi yang diketahui telah ditakrifkan. Anda boleh membuangnya dan menambah sebarang jenis tersuai yang anda mahu.";
+"IgnoredPasteboardTypesReset" = "Tetapkan semula";
+"RegexpTab" = "Ungkapan biasa";
+"IgnoredRegexpsDescription" = "Anda boleh mengabaikan salinan tertentu daripada diingati berdasarkan ungkapan biasa yang ditakrifkan.";

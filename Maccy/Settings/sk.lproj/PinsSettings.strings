@@ -1,0 +1,7 @@
+"Title" = "Pripnuté";
+"Key" = "Kláves";
+"Alias" = "Názov";
+"Content" = "Obsah";
+"ContentIsNotText" = "Neupraviteľný obsah (obrázok alebo súbor)";
+"RichTextEditWarning" = "Úprava zahodí celé formátovanie.";
+"PinCustomizationDescription" = "Môžete prispôsobiť názov a obsah každej pripnutej položky. Ak chcete upraviť, dvakrát kliknite na položku a zadajte novú hodnotu.\nUpozorňujeme, že meniť možno iba obyčajný text.";

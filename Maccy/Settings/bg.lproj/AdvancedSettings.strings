@@ -1,0 +1,10 @@
+"Title" = "Разширени";
+"TurnOff" = "Изключване";
+"TurnOffDescription" = "Временно игнориране на всички нови копирания.\nВероятно ще го използвате програмно и ще изключвате приложението, докато копирате чувствителни данни.";
+"TurnOffShellScript" = "defaults write org.p0deje.Maccy ignoreEvents true\n# копиране на данни\ndefaults write org.p0deje.Maccy ignoreEvents false";
+"TurnOffViaMenuIconDescription" = "Можете също да щракнете върху иконата в менюто със задържан ⌥.\nЗа да игнорирате само следващото копиране, щракнете със задържани ⌥⇧.";
+"TurnOffNextShellScript" = "defaults write org.p0deje.Maccy ignoreOnlyNextEvent true\n# копиране на данни";
+"ClearHistoryOnQuit" = "Изчистване на историята при изход";
+"ClearHistoryOnQuitTooltip" = "Автоматично премахване на всички незакрепени елементи преди затваряне на приложението.";
+"ClearSystemClipboard" = "Изчистване и на системния клипборд";
+"ClearSystemClipboardTooltip" = "Когато е включено, изчистването на историята ще изчисти и текущия системен клипборд.";

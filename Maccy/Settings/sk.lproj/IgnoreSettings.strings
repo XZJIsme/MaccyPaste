@@ -1,0 +1,9 @@
+"Title" = "Ignorovať";
+"ApplicationsTab" = "Aplikácie";
+"IgnoredAppsDescription" = "Je možné ignorovať kopírovania pochádzajúce z určitých aplikácií.\nUpozorňujeme, že tento spôsob nie je úplne spoľahlivý, preto je lepšie používať typy schránky, keď je to možné.";
+"IgnoredAllAppsExceptListed" = "Ignorovať všetky aplikácie okrem uvedených";
+"PasteboardTypesTab" = "Typy schránky";
+"IgnoredPasteboardTypesDescription" = "Je možné ignorovať určité typy položiek schránky, aby sa neukladali.\nPredvolene sú definované niektoré známe typy špecifické pre aplikácie. Môžete ich odstrániť a pridať ľubovoľné vlastné typy.";
+"IgnoredPasteboardTypesReset" = "Obnoviť";
+"RegexpTab" = "Regulárne výrazy";
+"IgnoredRegexpsDescription" = "Je možné ignorovať určité kopírovania na základe definovaných regulárnych výrazov.";

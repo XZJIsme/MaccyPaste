@@ -1,0 +1,17 @@
+"Title" = "Salvestus";
+"Save" = "Salvesta:";
+"Files" = "Failid";
+"Images" = "Pildid";
+"Text" = "Tekst";
+"SaveDescription" = "Muuda, millist tüüpi kopeeritud sisu salvestatakse.";
+"Size" = "Suurus:";
+"SizeTooltip" = "Säilitatavate kinnitamata ajalooüksuste arv. Kinnitatud üksusi selle piirangu sisse ei arvestata.\nVaikimisi: 9999.";
+"CurrentSizeTooltip" = "Praegune andmebaasi suurus ja ajalooüksuste arv.";
+"HistoryCountSummary" = "%d üksust (%d kinnitatud, %d kinnitamata)";
+"SortBy" = "Sordi:";
+"LastCopiedAt" = "Viimase kopeerimise aeg";
+"FirstCopiedAt" = "Esimese kopeerimise aeg";
+"NumberOfCopies" = "Kopeerimiste arv";
+"SortByTooltip" = "Vaikimisi: Viimase kopeerimise aeg.";
+"UnlimitedHistory" = "Piiramatu";
+"UnlimitedHistoryTooltip" = "Ära piira säilitatavate ajalooüksuste arvu. Kui see on sisse lülitatud, on suuruse väli keelatud.";

@@ -1,0 +1,17 @@
+"Title" = "Imbakan";
+"Save" = "I-save:";
+"Files" = "Mga file";
+"Images" = "Mga larawan";
+"Text" = "Text";
+"SaveDescription" = "Baguhin kung anong mga uri ng kinopyang nilalaman ang dapat i-store.";
+"Size" = "Laki:";
+"SizeTooltip" = "Bilang ng mga hindi naka-pin na history item na pananatilihin. Hindi kasama ang naka-pin na item sa limitasyong ito.\nDefault: 9999.";
+"CurrentSizeTooltip" = "Kasalukuyang laki ng database at bilang ng history items.";
+"HistoryCountSummary" = "%d item (%d naka-pin, %d hindi naka-pin)";
+"SortBy" = "Ayusin ayon sa:";
+"LastCopiedAt" = "Oras ng huling pagkopya";
+"FirstCopiedAt" = "Oras ng unang pagkopya";
+"NumberOfCopies" = "Bilang ng mga kopya";
+"SortByTooltip" = "Default: Oras ng huling pagkopya.";
+"UnlimitedHistory" = "Walang limitasyon";
+"UnlimitedHistoryTooltip" = "Huwag limitahan ang bilang ng history items na pananatilihin. Kapag naka-on, naka-disable ang size field.";

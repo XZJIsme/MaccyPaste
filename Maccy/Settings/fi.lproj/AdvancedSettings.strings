@@ -1,0 +1,10 @@
+"Title" = "Lisäasetukset";
+"TurnOff" = "Poista käytöstä";
+"TurnOffDescription" = "Ohita väliaikaisesti kaikki uudet kopioinnit.\nKäytät tätä todennäköisesti ohjelmallisesti ja poistat sovelluksen käytöstä arkaluonteisia tietoja kopioitaessa.";
+"TurnOffShellScript" = "defaults write org.p0deje.Maccy ignoreEvents true\n# kopioi tiedot\ndefaults write org.p0deje.Maccy ignoreEvents false";
+"TurnOffViaMenuIconDescription" = "Voit myös napsauttaa valikkokuvaketta ⌥ painettuna.\nOhita vain seuraava kopiointi napsauttamalla ⌥⇧ painettuna.";
+"TurnOffNextShellScript" = "defaults write org.p0deje.Maccy ignoreOnlyNextEvent true\n# kopioi tiedot";
+"ClearHistoryOnQuit" = "Tyhjennä historia lopetettaessa";
+"ClearHistoryOnQuitTooltip" = "Poista kaikki kiinnittämättömät kohteet automaattisesti ennen sovelluksen lopettamista.";
+"ClearSystemClipboard" = "Tyhjennä myös järjestelmän leikepöytä";
+"ClearSystemClipboardTooltip" = "Kun tämä on käytössä, historian tyhjentäminen tyhjentää myös nykyisen järjestelmän leikepöydän.";

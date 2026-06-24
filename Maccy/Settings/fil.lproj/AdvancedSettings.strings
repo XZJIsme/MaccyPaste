@@ -1,0 +1,10 @@
+"Title" = "Advanced";
+"TurnOff" = "I-off";
+"TurnOffDescription" = "Pansamantalang huwag pansinin ang lahat ng bagong kopya.\nMalamang gagamitin mo ito sa pamamagitan ng script at idi-disable ang application habang kumokopya ng sensitibong data.";
+"TurnOffShellScript" = "defaults write org.p0deje.Maccy ignoreEvents true\n# kopyahin ang data\ndefaults write org.p0deje.Maccy ignoreEvents false";
+"TurnOffViaMenuIconDescription" = "Maaari mo ring i-click ang menu icon habang nakapindot ang ⌥.\nPara balewalain lang ang susunod na kopya, i-click gamit ang ⌥⇧.";
+"TurnOffNextShellScript" = "defaults write org.p0deje.Maccy ignoreOnlyNextEvent true\n# kopyahin ang data";
+"ClearHistoryOnQuit" = "I-clear ang history sa pag-alis";
+"ClearHistoryOnQuitTooltip" = "Awtomatikong alisin ang lahat ng hindi naka-pin na item bago isara ang application.";
+"ClearSystemClipboard" = "I-clear din ang system clipboard";
+"ClearSystemClipboardTooltip" = "Kapag naka-on, iki-clear din ng pag-clear ng history ang kasalukuyang system clipboard.";

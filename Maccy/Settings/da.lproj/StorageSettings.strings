@@ -1,0 +1,17 @@
+"Title" = "Lagring";
+"Save" = "Gem:";
+"Files" = "Filer";
+"Images" = "Billeder";
+"Text" = "Tekst";
+"SaveDescription" = "Skift hvilke typer kopieret indhold der skal gemmes.";
+"Size" = "Størrelse:";
+"SizeTooltip" = "Antal ikke-fastgjorte historikelementer, der skal beholdes. Fastgjorte emner tæller ikke med i denne grænse.\nStandard: 9999.";
+"CurrentSizeTooltip" = "Aktuel databasestørrelse og antal historikelementer.";
+"HistoryCountSummary" = "%d emner (%d fastgjorte, %d ikke-fastgjorte)";
+"SortBy" = "Sortér efter:";
+"LastCopiedAt" = "Tidspunkt for seneste kopiering";
+"FirstCopiedAt" = "Tidspunkt for første kopiering";
+"NumberOfCopies" = "Antal kopieringer";
+"SortByTooltip" = "Standard: Tidspunkt for seneste kopiering.";
+"UnlimitedHistory" = "Ubegrænset";
+"UnlimitedHistoryTooltip" = "Begræns ikke antallet af historikelementer, der beholdes. Når dette er slået til, er størrelsesfeltet deaktiveret.";

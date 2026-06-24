@@ -1,0 +1,7 @@
+"Title" = "Mga naka-pin";
+"Key" = "Key";
+"Alias" = "Pamagat";
+"Content" = "Nilalaman";
+"ContentIsNotText" = "Hindi nae-edit na nilalaman (larawan o file)";
+"RichTextEditWarning" = "Tatanggalin ng pag-edit ang lahat ng formatting.";
+"PinCustomizationDescription" = "Maaari mong i-customize ang pamagat at nilalaman ng anumang naka-pin na item. Para mag-edit, i-double click ang item at maglagay ng bagong value.\nTandaan na plain text lang ang puwedeng baguhin.";

@@ -6,17 +6,22 @@ enum AppLanguage: String, CaseIterable, Identifiable, Defaults.Serializable {
   case system
   case ar
   case be
+  case bg
   case bn
   case bs
   case ca
   case ckb
   case cs
+  case da
   case de
   case el
   case en
   case eo
   case es
+  case et
   case fa
+  case fi
+  case fil
   case fr
   case he
   case hi
@@ -28,6 +33,7 @@ enum AppLanguage: String, CaseIterable, Identifiable, Defaults.Serializable {
   case ko
   case lt
   case lv
+  case ms
   case nb
   case nl
   case pl
@@ -35,12 +41,15 @@ enum AppLanguage: String, CaseIterable, Identifiable, Defaults.Serializable {
   case ptBR = "pt-BR"
   case ro
   case ru
+  case sk
+  case sr
   case sl
   case sv
   case ta
   case th
   case tr
   case uk
+  case ur
   case uz
   case vi
   case zhHans = "zh-Hans"

@@ -1,0 +1,9 @@
+"Title" = "Ohita";
+"ApplicationsTab" = "Sovellukset";
+"IgnoredAppsDescription" = "Tiettyjen sovellusten kopioinnit voidaan ohittaa.\nHuomaa, että toimintatapa ei ole täysin varma, joten leikepöytätyyppejä kannattaa käyttää, kun se on mahdollista.";
+"IgnoredAllAppsExceptListed" = "Ohita kaikki sovellukset paitsi luetellut";
+"PasteboardTypesTab" = "Leikepöytätyypit";
+"IgnoredPasteboardTypesDescription" = "Tiettyjä leikepöytäkohteiden tyyppejä voidaan ohittaa tallennuksesta.\nOletuksena määritettynä on joitakin tunnettuja sovelluskohtaisia tyyppejä. Voit poistaa ne ja lisätä haluamiasi mukautettuja tyyppejä.";
+"IgnoredPasteboardTypesReset" = "Nollaa";
+"RegexpTab" = "Säännölliset lausekkeet";
+"IgnoredRegexpsDescription" = "Tiettyjä kopiointeja voidaan ohittaa tallennuksesta määritettyjen säännöllisten lausekkeiden perusteella.";

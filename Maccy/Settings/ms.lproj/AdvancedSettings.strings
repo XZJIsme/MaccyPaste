@@ -1,0 +1,10 @@
+"Title" = "Lanjutan";
+"TurnOff" = "Matikan";
+"TurnOffDescription" = "Abaikan semua salinan baharu buat sementara waktu.\nAnda mungkin menggunakannya secara programatik dan mematikan aplikasi semasa menyalin data sensitif.";
+"TurnOffShellScript" = "defaults write org.p0deje.Maccy ignoreEvents true\n# salin data\ndefaults write org.p0deje.Maccy ignoreEvents false";
+"TurnOffViaMenuIconDescription" = "Anda juga boleh mengklik ikon menu sambil menekan ⌥.\nUntuk mengabaikan hanya salinan seterusnya, klik dengan ⌥⇧.";
+"TurnOffNextShellScript" = "defaults write org.p0deje.Maccy ignoreOnlyNextEvent true\n# salin data";
+"ClearHistoryOnQuit" = "Kosongkan sejarah apabila keluar";
+"ClearHistoryOnQuitTooltip" = "Alih keluar semua item yang tidak disemat secara automatik sebelum keluar daripada aplikasi.";
+"ClearSystemClipboard" = "Kosongkan papan klip sistem juga";
+"ClearSystemClipboardTooltip" = "Apabila dihidupkan, mengosongkan sejarah juga akan mengosongkan papan klip sistem semasa.";

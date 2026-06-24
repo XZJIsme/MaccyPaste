@@ -1,0 +1,8 @@
+"Application" = "Апликација:";
+"FirstCopyTime" = "Време првог копирања:";
+"LastCopyTime" = "Време последњег копирања:";
+"NumberOfCopies" = "Број копирања:";
+"PinKey" = "Притисните {pinKey} да прикачите.";
+"UnpinKey" = "Притисните {pinKey} да откачите.";
+"DeleteKey" = "Притисните {deleteKey} да обришете.";
+"PreviewKey" = "Притисните {previewKey} да укључите или искључите преглед.";

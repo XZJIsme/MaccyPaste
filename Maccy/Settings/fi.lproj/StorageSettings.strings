@@ -1,0 +1,17 @@
+"Title" = "Tallennus";
+"Save" = "Tallenna:";
+"Files" = "Tiedostot";
+"Images" = "Kuvat";
+"Text" = "Teksti";
+"SaveDescription" = "Muuta, minkä tyyppistä kopioitua sisältöä tallennetaan.";
+"Size" = "Koko:";
+"SizeTooltip" = "Säilytettävien kiinnittämättömien historiakohteiden määrä. Kiinnitettyjä kohteita ei lasketa tähän rajaan.\nOletus: 9999.";
+"CurrentSizeTooltip" = "Nykyinen tietokannan koko ja historiakohteiden määrät.";
+"HistoryCountSummary" = "%d kohdetta (%d kiinnitettyä, %d kiinnittämätöntä)";
+"SortBy" = "Lajittele:";
+"LastCopiedAt" = "Viimeisimmän kopioinnin aika";
+"FirstCopiedAt" = "Ensimmäisen kopioinnin aika";
+"NumberOfCopies" = "Kopiointien määrä";
+"SortByTooltip" = "Oletus: Viimeisimmän kopioinnin aika.";
+"UnlimitedHistory" = "Rajoittamaton";
+"UnlimitedHistoryTooltip" = "Älä rajoita säilytettävien historiakohteiden määrää. Kun tämä on käytössä, kokokenttä poistetaan käytöstä.";

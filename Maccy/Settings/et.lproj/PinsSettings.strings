@@ -1,0 +1,7 @@
+"Title" = "Kinnitatud";
+"Key" = "Klahv";
+"Alias" = "Pealkiri";
+"Content" = "Sisu";
+"ContentIsNotText" = "Mitte-redigeeritav sisu (pilt või fail)";
+"RichTextEditWarning" = "Redigeerimine eemaldab kogu vorminduse.";
+"PinCustomizationDescription" = "Saad kohandada iga kinnitatud üksuse pealkirja ja sisu. Redigeerimiseks topeltklõpsa üksust ja sisesta uus väärtus.\nPane tähele, et muuta saab ainult lihtteksti.";

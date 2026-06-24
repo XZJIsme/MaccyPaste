@@ -1,0 +1,10 @@
+"Title" = "Rozšírené";
+"TurnOff" = "Vypnúť";
+"TurnOffDescription" = "Dočasne ignorovať všetky nové kopírovania.\nPravdepodobne to použijete programovo a aplikáciu vypnete počas kopírovania citlivých údajov.";
+"TurnOffShellScript" = "defaults write org.p0deje.Maccy ignoreEvents true\n# kopírovanie údajov\ndefaults write org.p0deje.Maccy ignoreEvents false";
+"TurnOffViaMenuIconDescription" = "Môžete tiež kliknúť na ikonu v menu so stlačeným ⌥.\nAk chcete ignorovať iba nasledujúce kopírovanie, kliknite so stlačeným ⌥⇧.";
+"TurnOffNextShellScript" = "defaults write org.p0deje.Maccy ignoreOnlyNextEvent true\n# kopírovanie údajov";
+"ClearHistoryOnQuit" = "Vymazať históriu pri ukončení";
+"ClearHistoryOnQuitTooltip" = "Automaticky odstrániť všetky nepripnuté položky pred ukončením aplikácie.";
+"ClearSystemClipboard" = "Vymazať aj systémovú schránku";
+"ClearSystemClipboardTooltip" = "Keď je zapnuté, vymazanie histórie vymaže aj aktuálnu systémovú schránku.";

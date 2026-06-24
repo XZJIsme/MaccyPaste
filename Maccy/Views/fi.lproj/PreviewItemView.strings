@@ -1,0 +1,8 @@
+"Application" = "Sovellus:";
+"FirstCopyTime" = "Ensimmäisen kopioinnin aika:";
+"LastCopyTime" = "Viimeisimmän kopioinnin aika:";
+"NumberOfCopies" = "Kopiointien määrä:";
+"PinKey" = "Kiinnitä painamalla {pinKey}.";
+"UnpinKey" = "Poista kiinnitys painamalla {pinKey}.";
+"DeleteKey" = "Poista painamalla {deleteKey}.";
+"PreviewKey" = "Vaihda esikatselu painamalla {previewKey}.";
