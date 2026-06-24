@@ -44,6 +44,7 @@ class HistoryItemDecorator: Identifiable, Hashable, HasVisibility {
   var thumbnailImageGenerationTask: Task<Void, Never>?
   var previewImage: NSImage?
   var thumbnailImage: NSImage?
+  var accessoryImage: NSImage?
   var applicationImage: ApplicationImage
 
   // 10k characters seems to be more than enough on large displays
@@ -64,6 +65,7 @@ class HistoryItemDecorator: Identifiable, Hashable, HasVisibility {
   init(_ item: HistoryItem) {
     self.item = item
     self.title = item.title
+    self.accessoryImage = ColorImage.from(item.title)
     self.applicationImage = ApplicationImageCache.shared.getImage(item: item)
 
     synchronizeItemTitle()
@@ -207,6 +209,7 @@ class HistoryItemDecorator: Identifiable, Hashable, HasVisibility {
     } onChange: {
       DispatchQueue.main.async {
         self.title = self.item.title
+        self.accessoryImage = ColorImage.from(self.item.title)
         self.synchronizeItemTitle()
       }
     }

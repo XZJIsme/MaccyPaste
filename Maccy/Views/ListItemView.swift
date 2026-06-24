@@ -40,6 +40,7 @@ struct ListItemView<Title: View, ID: Hashable>: View {
   var selectionIndex: Int?
   var help: LocalizedStringKey?
   var selectionAppearance: SelectionAppearance = .none
+  var onHoverSelection: (() -> Void)?
   @ViewBuilder var title: () -> Title
 
   @Default(.showApplicationIcons) private var showIcons
@@ -114,7 +115,7 @@ struct ListItemView<Title: View, ID: Hashable>: View {
     // The slight opcaity white background is a workaround
     .background(isSelected ? Color.accentColor.opacity(0.8) : .white.opacity(0.001))
     .clipShape(selectionAppearance.rect(cornerRadius: Popup.cornerRadius))
-    .hoverSelectionId(selectionId)
+    .hoverSelectionId(selectionId, action: onHoverSelection)
     .help(help ?? "")
   }
 }

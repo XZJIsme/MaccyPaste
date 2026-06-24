@@ -37,12 +37,15 @@ struct HistoryItemView: View {
       selectionId: item.id,
       appIcon: item.applicationImage,
       image: item.thumbnailImage,
-      accessoryImage: item.thumbnailImage != nil ? nil : ColorImage.from(item.title),
+      accessoryImage: item.thumbnailImage != nil ? nil : item.accessoryImage,
       attributedTitle: item.attributedTitle,
       shortcuts: item.shortcuts,
       isSelected: item.isSelected,
       selectionIndex: visualIndex,
-      selectionAppearance: selectionAppearance
+      selectionAppearance: selectionAppearance,
+      onHoverSelection: {
+        appState.navigator.selectWithoutScrolling(item: item)
+      }
     ) {
       Text(verbatim: item.title)
     }
