@@ -54,14 +54,14 @@ struct HistoryItemView: View {
     }
     .onAppear {
       item.ensureThumbnailImage()
-      if item.isSelected {
+      if item.isSelected && appState.preview.state.isOpen {
         item.ensurePreviewImage()
       }
       appState.history.loadPreviousUnpinnedPageIfNeeded(around: item)
       appState.history.loadNextUnpinnedPageIfNeeded(around: item)
     }
     .onChange(of: item.isSelected) {
-      if item.isSelected {
+      if item.isSelected && appState.preview.state.isOpen {
         item.ensurePreviewImage()
       }
     }

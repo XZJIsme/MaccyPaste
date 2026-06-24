@@ -6,6 +6,13 @@ struct PreviewItemView: View {
   var fallbackImage: NSImage?
   var onPreviewImageLoaded: (NSImage) -> Void
 
+  @State private var loadedPreviewImage: NSImage?
+  @State private var previewLoadFailed = false
+
+  private var displayImage: NSImage? {
+    item.previewImage ?? loadedPreviewImage ?? item.thumbnailImage ?? fallbackImage
+  }
+
   @ViewBuilder
   func previewImage(content: () -> some View) -> some View {
     content()
@@ -16,58 +23,34 @@ struct PreviewItemView: View {
   var body: some View {
     VStack(alignment: .leading, spacing: 0) {
       if item.hasImage {
-        if let image = item.previewImage {
+        if let image = displayImage {
           previewImage {
             Image(nsImage: image)
               .resizable()
           }
-          .onAppear {
-            onPreviewImageLoaded(image)
+        } else if previewLoadFailed {
+          previewImage {
+            ZStack {
+              Color.gray.opacity(0.3)
+                .frame(
+                  idealWidth: HistoryItemDecorator.previewImageSize.width,
+                  idealHeight: HistoryItemDecorator.previewImageSize.height
+                )
+              Image(systemName: "photo.badge.exclamationmark")
+                .symbolRenderingMode(.multicolor)
+                .frame(alignment: .center)
+            }
           }
         } else {
-          AsyncView<NSImage?, _, _> {
-            return await item.asyncGetPreviewImage()
-          } content: { image in
-            if let image = image {
-              previewImage {
-                Image(nsImage: image)
-                  .resizable()
-              }
-              .onAppear {
-                onPreviewImageLoaded(image)
-              }
-            } else {
-              previewImage {
-                ZStack {
-                  Color.gray.opacity(0.3)
-                    .frame(
-                      idealWidth: HistoryItemDecorator.previewImageSize.width,
-                      idealHeight: HistoryItemDecorator.previewImageSize.height
-                    )
-                  Image(systemName: "photo.badge.exclamationmark")
-                    .symbolRenderingMode(.multicolor)
-                    .frame(alignment: .center)
-                }
-              }
-            }
-          } placeholder: {
-            if let fallbackImage {
-              previewImage {
-                Image(nsImage: fallbackImage)
-                  .resizable()
-              }
-            } else {
-              previewImage {
-                ZStack {
-                  Color.gray.opacity(0.3)
-                    .frame(
-                      idealWidth: HistoryItemDecorator.previewImageSize.width,
-                      idealHeight: HistoryItemDecorator.previewImageSize.height
-                    )
-                  ProgressView()
-                    .frame(alignment: .center)
-                }
-              }
+          previewImage {
+            ZStack {
+              Color.gray.opacity(0.3)
+                .frame(
+                  idealWidth: HistoryItemDecorator.previewImageSize.width,
+                  idealHeight: HistoryItemDecorator.previewImageSize.height
+                )
+              ProgressView()
+                .frame(alignment: .center)
             }
           }
         }
@@ -112,5 +95,19 @@ struct PreviewItemView: View {
       }
     }
     .controlSize(.small)
+    .task(id: item.id) {
+      guard item.hasImage else { return }
+      loadedPreviewImage = nil
+      previewLoadFailed = false
+
+      guard let image = await item.asyncGetPreviewImage() else {
+        previewLoadFailed = true
+        return
+      }
+
+      guard !Task.isCancelled else { return }
+      loadedPreviewImage = image
+      onPreviewImageLoaded(image)
+    }
   }
 }

@@ -1,6 +1,7 @@
 import AppKit.NSWorkspace
 import Defaults
 import Foundation
+import ImageIO
 import Observation
 
 @Observable
@@ -139,20 +140,12 @@ class HistoryItemDecorator: Identifiable, Hashable, HasVisibility {
 
   @MainActor
   private func generateThumbnailImage() {
-    guard let data = item.imageData,
-          let image = NSImage(data: data) else {
-      return
-    }
-    thumbnailImage = image.resized(to: HistoryItemDecorator.thumbnailImageSize)
+    thumbnailImage = Self.makeImage(from: item.imageData, targetSize: Self.thumbnailImageSize, scale: Self.imageScale)
   }
 
   @MainActor
   private func generatePreviewImage() {
-    guard let data = item.imageData,
-          let image = NSImage(data: data) else {
-      return
-    }
-    previewImage = image.resized(to: HistoryItemDecorator.previewImageSize)
+    previewImage = Self.makeImage(from: item.imageData, targetSize: Self.previewImageSize, scale: Self.imageScale)
   }
 
   @MainActor
@@ -162,9 +155,69 @@ class HistoryItemDecorator: Identifiable, Hashable, HasVisibility {
   }
 
   private static func generateImage(from data: Data, targetSize: NSSize) async -> NSImage? {
-    await Task.detached(priority: .utility) {
-      NSImage(data: data)?.resized(to: targetSize)
+    let scale = await MainActor.run { imageScale }
+    let generated = await Task.detached(priority: .utility) {
+      generateCGImage(from: data, targetSize: targetSize, scale: scale)
     }.value
+
+    guard let generated else {
+      return nil
+    }
+
+    return NSImage(cgImage: generated.cgImage, size: generated.size)
+  }
+
+  @MainActor
+  private static var imageScale: CGFloat {
+    NSScreen.forPopup?.backingScaleFactor ?? NSScreen.main?.backingScaleFactor ?? 1
+  }
+
+  private struct GeneratedImage: @unchecked Sendable {
+    let cgImage: CGImage
+    let size: NSSize
+  }
+
+  private static func makeImage(from data: Data?, targetSize: NSSize, scale: CGFloat) -> NSImage? {
+    guard let generated = generateCGImage(from: data, targetSize: targetSize, scale: scale) else {
+      return nil
+    }
+
+    return NSImage(cgImage: generated.cgImage, size: generated.size)
+  }
+
+  private static func generateCGImage(from data: Data?, targetSize: NSSize, scale: CGFloat) -> GeneratedImage? {
+    guard let data,
+          let source = CGImageSourceCreateWithData(data as CFData, nil) else {
+      return nil
+    }
+
+    let properties = CGImageSourceCopyPropertiesAtIndex(source, 0, nil) as? [CFString: Any]
+    let sourceWidth = (properties?[kCGImagePropertyPixelWidth] as? CGFloat) ?? 0
+    let sourceHeight = (properties?[kCGImagePropertyPixelHeight] as? CGFloat) ?? 0
+    guard sourceWidth > 0, sourceHeight > 0 else {
+      return nil
+    }
+
+    let targetPixelWidth = targetSize.width * scale
+    let targetPixelHeight = targetSize.height * scale
+    let ratio = min(targetPixelWidth / sourceWidth, targetPixelHeight / sourceHeight, 1)
+    let fittedPixelWidth = max(1, sourceWidth * ratio)
+    let fittedPixelHeight = max(1, sourceHeight * ratio)
+    let fittedSize = NSSize(width: fittedPixelWidth / scale, height: fittedPixelHeight / scale)
+    let maxPixelSize = max(1, Int(ceil(max(fittedPixelWidth, fittedPixelHeight))))
+    let options: [CFString: Any] = [
+      kCGImageSourceCreateThumbnailFromImageIfAbsent: true,
+      kCGImageSourceCreateThumbnailWithTransform: true,
+      kCGImageSourceShouldCacheImmediately: true,
+      kCGImageSourceThumbnailMaxPixelSize: maxPixelSize,
+    ]
+
+    let cgImage = CGImageSourceCreateThumbnailAtIndex(source, 0, options as CFDictionary)
+      ?? CGImageSourceCreateImageAtIndex(source, 0, nil)
+
+    guard let cgImage else { return nil }
+
+    return GeneratedImage(cgImage: cgImage, size: fittedSize)
   }
 
   func highlight(_ query: String, _ ranges: [Range<String.Index>]) {
