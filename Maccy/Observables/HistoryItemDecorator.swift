@@ -38,10 +38,10 @@ class HistoryItemDecorator: Identifiable, Hashable, HasVisibility {
     return url.deletingPathExtension().lastPathComponent
   }
 
-  var hasImage: Bool { item.image != nil }
+  var hasImage: Bool { item.imageData != nil }
 
-  var previewImageGenerationTask: Task<(), Error>?
-  var thumbnailImageGenerationTask: Task<(), Error>?
+  var previewImageGenerationTask: Task<Void, Never>?
+  var thumbnailImageGenerationTask: Task<Void, Never>?
   var previewImage: NSImage?
   var thumbnailImage: NSImage?
   var applicationImage: ApplicationImage
@@ -71,7 +71,7 @@ class HistoryItemDecorator: Identifiable, Hashable, HasVisibility {
 
   @MainActor
   func ensureThumbnailImage() {
-    guard item.image != nil else {
+    guard let imageData = item.imageData else {
       return
     }
     guard thumbnailImage == nil else {
@@ -80,14 +80,20 @@ class HistoryItemDecorator: Identifiable, Hashable, HasVisibility {
     guard thumbnailImageGenerationTask == nil else {
       return
     }
-    thumbnailImageGenerationTask = Task { [weak self] in
-      self?.generateThumbnailImage()
+
+    let targetSize = Self.thumbnailImageSize
+    thumbnailImageGenerationTask = Task { [weak self, imageData, targetSize] in
+      let image = await Self.generateImage(from: imageData, targetSize: targetSize)
+      guard let self else { return }
+      defer { self.thumbnailImageGenerationTask = nil }
+      guard !Task.isCancelled else { return }
+      self.thumbnailImage = image
     }
   }
 
   @MainActor
   func ensurePreviewImage() {
-    guard item.image != nil else {
+    guard let imageData = item.imageData else {
       return
     }
     guard previewImage == nil else {
@@ -96,8 +102,14 @@ class HistoryItemDecorator: Identifiable, Hashable, HasVisibility {
     guard previewImageGenerationTask == nil else {
       return
     }
-    previewImageGenerationTask = Task { [weak self] in
-      self?.generatePreviewImage()
+
+    let targetSize = Self.previewImageSize
+    previewImageGenerationTask = Task { [weak self, imageData, targetSize] in
+      let image = await Self.generateImage(from: imageData, targetSize: targetSize)
+      guard let self else { return }
+      defer { self.previewImageGenerationTask = nil }
+      guard !Task.isCancelled else { return }
+      self.previewImage = image
     }
   }
 
@@ -115,6 +127,8 @@ class HistoryItemDecorator: Identifiable, Hashable, HasVisibility {
   func cleanupImages() {
     thumbnailImageGenerationTask?.cancel()
     previewImageGenerationTask?.cancel()
+    thumbnailImageGenerationTask = nil
+    previewImageGenerationTask = nil
     thumbnailImage?.recache()
     previewImage?.recache()
     thumbnailImage = nil
@@ -123,7 +137,8 @@ class HistoryItemDecorator: Identifiable, Hashable, HasVisibility {
 
   @MainActor
   private func generateThumbnailImage() {
-    guard let image = item.image else {
+    guard let data = item.imageData,
+          let image = NSImage(data: data) else {
       return
     }
     thumbnailImage = image.resized(to: HistoryItemDecorator.thumbnailImageSize)
@@ -131,7 +146,8 @@ class HistoryItemDecorator: Identifiable, Hashable, HasVisibility {
 
   @MainActor
   private func generatePreviewImage() {
-    guard let image = item.image else {
+    guard let data = item.imageData,
+          let image = NSImage(data: data) else {
       return
     }
     previewImage = image.resized(to: HistoryItemDecorator.previewImageSize)
@@ -141,6 +157,12 @@ class HistoryItemDecorator: Identifiable, Hashable, HasVisibility {
   func sizeImages() {
     generatePreviewImage()
     generateThumbnailImage()
+  }
+
+  private static func generateImage(from data: Data, targetSize: NSSize) async -> NSImage? {
+    await Task.detached(priority: .utility) {
+      NSImage(data: data)?.resized(to: targetSize)
+    }.value
   }
 
   func highlight(_ query: String, _ ranges: [Range<String.Index>]) {

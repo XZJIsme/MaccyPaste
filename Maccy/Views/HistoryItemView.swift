@@ -48,8 +48,16 @@ struct HistoryItemView: View {
     }
     .onAppear {
       item.ensureThumbnailImage()
+      if item.isSelected {
+        item.ensurePreviewImage()
+      }
       appState.history.loadPreviousUnpinnedPageIfNeeded(around: item)
       appState.history.loadNextUnpinnedPageIfNeeded(around: item)
+    }
+    .onChange(of: item.isSelected) {
+      if item.isSelected {
+        item.ensurePreviewImage()
+      }
     }
     .onTapGesture {
       if NSEvent.modifierFlags.contains(.command) && appState.multiSelectionEnabled {
