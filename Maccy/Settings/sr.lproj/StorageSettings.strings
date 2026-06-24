@@ -15,3 +15,25 @@
 "SortByTooltip" = "Подразумевано: Време последњег копирања.";
 "UnlimitedHistory" = "Неограничено";
 "UnlimitedHistoryTooltip" = "Не ограничавај број ставки историје које се чувају. Када је укључено, поље величине је онемогућено.";
+
+"ListSeparator" = ", ";
+"Cleanup" = "Чишћење:";
+"ClearAll" = "Очисти све";
+"AdvancedCleanup" = "Напредно чишћење";
+"OptimizeDatabase" = "Сажми и оптимизуј базу података";
+"ClearAllDescription" = "Брише сачувану историју клипборда за датотеке, слике и текст. Закачене ставке се подразумевано чувају.";
+"IncludePinnedItems" = "Очисти и закачене ставке";
+"Cancel" = "Откажи";
+"AdvancedCleanupDescription" = "Изаберите типове садржаја и гранични датум за чишћење.";
+"CleanupBefore" = "Старије од:";
+"Clear" = "Очисти";
+"ConfirmAdvancedCleanup" = "Потврди напредно чишћење";
+"Back" = "Назад";
+"ConfirmCleanup" = "Потврди чишћење";
+"OptimizeDatabaseDescription" = "Уклања податке садржаја без одговарајућих ставки историје и сажима SQLite базу да ослободи неискоришћен простор. Велике базе могу потрајати.";
+"Close" = "Затвори";
+"StartOptimization" = "Покрени оптимизацију";
+"OptimizationSucceeded" = "Оптимизација завршена. Величина базе: %@ -> %@.";
+"OptimizationFailed" = "Оптимизација није успела: %@";
+"AdvancedCleanupConfirmationIncludingPinned" = "Биће очишћене %@ ставке старије од %@, укључујући закачене. Потврдити?";
+"AdvancedCleanupConfirmationExcludingPinned" = "Биће очишћене %@ ставке старије од %@, без закачених. Потврдити?";

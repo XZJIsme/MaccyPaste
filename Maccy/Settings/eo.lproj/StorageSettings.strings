@@ -15,3 +15,25 @@
 "SortByTooltip" = "Defaŭlta: Momento de lasta kopio.";
 "UnlimitedHistory" = "Senlima";
 "UnlimitedHistoryTooltip" = "Ne limigi la nombron de konservotaj historiaj eroj. Kiam ŝaltita, la nombro-kampo estas malŝaltita.";
+
+"ListSeparator" = ", ";
+"Cleanup" = "Purigado:";
+"ClearAll" = "Purigi ĉion";
+"AdvancedCleanup" = "Altnivela purigado";
+"OptimizeDatabase" = "Kompakti kaj optimumigi datumbazon";
+"ClearAllDescription" = "Forigas konservitan tondujan historion por dosieroj, bildoj kaj teksto. Alpinglitaj eroj restas defaŭlte.";
+"IncludePinnedItems" = "Purigi ankaŭ alpinglitajn erojn";
+"Cancel" = "Nuligi";
+"AdvancedCleanupDescription" = "Elektu enhavotipojn kaj limdaton por purigi.";
+"CleanupBefore" = "Pli malnova ol:";
+"Clear" = "Purigi";
+"ConfirmAdvancedCleanup" = "Konfirmi altnivelan purigadon";
+"Back" = "Reen";
+"ConfirmCleanup" = "Konfirmi purigadon";
+"OptimizeDatabaseDescription" = "Forigas enhavdatenojn sen kongruaj historiaj eroj kaj kompaktigas la SQLite-datumbazon por liberigi neuzatan spacon. Grandaj datumbazoj povas bezoni tempon.";
+"Close" = "Fermi";
+"StartOptimization" = "Komenci optimumigon";
+"OptimizationSucceeded" = "Optimumigo finiĝis. Datumbaza grandeco: %@ -> %@.";
+"OptimizationFailed" = "Optimumigo malsukcesis: %@";
+"AdvancedCleanupConfirmationIncludingPinned" = "Purigos %@ erojn pli malnovajn ol %@, inkluzive alpinglitajn erojn. Ĉu konfirmi?";
+"AdvancedCleanupConfirmationExcludingPinned" = "Purigos %@ erojn pli malnovajn ol %@, krom alpinglitaj eroj. Ĉu konfirmi?";

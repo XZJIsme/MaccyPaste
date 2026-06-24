@@ -15,3 +15,25 @@
 "SortByTooltip" = "Privzeto: Čas zadnjega kopiranja.";
 "UnlimitedHistory" = "Neomejeno";
 "UnlimitedHistoryTooltip" = "Ne omejuj števila shranjenih elementov zgodovine. Ko je omogočeno, je polje za število onemogočeno.";
+
+"ListSeparator" = ", ";
+"Cleanup" = "Čiščenje:";
+"ClearAll" = "Počisti vse";
+"AdvancedCleanup" = "Napredno čiščenje";
+"OptimizeDatabase" = "Stisni in optimiziraj zbirko podatkov";
+"ClearAllDescription" = "Izbriše shranjeno zgodovino odložišča za datoteke, slike in besedilo. Pripeti elementi se privzeto ohranijo.";
+"IncludePinnedItems" = "Počisti tudi pripete elemente";
+"Cancel" = "Prekliči";
+"AdvancedCleanupDescription" = "Izberite vrste vsebine in mejni datum za čiščenje.";
+"CleanupBefore" = "Starejše od:";
+"Clear" = "Počisti";
+"ConfirmAdvancedCleanup" = "Potrdi napredno čiščenje";
+"Back" = "Nazaj";
+"ConfirmCleanup" = "Potrdi čiščenje";
+"OptimizeDatabaseDescription" = "Odstrani podatke vsebine brez ustreznih zgodovinskih elementov in stisne zbirko SQLite, da sprosti neuporabljen prostor. Velike zbirke lahko trajajo nekaj časa.";
+"Close" = "Zapri";
+"StartOptimization" = "Začni optimizacijo";
+"OptimizationSucceeded" = "Optimizacija končana. Velikost zbirke: %@ -> %@.";
+"OptimizationFailed" = "Optimizacija ni uspela: %@";
+"AdvancedCleanupConfirmationIncludingPinned" = "Počiščeni bodo elementi %@, starejši od %@, vključno s pripetimi. Potrditi?";
+"AdvancedCleanupConfirmationExcludingPinned" = "Počiščeni bodo elementi %@, starejši od %@, brez pripetih. Potrditi?";

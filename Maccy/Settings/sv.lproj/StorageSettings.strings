@@ -15,3 +15,25 @@
 "SortByTooltip" = "Standard: Tid för senaste kopian.";
 "UnlimitedHistory" = "Obegränsat";
 "UnlimitedHistoryTooltip" = "Begränsa inte antalet historikobjekt som behålls. När detta är aktiverat är antalsfältet inaktiverat.";
+
+"ListSeparator" = ", ";
+"Cleanup" = "Rensning:";
+"ClearAll" = "Rensa allt";
+"AdvancedCleanup" = "Avancerad rensning";
+"OptimizeDatabase" = "Kompaktera och optimera databasen";
+"ClearAllDescription" = "Tar bort sparad urklippshistorik för filer, bilder och text. Fästa objekt behålls som standard.";
+"IncludePinnedItems" = "Rensa även fästa objekt";
+"Cancel" = "Avbryt";
+"AdvancedCleanupDescription" = "Välj innehållstyper och ett brytdatum för rensning.";
+"CleanupBefore" = "Äldre än:";
+"Clear" = "Rensa";
+"ConfirmAdvancedCleanup" = "Bekräfta avancerad rensning";
+"Back" = "Tillbaka";
+"ConfirmCleanup" = "Bekräfta rensning";
+"OptimizeDatabaseDescription" = "Tar bort innehållsdata utan motsvarande historikobjekt och kompakterar SQLite-databasen för att frigöra oanvänt utrymme. Stora databaser kan ta en stund.";
+"Close" = "Stäng";
+"StartOptimization" = "Starta optimering";
+"OptimizationSucceeded" = "Optimering klar. Databasstorlek: %@ -> %@.";
+"OptimizationFailed" = "Optimering misslyckades: %@";
+"AdvancedCleanupConfirmationIncludingPinned" = "%@-objekt äldre än %@ rensas, inklusive fästa objekt. Bekräfta?";
+"AdvancedCleanupConfirmationExcludingPinned" = "%@-objekt äldre än %@ rensas, utan fästa objekt. Bekräfta?";

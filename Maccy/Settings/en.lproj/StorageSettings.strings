@@ -15,3 +15,25 @@
 "SortByTooltip" = "Default: Time of last copy.";
 "UnlimitedHistory" = "Unlimited";
 "UnlimitedHistoryTooltip" = "Do not limit the number of history items to keep. When enabled, the size field is disabled.";
+
+"ListSeparator" = ", ";
+"Cleanup" = "Cleanup:";
+"ClearAll" = "Clear All";
+"AdvancedCleanup" = "Advanced Cleanup";
+"OptimizeDatabase" = "Compact and Optimize Database";
+"ClearAllDescription" = "Deletes saved clipboard history for files, images, and text. Pinned items are kept by default.";
+"IncludePinnedItems" = "Also clear pinned items";
+"Cancel" = "Cancel";
+"AdvancedCleanupDescription" = "Choose content types and a cutoff date to clean.";
+"CleanupBefore" = "Older than:";
+"Clear" = "Clear";
+"ConfirmAdvancedCleanup" = "Confirm Advanced Cleanup";
+"Back" = "Back";
+"ConfirmCleanup" = "Confirm Cleanup";
+"OptimizeDatabaseDescription" = "Removes content data without matching history items and compacts the SQLite database to release unused space. Large databases may take a while.";
+"Close" = "Close";
+"StartOptimization" = "Start Optimization";
+"OptimizationSucceeded" = "Optimization complete. Database size: %@ -> %@.";
+"OptimizationFailed" = "Optimization failed: %@";
+"AdvancedCleanupConfirmationIncludingPinned" = "About to clean %@ items older than %@, including pinned items. Confirm?";
+"AdvancedCleanupConfirmationExcludingPinned" = "About to clean %@ items older than %@, excluding pinned items. Confirm?";

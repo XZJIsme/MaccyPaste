@@ -113,7 +113,7 @@ class AppLocalization {
 
 struct StorageType {
   static let files = StorageType(types: [.fileURL])
-  static let images = StorageType(types: [.png, .tiff])
+  static let images = StorageType(types: [.png, .tiff, .jpeg, .heic])
   static let text = StorageType(types: [.html, .rtf, .string])
   static let all = StorageType(types: files.types + images.types + text.types)
 

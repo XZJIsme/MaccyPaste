@@ -15,3 +15,25 @@
 "SortByTooltip" = "Standard: Zeitpunkt des letzten Eintrags.";
 "UnlimitedHistory" = "Unbegrenzt";
 "UnlimitedHistoryTooltip" = "Die Anzahl der zu behaltenden Verlaufseinträge nicht begrenzen. Wenn aktiviert, ist das Zahlenfeld deaktiviert.";
+
+"ListSeparator" = ", ";
+"Cleanup" = "Bereinigung:";
+"ClearAll" = "Alles bereinigen";
+"AdvancedCleanup" = "Erweiterte Bereinigung";
+"OptimizeDatabase" = "Datenbank komprimieren und optimieren";
+"ClearAllDescription" = "Löscht gespeicherte Zwischenablageverläufe für Dateien, Bilder und Text. Angeheftete Einträge bleiben standardmäßig erhalten.";
+"IncludePinnedItems" = "Auch angeheftete Einträge bereinigen";
+"Cancel" = "Abbrechen";
+"AdvancedCleanupDescription" = "Wählen Sie Inhaltstypen und ein Stichtagsdatum für die Bereinigung.";
+"CleanupBefore" = "Älter als:";
+"Clear" = "Bereinigen";
+"ConfirmAdvancedCleanup" = "Erweiterte Bereinigung bestätigen";
+"Back" = "Zurück";
+"ConfirmCleanup" = "Bereinigung bestätigen";
+"OptimizeDatabaseDescription" = "Entfernt Inhaltsdaten ohne zugehörige Verlaufseinträge und komprimiert die SQLite-Datenbank, um freien Speicherplatz zurückzugewinnen. Große Datenbanken können etwas dauern.";
+"Close" = "Schließen";
+"StartOptimization" = "Optimierung starten";
+"OptimizationSucceeded" = "Optimierung abgeschlossen. Datenbankgröße: %@ -> %@.";
+"OptimizationFailed" = "Optimierung fehlgeschlagen: %@";
+"AdvancedCleanupConfirmationIncludingPinned" = "%@-Einträge älter als %@ werden inklusive angehefteter Einträge bereinigt. Bestätigen?";
+"AdvancedCleanupConfirmationExcludingPinned" = "%@-Einträge älter als %@ werden ohne angeheftete Einträge bereinigt. Bestätigen?";

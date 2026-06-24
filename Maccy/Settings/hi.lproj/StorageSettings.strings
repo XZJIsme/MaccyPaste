@@ -15,3 +15,25 @@
 "SortByTooltip" = "डिफ़ॉल्ट: आखिरी कॉपी का समय।";
 "UnlimitedHistory" = "असीमित";
 "UnlimitedHistoryTooltip" = "रखे जाने वाले इतिहास आइटम की संख्या सीमित न करें। चालू होने पर संख्या फ़ील्ड निष्क्रिय हो जाती है。";
+
+"ListSeparator" = ", ";
+"Cleanup" = "सफाई:";
+"ClearAll" = "सब साफ करें";
+"AdvancedCleanup" = "उन्नत सफाई";
+"OptimizeDatabase" = "डेटाबेस संकुचित और अनुकूलित करें";
+"ClearAllDescription" = "फ़ाइलों, छवियों और टेक्स्ट के लिए सहेजा गया क्लिपबोर्ड इतिहास मिटाता है। पिन किए गए आइटम डिफ़ॉल्ट रूप से रखे जाते हैं।";
+"IncludePinnedItems" = "पिन किए गए आइटम भी साफ करें";
+"Cancel" = "रद्द करें";
+"AdvancedCleanupDescription" = "साफ करने के लिए सामग्री प्रकार और कटऑफ तारीख चुनें।";
+"CleanupBefore" = "इससे पुराना:";
+"Clear" = "साफ करें";
+"ConfirmAdvancedCleanup" = "उन्नत सफाई की पुष्टि";
+"Back" = "वापस";
+"ConfirmCleanup" = "सफाई की पुष्टि";
+"OptimizeDatabaseDescription" = "बिना संबंधित इतिहास आइटम वाले सामग्री डेटा को हटाता है और अप्रयुक्त स्थान छोड़ने के लिए SQLite डेटाबेस को संकुचित करता है। बड़े डेटाबेस में समय लग सकता है।";
+"Close" = "बंद करें";
+"StartOptimization" = "अनुकूलन शुरू करें";
+"OptimizationSucceeded" = "अनुकूलन पूरा हुआ। डेटाबेस आकार: %@ -> %@.";
+"OptimizationFailed" = "अनुकूलन विफल: %@";
+"AdvancedCleanupConfirmationIncludingPinned" = "%@ आइटम जो %@ से पुराने हैं, पिन किए गए आइटम सहित साफ किए जाएंगे। पुष्टि करें?";
+"AdvancedCleanupConfirmationExcludingPinned" = "%@ आइटम जो %@ से पुराने हैं, पिन किए गए आइटम छोड़कर साफ किए जाएंगे। पुष्टि करें?";

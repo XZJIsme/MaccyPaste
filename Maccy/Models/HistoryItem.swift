@@ -152,6 +152,14 @@ class HistoryItem {
   var fromMaccy: Bool { contentData([.fromMaccy]) != nil }
   var universalClipboard: Bool { contentData([.universalClipboard]) != nil }
 
+  func containsContent(types: [NSPasteboard.PasteboardType]) -> Bool {
+    if contentData(types) != nil {
+      return true
+    }
+
+    return !Set(types).isDisjoint(with: StorageType.images.types) && universalClipboardImage
+  }
+
   private var universalClipboardImage: Bool { universalClipboard && fileURLs.first?.pathExtension == "jpeg" }
   private var universalClipboardText: Bool {
     universalClipboard && contentData([.html, .tiff, .png, .jpeg, .rtf, .string, .heic]) != nil

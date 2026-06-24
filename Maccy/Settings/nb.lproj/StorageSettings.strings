@@ -15,3 +15,25 @@
 "SortByTooltip" = "Standard: Tidspunkt siste kopiering.";
 "UnlimitedHistory" = "Ubegrenset";
 "UnlimitedHistoryTooltip" = "Ikke begrens antall historikkelementer som beholdes. Når aktivert, deaktiveres størrelsesfeltet.";
+
+"ListSeparator" = ", ";
+"Cleanup" = "Opprydding:";
+"ClearAll" = "Rydd alt";
+"AdvancedCleanup" = "Avansert opprydding";
+"OptimizeDatabase" = "Komprimer og optimaliser database";
+"ClearAllDescription" = "Sletter lagret utklippshistorikk for filer, bilder og tekst. Festede elementer beholdes som standard.";
+"IncludePinnedItems" = "Rydd også festede elementer";
+"Cancel" = "Avbryt";
+"AdvancedCleanupDescription" = "Velg innholdstyper og en grensedato for opprydding.";
+"CleanupBefore" = "Eldre enn:";
+"Clear" = "Rydd";
+"ConfirmAdvancedCleanup" = "Bekreft avansert opprydding";
+"Back" = "Tilbake";
+"ConfirmCleanup" = "Bekreft opprydding";
+"OptimizeDatabaseDescription" = "Fjerner innholdsdata uten tilsvarende historikkelementer og komprimerer SQLite-databasen for å frigjøre ubrukt plass. Store databaser kan ta litt tid.";
+"Close" = "Lukk";
+"StartOptimization" = "Start optimalisering";
+"OptimizationSucceeded" = "Optimalisering fullført. Databasestørrelse: %@ -> %@.";
+"OptimizationFailed" = "Optimalisering mislyktes: %@";
+"AdvancedCleanupConfirmationIncludingPinned" = "%@-elementer eldre enn %@ ryddes, inkludert festede elementer. Bekreft?";
+"AdvancedCleanupConfirmationExcludingPinned" = "%@-elementer eldre enn %@ ryddes, unntatt festede elementer. Bekreft?";

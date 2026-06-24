@@ -15,3 +15,25 @@
 "HistoryCountSummary" = "%d פריטים (%d מוצמדים, %d לא מוצמדים)";
 "UnlimitedHistory" = "ללא הגבלה";
 "UnlimitedHistoryTooltip" = "לא להגביל את מספר פריטי ההיסטוריה לשמירה. כאשר האפשרות מופעלת, שדה הגודל מושבת.";
+
+"ListSeparator" = ", ";
+"Cleanup" = "ניקוי:";
+"ClearAll" = "נקה הכול";
+"AdvancedCleanup" = "ניקוי מתקדם";
+"OptimizeDatabase" = "דחוס ומטב מסד נתונים";
+"ClearAllDescription" = "מוחק היסטוריית לוח שמורה של קבצים, תמונות וטקסט. פריטים מוצמדים נשמרים כברירת מחדל.";
+"IncludePinnedItems" = "נקה גם פריטים מוצמדים";
+"Cancel" = "ביטול";
+"AdvancedCleanupDescription" = "בחר סוגי תוכן ותאריך סף לניקוי.";
+"CleanupBefore" = "ישן מ:";
+"Clear" = "נקה";
+"ConfirmAdvancedCleanup" = "אישור ניקוי מתקדם";
+"Back" = "חזרה";
+"ConfirmCleanup" = "אישור ניקוי";
+"OptimizeDatabaseDescription" = "מסיר נתוני תוכן ללא פריט היסטוריה מתאים ודוחס את מסד SQLite כדי לשחרר מקום לא מנוצל. מסדי נתונים גדולים עשויים לקחת זמן.";
+"Close" = "סגור";
+"StartOptimization" = "התחל מיטוב";
+"OptimizationSucceeded" = "המיטוב הושלם. גודל מסד הנתונים: %@ -> %@.";
+"OptimizationFailed" = "המיטוב נכשל: %@";
+"AdvancedCleanupConfirmationIncludingPinned" = "עומד לנקות פריטי %@ ישנים מ-%@, כולל פריטים מוצמדים. לאשר?";
+"AdvancedCleanupConfirmationExcludingPinned" = "עומד לנקות פריטי %@ ישנים מ-%@, ללא פריטים מוצמדים. לאשר?";

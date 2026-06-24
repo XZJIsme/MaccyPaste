@@ -15,3 +15,25 @@
 "SortByTooltip" = "Alapértelmezett: Utolsó másolás ideje.";
 "UnlimitedHistory" = "Korlátlan";
 "UnlimitedHistoryTooltip" = "Ne korlátozza a megtartandó előzményelemek számát. Bekapcsolva a méretmező le van tiltva.";
+
+"ListSeparator" = ", ";
+"Cleanup" = "Tisztítás:";
+"ClearAll" = "Összes törlése";
+"AdvancedCleanup" = "Speciális tisztítás";
+"OptimizeDatabase" = "Adatbázis tömörítése és optimalizálása";
+"ClearAllDescription" = "Törli a fájlok, képek és szövegek mentett vágólap-előzményeit. A rögzített elemek alapértelmezetten megmaradnak.";
+"IncludePinnedItems" = "Rögzített elemek tisztítása is";
+"Cancel" = "Mégse";
+"AdvancedCleanupDescription" = "Válassza ki a tartalomtípusokat és a határdátumot.";
+"CleanupBefore" = "Régebbi mint:";
+"Clear" = "Tisztítás";
+"ConfirmAdvancedCleanup" = "Speciális tisztítás megerősítése";
+"Back" = "Vissza";
+"ConfirmCleanup" = "Tisztítás megerősítése";
+"OptimizeDatabaseDescription" = "Eltávolítja az előzményelem nélküli tartalomadatokat, és tömöríti az SQLite-adatbázist a nem használt hely felszabadításához. Nagy adatbázisoknál ez eltarthat.";
+"Close" = "Bezárás";
+"StartOptimization" = "Optimalizálás indítása";
+"OptimizationSucceeded" = "Optimalizálás kész. Adatbázis mérete: %@ -> %@.";
+"OptimizationFailed" = "Optimalizálás sikertelen: %@";
+"AdvancedCleanupConfirmationIncludingPinned" = "A(z) %@ elemek közül a(z) %@ előtti elemek törlődnek, beleértve a rögzítetteket is. Megerősíti?";
+"AdvancedCleanupConfirmationExcludingPinned" = "A(z) %@ elemek közül a(z) %@ előtti elemek törlődnek, a rögzítettek kivételével. Megerősíti?";

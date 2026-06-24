@@ -15,3 +15,25 @@
 "SortByTooltip" = "기본값: 마지막 복사한 시간.";
 "UnlimitedHistory" = "무제한";
 "UnlimitedHistoryTooltip" = "보관할 기록 항목 수를 제한하지 않습니다. 활성화하면 크기 입력란이 비활성화됩니다.";
+
+"ListSeparator" = ", ";
+"Cleanup" = "정리:";
+"ClearAll" = "모두 정리";
+"AdvancedCleanup" = "고급 정리";
+"OptimizeDatabase" = "데이터베이스 압축 및 최적화";
+"ClearAllDescription" = "저장된 파일, 이미지, 텍스트 클립보드 기록을 삭제합니다. 고정된 항목은 기본적으로 유지됩니다.";
+"IncludePinnedItems" = "고정된 항목도 정리";
+"Cancel" = "취소";
+"AdvancedCleanupDescription" = "정리할 콘텐츠 유형과 기준 날짜를 선택합니다.";
+"CleanupBefore" = "다음보다 오래됨:";
+"Clear" = "정리";
+"ConfirmAdvancedCleanup" = "고급 정리 확인";
+"Back" = "뒤로";
+"ConfirmCleanup" = "정리 확인";
+"OptimizeDatabaseDescription" = "일치하는 기록 항목이 없는 콘텐츠 데이터를 제거하고 SQLite 데이터베이스를 압축하여 사용하지 않는 공간을 회수합니다. 데이터베이스가 크면 시간이 걸릴 수 있습니다.";
+"Close" = "닫기";
+"StartOptimization" = "최적화 시작";
+"OptimizationSucceeded" = "최적화 완료. 데이터베이스 크기: %@ -> %@.";
+"OptimizationFailed" = "최적화 실패: %@";
+"AdvancedCleanupConfirmationIncludingPinned" = "%@ 항목 중 %@보다 오래된 항목을 고정된 항목까지 포함해 정리합니다. 확인하시겠습니까?";
+"AdvancedCleanupConfirmationExcludingPinned" = "%@ 항목 중 %@보다 오래된 항목을 고정된 항목 제외하고 정리합니다. 확인하시겠습니까?";

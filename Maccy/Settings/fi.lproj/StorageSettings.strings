@@ -15,3 +15,25 @@
 "SortByTooltip" = "Oletus: Viimeisimmän kopioinnin aika.";
 "UnlimitedHistory" = "Rajoittamaton";
 "UnlimitedHistoryTooltip" = "Älä rajoita säilytettävien historiakohteiden määrää. Kun tämä on käytössä, kokokenttä poistetaan käytöstä.";
+
+"ListSeparator" = ", ";
+"Cleanup" = "Siivous:";
+"ClearAll" = "Tyhjennä kaikki";
+"AdvancedCleanup" = "Lisäsiivous";
+"OptimizeDatabase" = "Tiivistä ja optimoi tietokanta";
+"ClearAllDescription" = "Poistaa tallennetun leikepöytähistorian tiedostoille, kuville ja tekstille. Kiinnitetyt kohteet säilytetään oletuksena.";
+"IncludePinnedItems" = "Siivoa myös kiinnitetyt kohteet";
+"Cancel" = "Peruuta";
+"AdvancedCleanupDescription" = "Valitse siivottavat sisältötyypit ja rajapäivä.";
+"CleanupBefore" = "Vanhemmat kuin:";
+"Clear" = "Siivoa";
+"ConfirmAdvancedCleanup" = "Vahvista lisäsiivous";
+"Back" = "Takaisin";
+"ConfirmCleanup" = "Vahvista siivous";
+"OptimizeDatabaseDescription" = "Poistaa sisältötiedot, joille ei ole vastaavaa historiakohdetta, ja tiivistää SQLite-tietokannan käyttämättömän tilan vapauttamiseksi. Suuret tietokannat voivat kestää hetken.";
+"Close" = "Sulje";
+"StartOptimization" = "Aloita optimointi";
+"OptimizationSucceeded" = "Optimointi valmis. Tietokannan koko: %@ -> %@.";
+"OptimizationFailed" = "Optimointi epäonnistui: %@";
+"AdvancedCleanupConfirmationIncludingPinned" = "%@-kohteet, jotka ovat vanhempia kuin %@, siivotaan, mukaan lukien kiinnitetyt kohteet. Vahvistetaanko?";
+"AdvancedCleanupConfirmationExcludingPinned" = "%@-kohteet, jotka ovat vanhempia kuin %@, siivotaan ilman kiinnitettyjä kohteita. Vahvistetaanko?";

@@ -15,3 +15,25 @@
 "SortByTooltip" = "預設：上次拷貝時間。";
 "UnlimitedHistory" = "無限";
 "UnlimitedHistoryTooltip" = "不限制保留的歷史記錄數量。開啟後，左側數量設定將不可編輯。";
+
+"ListSeparator" = "、";
+"Cleanup" = "清理：";
+"ClearAll" = "清理所有";
+"AdvancedCleanup" = "進階清理";
+"OptimizeDatabase" = "壓縮並最佳化資料庫";
+"ClearAllDescription" = "刪除已儲存的檔案、影像和文字剪貼簿歷史記錄。預設保留釘選項目。";
+"IncludePinnedItems" = "同時清理釘選項目";
+"Cancel" = "取消";
+"AdvancedCleanupDescription" = "選擇要清理的內容類型和截止日期。";
+"CleanupBefore" = "早於：";
+"Clear" = "清理";
+"ConfirmAdvancedCleanup" = "確認進階清理";
+"Back" = "返回";
+"ConfirmCleanup" = "確認清理";
+"OptimizeDatabaseDescription" = "清理沒有對應歷史記錄的內容資料，並壓縮 SQLite 資料庫以釋放未使用空間。資料庫較大時可能需要等待一會兒。";
+"Close" = "關閉";
+"StartOptimization" = "開始最佳化";
+"OptimizationSucceeded" = "最佳化完成。資料庫大小：%@ -> %@。";
+"OptimizationFailed" = "最佳化失敗：%@";
+"AdvancedCleanupConfirmationIncludingPinned" = "即將清理%@中早於 %@ 的項目，包括釘選項目。是否確認？";
+"AdvancedCleanupConfirmationExcludingPinned" = "即將清理%@中早於 %@ 的項目，不包括釘選項目。是否確認？";

@@ -15,3 +15,25 @@
 "SortByTooltip" = "Default: Oras ng huling pagkopya.";
 "UnlimitedHistory" = "Walang limitasyon";
 "UnlimitedHistoryTooltip" = "Huwag limitahan ang bilang ng history items na pananatilihin. Kapag naka-on, naka-disable ang size field.";
+
+"ListSeparator" = ", ";
+"Cleanup" = "Paglilinis:";
+"ClearAll" = "Linisin Lahat";
+"AdvancedCleanup" = "Advanced na Paglilinis";
+"OptimizeDatabase" = "I-compact at I-optimize ang Database";
+"ClearAllDescription" = "Binubura ang naka-save na clipboard history para sa mga file, larawan, at teksto. Pinapanatili ang mga naka-pin na item bilang default.";
+"IncludePinnedItems" = "Linisin din ang mga naka-pin na item";
+"Cancel" = "Kanselahin";
+"AdvancedCleanupDescription" = "Pumili ng mga uri ng nilalaman at cutoff date na lilinisin.";
+"CleanupBefore" = "Mas luma sa:";
+"Clear" = "Linisin";
+"ConfirmAdvancedCleanup" = "Kumpirmahin ang Advanced na Paglilinis";
+"Back" = "Bumalik";
+"ConfirmCleanup" = "Kumpirmahin ang Paglilinis";
+"OptimizeDatabaseDescription" = "Tinatanggal ang content data na walang katugmang history item at kino-compact ang SQLite database para magpalaya ng hindi nagagamit na espasyo. Maaaring tumagal ang malalaking database.";
+"Close" = "Isara";
+"StartOptimization" = "Simulan ang Pag-optimize";
+"OptimizationSucceeded" = "Tapos na ang pag-optimize. Laki ng database: %@ -> %@.";
+"OptimizationFailed" = "Nabigo ang pag-optimize: %@";
+"AdvancedCleanupConfirmationIncludingPinned" = "Lilinisn ang mga item na %@ na mas luma sa %@, kasama ang mga naka-pin. Kumpirmahin?";
+"AdvancedCleanupConfirmationExcludingPinned" = "Lilinisn ang mga item na %@ na mas luma sa %@, hindi kasama ang mga naka-pin. Kumpirmahin?";

@@ -15,3 +15,25 @@
 "SortByTooltip" = "بنەڕەت: کاتی دوایین کۆپی.";
 "UnlimitedHistory" = "بێسنوور";
 "UnlimitedHistoryTooltip" = "ژمارەی ئایتەمە مێژووییە پارێزراوەکان سنووردار مەکە. کاتێک چالاک بێت، خانەی ژمارە ناچالاک دەبێت.";
+
+"ListSeparator" = "، ";
+"Cleanup" = "پاککردنەوە:";
+"ClearAll" = "هەمووی پاک بکەوە";
+"AdvancedCleanup" = "پاککردنەوەی پێشکەوتوو";
+"OptimizeDatabase" = "بنکەدراوە بچووک و باش بکە";
+"ClearAllDescription" = "مێژووی پاشەکەوتکراوی کلیپبۆرد بۆ فایل و وێنە و دەق دەسڕێتەوە. دانە پینکراوەکان بە بنەڕەت دەمێننەوە.";
+"IncludePinnedItems" = "دانە پینکراوەکانیش پاک بکەوە";
+"Cancel" = "پاشگەزبوونەوە";
+"AdvancedCleanupDescription" = "جۆری ناوەڕۆک و بەرواری سنوور بۆ پاککردنەوە هەڵبژێرە.";
+"CleanupBefore" = "کۆنتر لە:";
+"Clear" = "پاککردنەوە";
+"ConfirmAdvancedCleanup" = "دڵنیاکردنەوەی پاککردنەوەی پێشکەوتوو";
+"Back" = "گەڕانەوە";
+"ConfirmCleanup" = "دڵنیاکردنەوەی پاککردنەوە";
+"OptimizeDatabaseDescription" = "داتای ناوەڕۆک کە مێژووی هاوتای نییە دەسڕێتەوە و بنکەدراوەی SQLite بچووک دەکات بۆ ئازادکردنی شوێنی بەکارنەهاتوو. بنکەدراوەی گەورە کات دەخوازێت.";
+"Close" = "داخستن";
+"StartOptimization" = "دەستپێکردنی باشکردن";
+"OptimizationSucceeded" = "باشکردن تەواو بوو. قەبارەی بنکەدراوە: %@ -> %@.";
+"OptimizationFailed" = "باشکردن سەرکەوتوو نەبوو: %@";
+"AdvancedCleanupConfirmationIncludingPinned" = "دانەکانی %@ کە کۆنترن لە %@ پاک دەکرێنەوە، لەگەڵ دانە پینکراوەکان. دڵنیایت؟";
+"AdvancedCleanupConfirmationExcludingPinned" = "دانەکانی %@ کە کۆنترن لە %@ پاک دەکرێنەوە، بەبێ دانە پینکراوەکان. دڵنیایت؟";

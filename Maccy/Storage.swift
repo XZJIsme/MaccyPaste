@@ -51,4 +51,31 @@ class Storage {
       fatalError("Cannot load database: \(error.localizedDescription).")
     }
   }
+
+  func vacuum() throws {
+    try context.save()
+
+    let process = Process()
+    process.executableURL = URL(fileURLWithPath: "/usr/bin/sqlite3")
+    process.arguments = [
+      url.path,
+      "PRAGMA wal_checkpoint(TRUNCATE); VACUUM;"
+    ]
+
+    let errorPipe = Pipe()
+    process.standardError = errorPipe
+
+    try process.run()
+    process.waitUntilExit()
+
+    guard process.terminationStatus == 0 else {
+      let data = errorPipe.fileHandleForReading.readDataToEndOfFile()
+      let message = String(data: data, encoding: .utf8) ?? "sqlite3 exited with status \(process.terminationStatus)"
+      throw NSError(
+        domain: "MaccyPaste.Storage.Vacuum",
+        code: Int(process.terminationStatus),
+        userInfo: [NSLocalizedDescriptionKey: message]
+      )
+    }
+  }
 }

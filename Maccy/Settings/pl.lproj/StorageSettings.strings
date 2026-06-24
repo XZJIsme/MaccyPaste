@@ -15,3 +15,25 @@
 "SortByTooltip" = "Domyślnie: Czas ostatniego kopiowania.";
 "UnlimitedHistory" = "Bez ograniczeń";
 "UnlimitedHistoryTooltip" = "Nie ograniczaj liczby przechowywanych pozycji historii. Gdy włączone, pole liczby jest nieaktywne.";
+
+"ListSeparator" = ", ";
+"Cleanup" = "Czyszczenie:";
+"ClearAll" = "Wyczyść wszystko";
+"AdvancedCleanup" = "Zaawansowane czyszczenie";
+"OptimizeDatabase" = "Kompaktuj i optymalizuj bazę danych";
+"ClearAllDescription" = "Usuwa zapisany schowek dla plików, obrazów i tekstu. Przypięte elementy są domyślnie zachowywane.";
+"IncludePinnedItems" = "Wyczyść także przypięte elementy";
+"Cancel" = "Anuluj";
+"AdvancedCleanupDescription" = "Wybierz typy zawartości i datę graniczną czyszczenia.";
+"CleanupBefore" = "Starsze niż:";
+"Clear" = "Wyczyść";
+"ConfirmAdvancedCleanup" = "Potwierdź zaawansowane czyszczenie";
+"Back" = "Wstecz";
+"ConfirmCleanup" = "Potwierdź czyszczenie";
+"OptimizeDatabaseDescription" = "Usuwa dane zawartości bez odpowiadających im elementów historii i kompaktuje bazę SQLite, aby odzyskać nieużywane miejsce. Duże bazy mogą wymagać czasu.";
+"Close" = "Zamknij";
+"StartOptimization" = "Rozpocznij optymalizację";
+"OptimizationSucceeded" = "Optymalizacja zakończona. Rozmiar bazy danych: %@ -> %@.";
+"OptimizationFailed" = "Optymalizacja nie powiodła się: %@";
+"AdvancedCleanupConfirmationIncludingPinned" = "Zostaną wyczyszczone elementy %@ starsze niż %@, w tym przypięte. Potwierdzić?";
+"AdvancedCleanupConfirmationExcludingPinned" = "Zostaną wyczyszczone elementy %@ starsze niż %@, bez przypiętych. Potwierdzić?";

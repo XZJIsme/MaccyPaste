@@ -15,3 +15,25 @@
 "SortByTooltip" = "پیش‌فرض: زمان آخرین کپی.";
 "UnlimitedHistory" = "نامحدود";
 "UnlimitedHistoryTooltip" = "تعداد موارد تاریخچه برای نگهداری را محدود نکن. وقتی فعال باشد، فیلد تعداد غیرفعال می‌شود.";
+
+"ListSeparator" = "، ";
+"Cleanup" = "پاک‌سازی:";
+"ClearAll" = "پاک‌سازی همه";
+"AdvancedCleanup" = "پاک‌سازی پیشرفته";
+"OptimizeDatabase" = "فشرده‌سازی و بهینه‌سازی پایگاه داده";
+"ClearAllDescription" = "تاریخچهٔ ذخیره‌شدهٔ کلیپ‌بورد برای فایل‌ها، تصاویر و متن را حذف می‌کند. موارد سنجاق‌شده به‌طور پیش‌فرض نگه داشته می‌شوند.";
+"IncludePinnedItems" = "موارد سنجاق‌شده را هم پاک کن";
+"Cancel" = "لغو";
+"AdvancedCleanupDescription" = "نوع محتوا و تاریخ مرزی برای پاک‌سازی را انتخاب کنید.";
+"CleanupBefore" = "قدیمی‌تر از:";
+"Clear" = "پاک‌سازی";
+"ConfirmAdvancedCleanup" = "تأیید پاک‌سازی پیشرفته";
+"Back" = "بازگشت";
+"ConfirmCleanup" = "تأیید پاک‌سازی";
+"OptimizeDatabaseDescription" = "داده‌های محتوایی بدون مورد تاریخچهٔ متناظر را حذف می‌کند و پایگاه SQLite را برای آزاد کردن فضای استفاده‌نشده فشرده می‌کند. پایگاه‌های بزرگ ممکن است کمی زمان ببرند.";
+"Close" = "بستن";
+"StartOptimization" = "شروع بهینه‌سازی";
+"OptimizationSucceeded" = "بهینه‌سازی کامل شد. اندازهٔ پایگاه داده: %@ -> %@.";
+"OptimizationFailed" = "بهینه‌سازی ناموفق بود: %@";
+"AdvancedCleanupConfirmationIncludingPinned" = "موارد %@ قدیمی‌تر از %@، همراه با موارد سنجاق‌شده، پاک می‌شوند. تأیید می‌کنید؟";
+"AdvancedCleanupConfirmationExcludingPinned" = "موارد %@ قدیمی‌تر از %@، بدون موارد سنجاق‌شده، پاک می‌شوند. تأیید می‌کنید؟";

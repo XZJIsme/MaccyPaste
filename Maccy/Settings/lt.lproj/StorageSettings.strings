@@ -15,3 +15,25 @@
 "SortByTooltip" = "Numatytoji reikšmė: Paskutinės kopijos laikas.";
 "UnlimitedHistory" = "Neribota";
 "UnlimitedHistoryTooltip" = "Neriboti saugomų istorijos elementų skaičiaus. Įjungus, skaičiaus laukas išjungiamas.";
+
+"ListSeparator" = ", ";
+"Cleanup" = "Valymas:";
+"ClearAll" = "Išvalyti viską";
+"AdvancedCleanup" = "Išplėstinis valymas";
+"OptimizeDatabase" = "Suglaudinti ir optimizuoti duomenų bazę";
+"ClearAllDescription" = "Ištrina išsaugotą failų, vaizdų ir teksto iškarpinės istoriją. Prisegti elementai pagal numatymą paliekami.";
+"IncludePinnedItems" = "Valyti ir prisegtus elementus";
+"Cancel" = "Atšaukti";
+"AdvancedCleanupDescription" = "Pasirinkite valytinus turinio tipus ir ribinę datą.";
+"CleanupBefore" = "Senesni nei:";
+"Clear" = "Valyti";
+"ConfirmAdvancedCleanup" = "Patvirtinti išplėstinį valymą";
+"Back" = "Atgal";
+"ConfirmCleanup" = "Patvirtinti valymą";
+"OptimizeDatabaseDescription" = "Pašalina turinio duomenis be atitinkamų istorijos elementų ir suglaudina SQLite duomenų bazę, kad atlaisvintų nenaudojamą vietą. Didelės duomenų bazės gali užtrukti.";
+"Close" = "Uždaryti";
+"StartOptimization" = "Pradėti optimizavimą";
+"OptimizationSucceeded" = "Optimizavimas baigtas. Duomenų bazės dydis: %@ -> %@.";
+"OptimizationFailed" = "Optimizavimas nepavyko: %@";
+"AdvancedCleanupConfirmationIncludingPinned" = "Bus išvalyti %@ elementai, senesni nei %@, įskaitant prisegtus. Patvirtinti?";
+"AdvancedCleanupConfirmationExcludingPinned" = "Bus išvalyti %@ elementai, senesni nei %@, išskyrus prisegtus. Patvirtinti?";

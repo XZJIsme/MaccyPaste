@@ -15,3 +15,25 @@
 "SortByTooltip" = "ডিফল্ট: শেষ কপির সময়।";
 "UnlimitedHistory" = "সীমাহীন";
 "UnlimitedHistoryTooltip" = "রাখা ইতিহাস আইটেমের সংখ্যায় সীমা দেবেন না। চালু থাকলে সংখ্যা ঘরটি নিষ্ক্রিয় থাকে。";
+
+"ListSeparator" = ", ";
+"Cleanup" = "পরিষ্কার:";
+"ClearAll" = "সব পরিষ্কার করুন";
+"AdvancedCleanup" = "উন্নত পরিষ্কার";
+"OptimizeDatabase" = "ডেটাবেস সংকুচিত ও অপ্টিমাইজ করুন";
+"ClearAllDescription" = "ফাইল, ছবি এবং লেখার জন্য সংরক্ষিত ক্লিপবোর্ড ইতিহাস মুছে দেয়। পিন করা আইটেম ডিফল্টভাবে রাখা হয়।";
+"IncludePinnedItems" = "পিন করা আইটেমও পরিষ্কার করুন";
+"Cancel" = "বাতিল";
+"AdvancedCleanupDescription" = "পরিষ্কারের জন্য কনটেন্টের ধরন ও কাট-অফ তারিখ বেছে নিন।";
+"CleanupBefore" = "এর আগের:";
+"Clear" = "পরিষ্কার";
+"ConfirmAdvancedCleanup" = "উন্নত পরিষ্কার নিশ্চিত করুন";
+"Back" = "ফিরে যান";
+"ConfirmCleanup" = "পরিষ্কার নিশ্চিত করুন";
+"OptimizeDatabaseDescription" = "যে কনটেন্ট ডেটার সঙ্গে কোনো ইতিহাস আইটেম নেই তা সরায় এবং অব্যবহৃত স্থান ছাড়তে SQLite ডেটাবেস সংকুচিত করে। বড় ডেটাবেসে সময় লাগতে পারে।";
+"Close" = "বন্ধ";
+"StartOptimization" = "অপ্টিমাইজ শুরু করুন";
+"OptimizationSucceeded" = "অপ্টিমাইজ সম্পন্ন। ডেটাবেস আকার: %@ -> %@.";
+"OptimizationFailed" = "অপ্টিমাইজ ব্যর্থ: %@";
+"AdvancedCleanupConfirmationIncludingPinned" = "%@ আইটেম, যা %@-এর আগের, পিন করা আইটেমসহ পরিষ্কার করা হবে। নিশ্চিত করবেন?";
+"AdvancedCleanupConfirmationExcludingPinned" = "%@ আইটেম, যা %@-এর আগের, পিন করা আইটেম বাদ দিয়ে পরিষ্কার করা হবে। নিশ্চিত করবেন?";

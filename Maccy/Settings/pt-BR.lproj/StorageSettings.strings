@@ -15,3 +15,25 @@
 "SortByTooltip" = "Padrão: Data de última cópia.";
 "UnlimitedHistory" = "Ilimitado";
 "UnlimitedHistoryTooltip" = "Não limitar o número de itens do histórico a manter. Quando ativado, o campo de quantidade fica desativado.";
+
+"ListSeparator" = ", ";
+"Cleanup" = "Limpeza:";
+"ClearAll" = "Limpar tudo";
+"AdvancedCleanup" = "Limpeza avançada";
+"OptimizeDatabase" = "Compactar e otimizar banco de dados";
+"ClearAllDescription" = "Exclui o histórico salvo da área de transferência para arquivos, imagens e texto. Itens fixados são mantidos por padrão.";
+"IncludePinnedItems" = "Limpar também itens fixados";
+"Cancel" = "Cancelar";
+"AdvancedCleanupDescription" = "Escolha os tipos de conteúdo e uma data limite para limpar.";
+"CleanupBefore" = "Anterior a:";
+"Clear" = "Limpar";
+"ConfirmAdvancedCleanup" = "Confirmar limpeza avançada";
+"Back" = "Voltar";
+"ConfirmCleanup" = "Confirmar limpeza";
+"OptimizeDatabaseDescription" = "Remove dados de conteúdo sem itens de histórico correspondentes e compacta o banco SQLite para liberar espaço não usado. Bancos grandes podem levar um tempo.";
+"Close" = "Fechar";
+"StartOptimization" = "Iniciar otimização";
+"OptimizationSucceeded" = "Otimização concluída. Tamanho do banco de dados: %@ -> %@.";
+"OptimizationFailed" = "Falha na otimização: %@";
+"AdvancedCleanupConfirmationIncludingPinned" = "Serão limpos itens %@ anteriores a %@, incluindo itens fixados. Confirmar?";
+"AdvancedCleanupConfirmationExcludingPinned" = "Serão limpos itens %@ anteriores a %@, excluindo itens fixados. Confirmar?";

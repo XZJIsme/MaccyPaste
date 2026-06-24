@@ -15,3 +15,25 @@
 "HistoryCountSummary" = "%d stavki (%d prikvačenih, %d neprikvačenih)";
 "UnlimitedHistory" = "Neograničeno";
 "UnlimitedHistoryTooltip" = "Nemoj ograničavati broj stavki povijesti koje se čuvaju. Kada je uključeno, polje za broj je onemogućeno.";
+
+"ListSeparator" = ", ";
+"Cleanup" = "Čišćenje:";
+"ClearAll" = "Očisti sve";
+"AdvancedCleanup" = "Napredno čišćenje";
+"OptimizeDatabase" = "Sažmi i optimiziraj bazu podataka";
+"ClearAllDescription" = "Briše spremljenu povijest međuspremnika za datoteke, slike i tekst. Prikvačene stavke zadržavaju se zadano.";
+"IncludePinnedItems" = "Očisti i prikvačene stavke";
+"Cancel" = "Odustani";
+"AdvancedCleanupDescription" = "Odaberite vrste sadržaja i granični datum za čišćenje.";
+"CleanupBefore" = "Starije od:";
+"Clear" = "Očisti";
+"ConfirmAdvancedCleanup" = "Potvrdi napredno čišćenje";
+"Back" = "Natrag";
+"ConfirmCleanup" = "Potvrdi čišćenje";
+"OptimizeDatabaseDescription" = "Uklanja podatke sadržaja bez odgovarajućih stavki povijesti i sažima SQLite bazu za oslobađanje neiskorištenog prostora. Velike baze mogu potrajati.";
+"Close" = "Zatvori";
+"StartOptimization" = "Pokreni optimizaciju";
+"OptimizationSucceeded" = "Optimizacija dovršena. Veličina baze: %@ -> %@.";
+"OptimizationFailed" = "Optimizacija nije uspjela: %@";
+"AdvancedCleanupConfirmationIncludingPinned" = "Očistit će se %@ stavke starije od %@, uključujući prikvačene. Potvrditi?";
+"AdvancedCleanupConfirmationExcludingPinned" = "Očistit će se %@ stavke starije od %@, bez prikvačenih. Potvrditi?";

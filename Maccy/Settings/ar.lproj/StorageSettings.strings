@@ -15,3 +15,25 @@
 "SortByTooltip" = "الافتراضي: وقت النسخة الأخيرة.";
 "UnlimitedHistory" = "غير محدود";
 "UnlimitedHistoryTooltip" = "لا تضع حدًا لعدد عناصر السجل المحفوظة. عند التفعيل، يتم تعطيل حقل العدد.";
+
+"ListSeparator" = "، ";
+"Cleanup" = "التنظيف:";
+"ClearAll" = "تنظيف الكل";
+"AdvancedCleanup" = "تنظيف متقدم";
+"OptimizeDatabase" = "ضغط قاعدة البيانات وتحسينها";
+"ClearAllDescription" = "يحذف سجل الحافظة المحفوظ للملفات والصور والنصوص. يتم الاحتفاظ بالعناصر المثبتة افتراضيًا.";
+"IncludePinnedItems" = "تنظيف العناصر المثبتة أيضًا";
+"Cancel" = "إلغاء";
+"AdvancedCleanupDescription" = "اختر أنواع المحتوى وتاريخًا حدّيًا للتنظيف.";
+"CleanupBefore" = "أقدم من:";
+"Clear" = "تنظيف";
+"ConfirmAdvancedCleanup" = "تأكيد التنظيف المتقدم";
+"Back" = "رجوع";
+"ConfirmCleanup" = "تأكيد التنظيف";
+"OptimizeDatabaseDescription" = "يزيل بيانات المحتوى التي لا تقابلها عناصر سجل ويضغط قاعدة بيانات SQLite لتحرير المساحة غير المستخدمة. قد تستغرق قواعد البيانات الكبيرة بعض الوقت.";
+"Close" = "إغلاق";
+"StartOptimization" = "بدء التحسين";
+"OptimizationSucceeded" = "اكتمل التحسين. حجم قاعدة البيانات: %@ -> %@.";
+"OptimizationFailed" = "فشل التحسين: %@";
+"AdvancedCleanupConfirmationIncludingPinned" = "سيتم تنظيف عناصر %@ الأقدم من %@، بما في ذلك العناصر المثبتة. هل تؤكد؟";
+"AdvancedCleanupConfirmationExcludingPinned" = "سيتم تنظيف عناصر %@ الأقدم من %@، باستثناء العناصر المثبتة. هل تؤكد؟";

@@ -15,3 +15,25 @@
 "SortByTooltip" = "Vaikimisi: Viimase kopeerimise aeg.";
 "UnlimitedHistory" = "Piiramatu";
 "UnlimitedHistoryTooltip" = "Ära piira säilitatavate ajalooüksuste arvu. Kui see on sisse lülitatud, on suuruse väli keelatud.";
+
+"ListSeparator" = ", ";
+"Cleanup" = "Puhastus:";
+"ClearAll" = "Puhasta kõik";
+"AdvancedCleanup" = "Täpsem puhastus";
+"OptimizeDatabase" = "Tihenda ja optimeeri andmebaas";
+"ClearAllDescription" = "Kustutab salvestatud lõikepuhvri ajaloo failide, piltide ja teksti jaoks. Kinnitatud üksused jäetakse vaikimisi alles.";
+"IncludePinnedItems" = "Puhasta ka kinnitatud üksused";
+"Cancel" = "Loobu";
+"AdvancedCleanupDescription" = "Vali puhastatavad sisutüübid ja lõppkuupäev.";
+"CleanupBefore" = "Vanem kui:";
+"Clear" = "Puhasta";
+"ConfirmAdvancedCleanup" = "Kinnita täpsem puhastus";
+"Back" = "Tagasi";
+"ConfirmCleanup" = "Kinnita puhastus";
+"OptimizeDatabaseDescription" = "Eemaldab sisuandmed, millel pole vastavat ajalooüksust, ja tihendab SQLite-andmebaasi kasutamata ruumi vabastamiseks. Suured andmebaasid võivad aega võtta.";
+"Close" = "Sulge";
+"StartOptimization" = "Alusta optimeerimist";
+"OptimizationSucceeded" = "Optimeerimine valmis. Andmebaasi suurus: %@ -> %@.";
+"OptimizationFailed" = "Optimeerimine nurjus: %@";
+"AdvancedCleanupConfirmationIncludingPinned" = "Puhastatakse %@ üksused, mis on vanemad kui %@, sealhulgas kinnitatud üksused. Kinnitada?";
+"AdvancedCleanupConfirmationExcludingPinned" = "Puhastatakse %@ üksused, mis on vanemad kui %@, kinnitatud üksused välja arvatud. Kinnitada?";

@@ -15,3 +15,25 @@
 "SortByTooltip" = "Par défaut : Date de dernière copie.";
 "UnlimitedHistory" = "Illimité";
 "UnlimitedHistoryTooltip" = "Ne pas limiter le nombre d’éléments d’historique à conserver. Lorsque cette option est activée, le champ de taille est désactivé.";
+
+"ListSeparator" = ", ";
+"Cleanup" = "Nettoyage :";
+"ClearAll" = "Tout nettoyer";
+"AdvancedCleanup" = "Nettoyage avancé";
+"OptimizeDatabase" = "Compacter et optimiser la base de données";
+"ClearAllDescription" = "Supprime l’historique enregistré du presse-papiers pour les fichiers, images et textes. Les éléments épinglés sont conservés par défaut.";
+"IncludePinnedItems" = "Nettoyer aussi les éléments épinglés";
+"Cancel" = "Annuler";
+"AdvancedCleanupDescription" = "Choisissez les types de contenu et une date limite à nettoyer.";
+"CleanupBefore" = "Plus ancien que :";
+"Clear" = "Nettoyer";
+"ConfirmAdvancedCleanup" = "Confirmer le nettoyage avancé";
+"Back" = "Retour";
+"ConfirmCleanup" = "Confirmer le nettoyage";
+"OptimizeDatabaseDescription" = "Supprime les données de contenu sans élément d’historique correspondant et compacte la base SQLite pour libérer l’espace inutilisé. Les grandes bases peuvent prendre du temps.";
+"Close" = "Fermer";
+"StartOptimization" = "Démarrer l’optimisation";
+"OptimizationSucceeded" = "Optimisation terminée. Taille de la base : %@ -> %@.";
+"OptimizationFailed" = "Échec de l’optimisation : %@";
+"AdvancedCleanupConfirmationIncludingPinned" = "Les éléments %@ plus anciens que %@ seront nettoyés, y compris les éléments épinglés. Confirmer ?";
+"AdvancedCleanupConfirmationExcludingPinned" = "Les éléments %@ plus anciens que %@ seront nettoyés, sauf les éléments épinglés. Confirmer ?";

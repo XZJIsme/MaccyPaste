@@ -15,3 +15,25 @@
 "SortByTooltip" = "ڈیفالٹ: آخری کاپی کا وقت۔";
 "UnlimitedHistory" = "لامحدود";
 "UnlimitedHistoryTooltip" = "محفوظ رکھی جانے والی تاریخ آئٹمز کی تعداد محدود نہ کریں۔ فعال ہونے پر حجم کا خانہ غیر فعال ہو جاتا ہے۔";
+
+"ListSeparator" = "، ";
+"Cleanup" = "صفائی:";
+"ClearAll" = "سب صاف کریں";
+"AdvancedCleanup" = "اعلیٰ صفائی";
+"OptimizeDatabase" = "ڈیٹابیس کو کمپریس اور بہتر کریں";
+"ClearAllDescription" = "فائلوں، تصاویر اور متن کے لیے محفوظ کلپ بورڈ تاریخ حذف کرتا ہے۔ پن شدہ آئٹمز بطور ڈیفالٹ محفوظ رہتے ہیں۔";
+"IncludePinnedItems" = "پن شدہ آئٹمز بھی صاف کریں";
+"Cancel" = "منسوخ";
+"AdvancedCleanupDescription" = "صاف کرنے کے لیے مواد کی اقسام اور آخری تاریخ منتخب کریں۔";
+"CleanupBefore" = "اس سے پرانا:";
+"Clear" = "صاف کریں";
+"ConfirmAdvancedCleanup" = "اعلیٰ صفائی کی تصدیق";
+"Back" = "واپس";
+"ConfirmCleanup" = "صفائی کی تصدیق";
+"OptimizeDatabaseDescription" = "ایسے مواد کا ڈیٹا ہٹاتا ہے جس کا کوئی متعلقہ تاریخی آئٹم نہیں، اور SQLite ڈیٹابیس کو کمپریس کر کے غیر استعمال شدہ جگہ آزاد کرتا ہے۔ بڑے ڈیٹابیس میں وقت لگ سکتا ہے۔";
+"Close" = "بند کریں";
+"StartOptimization" = "بہتری شروع کریں";
+"OptimizationSucceeded" = "بہتری مکمل۔ ڈیٹابیس سائز: %@ -> %@.";
+"OptimizationFailed" = "بہتری ناکام: %@";
+"AdvancedCleanupConfirmationIncludingPinned" = "%@ آئٹمز جو %@ سے پرانے ہیں، پن شدہ آئٹمز سمیت صاف کیے جائیں گے۔ تصدیق؟";
+"AdvancedCleanupConfirmationExcludingPinned" = "%@ آئٹمز جو %@ سے پرانے ہیں، پن شدہ آئٹمز کے بغیر صاف کیے جائیں گے۔ تصدیق؟";

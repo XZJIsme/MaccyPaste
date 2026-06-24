@@ -15,3 +15,25 @@
 "SortByTooltip" = "デフォルト：最後にコピーした日時。";
 "UnlimitedHistory" = "無制限";
 "UnlimitedHistoryTooltip" = "保持する履歴項目数を制限しません。有効にすると、数値フィールドは無効になります。";
+
+"ListSeparator" = "、";
+"Cleanup" = "クリーンアップ:";
+"ClearAll" = "すべて消去";
+"AdvancedCleanup" = "詳細クリーンアップ";
+"OptimizeDatabase" = "データベースを圧縮して最適化";
+"ClearAllDescription" = "保存済みのファイル、画像、テキストのクリップボード履歴を削除します。ピン留め項目は既定で保持されます。";
+"IncludePinnedItems" = "ピン留め項目も消去";
+"Cancel" = "キャンセル";
+"AdvancedCleanupDescription" = "消去する内容の種類と基準日を選択します。";
+"CleanupBefore" = "次の日付より前:";
+"Clear" = "消去";
+"ConfirmAdvancedCleanup" = "詳細クリーンアップの確認";
+"Back" = "戻る";
+"ConfirmCleanup" = "消去を確認";
+"OptimizeDatabaseDescription" = "対応する履歴項目がない内容データを削除し、SQLite データベースを圧縮して未使用領域を解放します。大きなデータベースでは時間がかかる場合があります。";
+"Close" = "閉じる";
+"StartOptimization" = "最適化を開始";
+"OptimizationSucceeded" = "最適化が完了しました。データベースサイズ: %@ -> %@。";
+"OptimizationFailed" = "最適化に失敗しました: %@";
+"AdvancedCleanupConfirmationIncludingPinned" = "%@ の項目のうち %@ より古いものを、ピン留め項目を含めて消去します。続行しますか?";
+"AdvancedCleanupConfirmationExcludingPinned" = "%@ の項目のうち %@ より古いものを、ピン留め項目を除いて消去します。続行しますか?";

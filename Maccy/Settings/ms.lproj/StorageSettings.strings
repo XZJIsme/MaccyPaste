@@ -15,3 +15,25 @@
 "SortByTooltip" = "Lalai: Masa salinan terakhir.";
 "UnlimitedHistory" = "Tanpa had";
 "UnlimitedHistoryTooltip" = "Jangan hadkan bilangan item sejarah untuk disimpan. Apabila dihidupkan, medan saiz dinyahdayakan.";
+
+"ListSeparator" = ", ";
+"Cleanup" = "Pembersihan:";
+"ClearAll" = "Bersihkan Semua";
+"AdvancedCleanup" = "Pembersihan Lanjutan";
+"OptimizeDatabase" = "Padatkan dan Optimumkan Pangkalan Data";
+"ClearAllDescription" = "Memadam sejarah papan klip tersimpan untuk fail, imej dan teks. Item yang dipinkan disimpan secara lalai.";
+"IncludePinnedItems" = "Bersihkan juga item dipinkan";
+"Cancel" = "Batal";
+"AdvancedCleanupDescription" = "Pilih jenis kandungan dan tarikh had untuk dibersihkan.";
+"CleanupBefore" = "Lebih lama daripada:";
+"Clear" = "Bersihkan";
+"ConfirmAdvancedCleanup" = "Sahkan Pembersihan Lanjutan";
+"Back" = "Kembali";
+"ConfirmCleanup" = "Sahkan Pembersihan";
+"OptimizeDatabaseDescription" = "Membuang data kandungan tanpa item sejarah sepadan dan memadatkan pangkalan data SQLite untuk melepaskan ruang tidak digunakan. Pangkalan data besar mungkin mengambil masa.";
+"Close" = "Tutup";
+"StartOptimization" = "Mulakan Pengoptimuman";
+"OptimizationSucceeded" = "Pengoptimuman selesai. Saiz pangkalan data: %@ -> %@.";
+"OptimizationFailed" = "Pengoptimuman gagal: %@";
+"AdvancedCleanupConfirmationIncludingPinned" = "Akan membersihkan item %@ yang lebih lama daripada %@, termasuk item dipinkan. Sahkan?";
+"AdvancedCleanupConfirmationExcludingPinned" = "Akan membersihkan item %@ yang lebih lama daripada %@, kecuali item dipinkan. Sahkan?";

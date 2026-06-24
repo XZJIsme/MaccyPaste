@@ -126,6 +126,7 @@ class AppState: Sendable {
           ) {
             LocalizedView {
               StorageSettingsPane()
+                .environment(self)
             }
           },
           Settings.Pane(

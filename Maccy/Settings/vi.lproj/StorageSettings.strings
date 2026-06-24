@@ -15,3 +15,25 @@
 "HistoryCountSummary" = "%d mục (%d đã ghim, %d chưa ghim)";
 "UnlimitedHistory" = "Không giới hạn";
 "UnlimitedHistoryTooltip" = "Không giới hạn số mục lịch sử cần giữ lại. Khi bật, trường số lượng sẽ bị vô hiệu hóa.";
+
+"ListSeparator" = ", ";
+"Cleanup" = "Dọn dẹp:";
+"ClearAll" = "Dọn tất cả";
+"AdvancedCleanup" = "Dọn dẹp nâng cao";
+"OptimizeDatabase" = "Nén và tối ưu cơ sở dữ liệu";
+"ClearAllDescription" = "Xóa lịch sử bảng nhớ tạm đã lưu cho tệp, hình ảnh và văn bản. Mục đã ghim được giữ lại theo mặc định.";
+"IncludePinnedItems" = "Dọn cả mục đã ghim";
+"Cancel" = "Hủy";
+"AdvancedCleanupDescription" = "Chọn loại nội dung và ngày giới hạn để dọn dẹp.";
+"CleanupBefore" = "Cũ hơn:";
+"Clear" = "Dọn";
+"ConfirmAdvancedCleanup" = "Xác nhận dọn dẹp nâng cao";
+"Back" = "Quay lại";
+"ConfirmCleanup" = "Xác nhận dọn dẹp";
+"OptimizeDatabaseDescription" = "Xóa dữ liệu nội dung không có mục lịch sử tương ứng và nén cơ sở dữ liệu SQLite để giải phóng dung lượng chưa dùng. Cơ sở dữ liệu lớn có thể mất một lúc.";
+"Close" = "Đóng";
+"StartOptimization" = "Bắt đầu tối ưu";
+"OptimizationSucceeded" = "Tối ưu hoàn tất. Kích thước cơ sở dữ liệu: %@ -> %@.";
+"OptimizationFailed" = "Tối ưu thất bại: %@";
+"AdvancedCleanupConfirmationIncludingPinned" = "Sắp dọn các mục %@ cũ hơn %@, bao gồm mục đã ghim. Xác nhận?";
+"AdvancedCleanupConfirmationExcludingPinned" = "Sắp dọn các mục %@ cũ hơn %@, không bao gồm mục đã ghim. Xác nhận?";

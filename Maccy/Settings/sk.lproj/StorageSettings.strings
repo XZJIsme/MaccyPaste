@@ -15,3 +15,25 @@
 "SortByTooltip" = "Predvolené: Čas posledného kopírovania.";
 "UnlimitedHistory" = "Neobmedzene";
 "UnlimitedHistoryTooltip" = "Neobmedzovať počet uchovávaných položiek histórie. Keď je zapnuté, pole veľkosti je vypnuté.";
+
+"ListSeparator" = ", ";
+"Cleanup" = "Čistenie:";
+"ClearAll" = "Vyčistiť všetko";
+"AdvancedCleanup" = "Pokročilé čistenie";
+"OptimizeDatabase" = "Kompaktovať a optimalizovať databázu";
+"ClearAllDescription" = "Odstráni uloženú históriu schránky pre súbory, obrázky a text. Pripnuté položky sa predvolene ponechajú.";
+"IncludePinnedItems" = "Vyčistiť aj pripnuté položky";
+"Cancel" = "Zrušiť";
+"AdvancedCleanupDescription" = "Vyberte typy obsahu a hraničný dátum čistenia.";
+"CleanupBefore" = "Staršie ako:";
+"Clear" = "Vyčistiť";
+"ConfirmAdvancedCleanup" = "Potvrdiť pokročilé čistenie";
+"Back" = "Späť";
+"ConfirmCleanup" = "Potvrdiť čistenie";
+"OptimizeDatabaseDescription" = "Odstráni dáta obsahu bez zodpovedajúcich položiek histórie a skompaktuje databázu SQLite, aby uvoľnila nepoužité miesto. Veľké databázy môžu chvíľu trvať.";
+"Close" = "Zavrieť";
+"StartOptimization" = "Spustiť optimalizáciu";
+"OptimizationSucceeded" = "Optimalizácia dokončená. Veľkosť databázy: %@ -> %@.";
+"OptimizationFailed" = "Optimalizácia zlyhala: %@";
+"AdvancedCleanupConfirmationIncludingPinned" = "Vyčistia sa položky %@ staršie ako %@ vrátane pripnutých. Potvrdiť?";
+"AdvancedCleanupConfirmationExcludingPinned" = "Vyčistia sa položky %@ staršie ako %@ bez pripnutých. Potvrdiť?";

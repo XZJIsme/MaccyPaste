@@ -15,3 +15,25 @@
 "HistoryCountSummary" = "%d elements (%d fixats, %d no fixats)";
 "UnlimitedHistory" = "Il·limitat";
 "UnlimitedHistoryTooltip" = "No limitis el nombre d’elements de l’historial que es conserven. Quan està activat, el camp de mida queda desactivat.";
+
+"ListSeparator" = ", ";
+"Cleanup" = "Neteja:";
+"ClearAll" = "Neteja-ho tot";
+"AdvancedCleanup" = "Neteja avançada";
+"OptimizeDatabase" = "Compacta i optimitza la base de dades";
+"ClearAllDescription" = "Suprimeix l’historial del porta-retalls desat per a fitxers, imatges i text. Els elements fixats es conserven per defecte.";
+"IncludePinnedItems" = "Neteja també els elements fixats";
+"Cancel" = "Cancel·la";
+"AdvancedCleanupDescription" = "Trieu els tipus de contingut i una data límit per netejar.";
+"CleanupBefore" = "Més antic que:";
+"Clear" = "Neteja";
+"ConfirmAdvancedCleanup" = "Confirma la neteja avançada";
+"Back" = "Enrere";
+"ConfirmCleanup" = "Confirma la neteja";
+"OptimizeDatabaseDescription" = "Elimina dades de contingut sense elements d’historial corresponents i compacta la base SQLite per alliberar espai no utilitzat. Les bases grans poden trigar.";
+"Close" = "Tanca";
+"StartOptimization" = "Inicia l’optimització";
+"OptimizationSucceeded" = "Optimització completada. Mida de la base de dades: %@ -> %@.";
+"OptimizationFailed" = "L’optimització ha fallat: %@";
+"AdvancedCleanupConfirmationIncludingPinned" = "Es netejaran els elements %@ anteriors a %@, inclosos els fixats. Confirmeu?";
+"AdvancedCleanupConfirmationExcludingPinned" = "Es netejaran els elements %@ anteriors a %@, exclosos els fixats. Confirmeu?";

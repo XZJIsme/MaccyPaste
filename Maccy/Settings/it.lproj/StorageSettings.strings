@@ -15,3 +15,25 @@
 "SortByTooltip" = "Predefinito: tempo dell’ultima copia.";
 "UnlimitedHistory" = "Illimitato";
 "UnlimitedHistoryTooltip" = "Non limitare il numero di elementi della cronologia da conservare. Quando è attivo, il campo della dimensione è disabilitato.";
+
+"ListSeparator" = ", ";
+"Cleanup" = "Pulizia:";
+"ClearAll" = "Pulisci tutto";
+"AdvancedCleanup" = "Pulizia avanzata";
+"OptimizeDatabase" = "Compatta e ottimizza database";
+"ClearAllDescription" = "Elimina la cronologia salvata degli appunti per file, immagini e testo. Gli elementi fissati vengono mantenuti per impostazione predefinita.";
+"IncludePinnedItems" = "Pulisci anche gli elementi fissati";
+"Cancel" = "Annulla";
+"AdvancedCleanupDescription" = "Scegli i tipi di contenuto e una data limite da pulire.";
+"CleanupBefore" = "Prima del:";
+"Clear" = "Pulisci";
+"ConfirmAdvancedCleanup" = "Conferma pulizia avanzata";
+"Back" = "Indietro";
+"ConfirmCleanup" = "Conferma pulizia";
+"OptimizeDatabaseDescription" = "Rimuove dati di contenuto senza voci di cronologia corrispondenti e compatta il database SQLite per liberare spazio inutilizzato. I database grandi possono richiedere tempo.";
+"Close" = "Chiudi";
+"StartOptimization" = "Avvia ottimizzazione";
+"OptimizationSucceeded" = "Ottimizzazione completata. Dimensione database: %@ -> %@.";
+"OptimizationFailed" = "Ottimizzazione non riuscita: %@";
+"AdvancedCleanupConfirmationIncludingPinned" = "Verranno puliti gli elementi %@ precedenti a %@, inclusi quelli fissati. Confermi?";
+"AdvancedCleanupConfirmationExcludingPinned" = "Verranno puliti gli elementi %@ precedenti a %@, esclusi quelli fissati. Confermi?";

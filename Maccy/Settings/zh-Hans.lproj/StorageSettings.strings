@@ -15,3 +15,25 @@
 "SortByTooltip" = "默认：上次复制时间。";
 "UnlimitedHistory" = "无限";
 "UnlimitedHistoryTooltip" = "不限制保留的历史记录数量。开启后，左侧数量设置将不可编辑。";
+
+"ListSeparator" = "、";
+"Cleanup" = "清理：";
+"ClearAll" = "清理所有";
+"AdvancedCleanup" = "高级清理";
+"OptimizeDatabase" = "压缩并优化数据库";
+"ClearAllDescription" = "删除已保存的文件、图像和文本剪贴板历史记录。默认保留置顶项目。";
+"IncludePinnedItems" = "同时清理置顶项目";
+"Cancel" = "取消";
+"AdvancedCleanupDescription" = "选择要清理的内容类型和截止日期。";
+"CleanupBefore" = "早于：";
+"Clear" = "清理";
+"ConfirmAdvancedCleanup" = "确认高级清理";
+"Back" = "返回";
+"ConfirmCleanup" = "确认清理";
+"OptimizeDatabaseDescription" = "清理没有对应历史记录的内容数据，并压缩 SQLite 数据库以释放未使用空间。数据库较大时可能需要等待一会儿。";
+"Close" = "关闭";
+"StartOptimization" = "开始优化";
+"OptimizationSucceeded" = "优化完成。数据库大小：%@ -> %@。";
+"OptimizationFailed" = "优化失败：%@";
+"AdvancedCleanupConfirmationIncludingPinned" = "即将清理%@中早于 %@ 的项目，包括置顶项目。是否确认？";
+"AdvancedCleanupConfirmationExcludingPinned" = "即将清理%@中早于 %@ 的项目，不包括置顶项目。是否确认？";

@@ -15,3 +15,25 @@
 "SortByTooltip" = "Standaard: Tijd van laatste kopie.";
 "UnlimitedHistory" = "Onbeperkt";
 "UnlimitedHistoryTooltip" = "Beperk het aantal te bewaren geschiedenisitems niet. Wanneer ingeschakeld, is het aantalveld uitgeschakeld.";
+
+"ListSeparator" = ", ";
+"Cleanup" = "Opschonen:";
+"ClearAll" = "Alles opschonen";
+"AdvancedCleanup" = "Geavanceerd opschonen";
+"OptimizeDatabase" = "Database comprimeren en optimaliseren";
+"ClearAllDescription" = "Verwijdert opgeslagen klembordgeschiedenis voor bestanden, afbeeldingen en tekst. Vastgezette items blijven standaard behouden.";
+"IncludePinnedItems" = "Ook vastgezette items opschonen";
+"Cancel" = "Annuleren";
+"AdvancedCleanupDescription" = "Kies inhoudstypen en een datumgrens om op te schonen.";
+"CleanupBefore" = "Ouder dan:";
+"Clear" = "Opschonen";
+"ConfirmAdvancedCleanup" = "Geavanceerd opschonen bevestigen";
+"Back" = "Terug";
+"ConfirmCleanup" = "Opschonen bevestigen";
+"OptimizeDatabaseDescription" = "Verwijdert inhoudsgegevens zonder bijbehorende geschiedenisitems en comprimeert de SQLite-database om ongebruikte ruimte vrij te maken. Grote databases kunnen even duren.";
+"Close" = "Sluiten";
+"StartOptimization" = "Optimalisatie starten";
+"OptimizationSucceeded" = "Optimalisatie voltooid. Databasegrootte: %@ -> %@.";
+"OptimizationFailed" = "Optimalisatie mislukt: %@";
+"AdvancedCleanupConfirmationIncludingPinned" = "%@-items ouder dan %@ worden opgeschoond, inclusief vastgezette items. Bevestigen?";
+"AdvancedCleanupConfirmationExcludingPinned" = "%@-items ouder dan %@ worden opgeschoond, zonder vastgezette items. Bevestigen?";

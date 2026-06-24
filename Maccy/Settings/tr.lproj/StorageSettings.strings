@@ -15,3 +15,25 @@
 "SortByTooltip" = "Saptanmış: Son kopyanın zamanı.";
 "UnlimitedHistory" = "Sınırsız";
 "UnlimitedHistoryTooltip" = "Saklanacak geçmiş öğesi sayısını sınırlama. Etkinleştirildiğinde sayı alanı devre dışı bırakılır.";
+
+"ListSeparator" = ", ";
+"Cleanup" = "Temizleme:";
+"ClearAll" = "Tümünü Temizle";
+"AdvancedCleanup" = "Gelişmiş Temizleme";
+"OptimizeDatabase" = "Veritabanını Sıkıştır ve Optimize Et";
+"ClearAllDescription" = "Dosyalar, görüntüler ve metin için kaydedilmiş pano geçmişini siler. Sabitlenmiş öğeler varsayılan olarak korunur.";
+"IncludePinnedItems" = "Sabitlenmiş öğeleri de temizle";
+"Cancel" = "İptal";
+"AdvancedCleanupDescription" = "Temizlenecek içerik türlerini ve kesme tarihini seçin.";
+"CleanupBefore" = "Şundan eski:";
+"Clear" = "Temizle";
+"ConfirmAdvancedCleanup" = "Gelişmiş Temizlemeyi Onayla";
+"Back" = "Geri";
+"ConfirmCleanup" = "Temizlemeyi Onayla";
+"OptimizeDatabaseDescription" = "Eşleşen geçmiş öğesi olmayan içerik verilerini kaldırır ve kullanılmayan alanı boşaltmak için SQLite veritabanını sıkıştırır. Büyük veritabanları biraz zaman alabilir.";
+"Close" = "Kapat";
+"StartOptimization" = "Optimizasyonu Başlat";
+"OptimizationSucceeded" = "Optimizasyon tamamlandı. Veritabanı boyutu: %@ -> %@.";
+"OptimizationFailed" = "Optimizasyon başarısız: %@";
+"AdvancedCleanupConfirmationIncludingPinned" = "%@ öğeleri %@ tarihinden eskiyse, sabitlenmiş öğeler dahil temizlenecek. Onaylıyor musunuz?";
+"AdvancedCleanupConfirmationExcludingPinned" = "%@ öğeleri %@ tarihinden eskiyse, sabitlenmiş öğeler hariç temizlenecek. Onaylıyor musunuz?";

@@ -15,6 +15,7 @@ class History: ItemsContainer { // swiftlint:disable:this type_body_length
 
   var items: [HistoryItemDecorator] = []
   var pasteStack: PasteStack?
+  var storageStatsVersion = 0
 
   var pinnedItems: [HistoryItemDecorator] { items.filter(\.isPinned) }
   var unpinnedItems: [HistoryItemDecorator] { items.filter(\.isUnpinned) }
@@ -435,6 +436,7 @@ class History: ItemsContainer { // swiftlint:disable:this type_body_length
       return
     }
 
+    var didDeleteItems = false
     let fetchOffset = historyLimitFetchOffset(maxSize: maxSize, preserving: itemToPreserve)
     while true {
       var descriptor = FetchDescriptor<HistoryItem>(
@@ -458,11 +460,16 @@ class History: ItemsContainer { // swiftlint:disable:this type_body_length
       }
 
       removeFromLoadedItems(deletable)
-      deletable.forEach(Storage.shared.context.delete)
+      deletable.forEach(deleteItemAndContents)
+      deleteOrphanedContents()
       Storage.shared.context.processPendingChanges()
+      didDeleteItems = true
     }
 
     try? Storage.shared.context.save()
+    if didDeleteItems {
+      markStorageStatsChanged()
+    }
   }
 
   @MainActor
@@ -502,6 +509,7 @@ class History: ItemsContainer { // swiftlint:disable:this type_body_length
     Storage.shared.context.insert(item)
     Storage.shared.context.processPendingChanges()
     try? Storage.shared.context.save()
+    markStorageStatsChanged()
   }
 
   @discardableResult
@@ -516,7 +524,9 @@ class History: ItemsContainer { // swiftlint:disable:this type_body_length
 
     var removedItemIndex: Int?
     if let existingHistoryItem = findSimilarItem(item) {
-      if isModified(item) == nil {
+      let modifiedItem = isModified(item)
+      let reusesExistingContents = modifiedItem == nil
+      if reusesExistingContents {
         item.contents = existingHistoryItem.contents
       }
       item.firstCopiedAt = existingHistoryItem.firstCopiedAt
@@ -527,6 +537,11 @@ class History: ItemsContainer { // swiftlint:disable:this type_body_length
         item.application = existingHistoryItem.application
       }
       logger.info("Removing duplicate item '\(item.title)'")
+      if !reusesExistingContents {
+        Array(existingHistoryItem.contents).forEach {
+          Storage.shared.context.delete($0)
+        }
+      }
       Storage.shared.context.delete(existingHistoryItem)
       removedItemIndex = all.firstIndex(where: { $0.item == existingHistoryItem })
       if let removedItemIndex {
@@ -595,20 +610,23 @@ class History: ItemsContainer { // swiftlint:disable:this type_body_length
       all.removeAll(where: \.isUnpinned)
       sessionLog.removeValues { $0.pin == nil }
       items = all
+      resetUnpinnedPagingState()
 
       try? Storage.shared.context.transaction {
-        try? Storage.shared.context.delete(
-          model: HistoryItem.self,
-          where: #Predicate { $0.pin == nil }
-        )
         try? Storage.shared.context.delete(
           model: HistoryItemContent.self,
           where: #Predicate { $0.item?.pin == nil }
         )
+        try? Storage.shared.context.delete(
+          model: HistoryItem.self,
+          where: #Predicate { $0.pin == nil }
+        )
+        deleteOrphanedContents()
       }
       Storage.shared.context.processPendingChanges()
       try? Storage.shared.context.save()
     }
+    markStorageStatsChanged()
 
     Clipboard.shared.clear()
     AppState.shared.popup.close()
@@ -619,24 +637,103 @@ class History: ItemsContainer { // swiftlint:disable:this type_body_length
 
   @MainActor
   func clearAll() {
-    withLogging("Clearing all history") {
-      all.forEach { item in
-        cleanup(item)
-      }
-      all.removeAll()
-      sessionLog.removeAll()
-      items = all
-
-      try? Storage.shared.context.delete(model: HistoryItem.self)
-      Storage.shared.context.processPendingChanges()
-      try? Storage.shared.context.save()
-    }
+    clearSavedRecords(includePinned: true)
 
     Clipboard.shared.clear()
     AppState.shared.popup.close()
+  }
+
+  @MainActor
+  func clearSavedRecords(includePinned: Bool = false) {
+    withLogging("Clearing saved history records") {
+      let matchingDecorators = all.filter { includePinned || $0.isUnpinned }
+      let matchingSet = Set(matchingDecorators.map { ObjectIdentifier($0.item) })
+
+      matchingDecorators.forEach { item in
+        cleanup(item)
+      }
+      all.removeAll { matchingSet.contains(ObjectIdentifier($0.item)) }
+      if includePinned {
+        sessionLog.removeAll()
+      } else {
+        sessionLog.removeValues { $0.pin == nil }
+      }
+      items = all
+      resetUnpinnedPagingState()
+
+      if includePinned {
+        try? Storage.shared.context.delete(model: HistoryItemContent.self)
+        try? Storage.shared.context.delete(model: HistoryItem.self)
+      } else {
+        try? Storage.shared.context.delete(
+          model: HistoryItemContent.self,
+          where: #Predicate { $0.item?.pin == nil }
+        )
+        try? Storage.shared.context.delete(
+          model: HistoryItem.self,
+          where: #Predicate { $0.pin == nil }
+        )
+      }
+      deleteOrphanedContents()
+      Storage.shared.context.processPendingChanges()
+      try? Storage.shared.context.save()
+    }
+    markStorageStatsChanged()
+
     Task {
       AppState.shared.popup.needsResize = true
     }
+  }
+
+  @MainActor
+  func clearRecords(types: [NSPasteboard.PasteboardType], before date: Date? = nil, includePinned: Bool = false) {
+    guard !types.isEmpty else { return }
+
+    withLogging("Clearing selected history records") {
+      let candidates: [HistoryItem]
+      if let date {
+        let descriptor = FetchDescriptor<HistoryItem>(
+          predicate: #Predicate { $0.lastCopiedAt < date }
+        )
+        candidates = (try? Storage.shared.context.fetch(descriptor)) ?? []
+      } else {
+        candidates = (try? Storage.shared.context.fetch(FetchDescriptor<HistoryItem>())) ?? []
+      }
+
+      let matchingItems = candidates.filter { item in
+        (includePinned || item.pin == nil) && item.containsContent(types: types)
+      }
+      let matchingSet = Set(matchingItems.map(ObjectIdentifier.init))
+
+      all.forEach { item in
+        if matchingSet.contains(ObjectIdentifier(item.item)) {
+          cleanup(item)
+        }
+      }
+      all.removeAll { matchingSet.contains(ObjectIdentifier($0.item)) }
+      items.removeAll { matchingSet.contains(ObjectIdentifier($0.item)) }
+      sessionLog.removeValues { matchingSet.contains(ObjectIdentifier($0)) }
+
+      matchingItems.forEach(deleteItemAndContents)
+      deleteOrphanedContents()
+      Storage.shared.context.processPendingChanges()
+      try? Storage.shared.context.save()
+    }
+    markStorageStatsChanged()
+
+    updateShortcuts()
+    Task {
+      AppState.shared.popup.needsResize = true
+    }
+  }
+
+  @MainActor
+  func optimizeStorage() throws {
+    deleteOrphanedContents()
+    Storage.shared.context.processPendingChanges()
+    try Storage.shared.context.save()
+    try Storage.shared.vacuum()
+    markStorageStatsChanged()
   }
 
   @MainActor
@@ -645,10 +742,12 @@ class History: ItemsContainer { // swiftlint:disable:this type_body_length
 
     cleanup(item)
     withLogging("Removing history item") {
-      Storage.shared.context.delete(item.item)
+      deleteItemAndContents(item.item)
+      deleteOrphanedContents()
       Storage.shared.context.processPendingChanges()
       try? Storage.shared.context.save()
     }
+    markStorageStatsChanged()
 
     all.removeAll { $0 == item }
     items.removeAll { $0 == item }
@@ -663,6 +762,22 @@ class History: ItemsContainer { // swiftlint:disable:this type_body_length
   @MainActor
   private func cleanup(_ item: HistoryItemDecorator) {
     item.cleanupImages()
+  }
+
+  @MainActor
+  private func deleteOrphanedContents() {
+    try? Storage.shared.context.delete(
+      model: HistoryItemContent.self,
+      where: #Predicate { $0.item == nil }
+    )
+  }
+
+  @MainActor
+  private func deleteItemAndContents(_ item: HistoryItem) {
+    Array(item.contents).forEach {
+      Storage.shared.context.delete($0)
+    }
+    Storage.shared.context.delete(item)
   }
 
   private func currentModifierFlags() -> NSEvent.ModifierFlags {
@@ -802,6 +917,7 @@ class History: ItemsContainer { // swiftlint:disable:this type_body_length
 
     let wasPinned = item.isPinned
     item.togglePin()
+    markStorageStatsChanged()
 
     if wasPinned, item.isUnpinned {
       limitHistorySize(to: Defaults[.size] - 1, preserving: item.item)
@@ -821,6 +937,11 @@ class History: ItemsContainer { // swiftlint:disable:this type_body_length
     if item.isUnpinned {
       AppState.shared.navigator.scrollTarget = item.id
     }
+  }
+
+  @MainActor
+  private func markStorageStatsChanged() {
+    storageStatsVersion += 1
   }
 
   @MainActor

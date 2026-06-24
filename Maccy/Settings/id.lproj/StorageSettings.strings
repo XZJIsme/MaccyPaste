@@ -15,3 +15,25 @@
 "SortByTooltip" = "Bawaan: Waktu salinan terakhir.";
 "UnlimitedHistory" = "Tak terbatas";
 "UnlimitedHistoryTooltip" = "Jangan batasi jumlah item riwayat yang disimpan. Saat aktif, kolom jumlah dinonaktifkan.";
+
+"ListSeparator" = ", ";
+"Cleanup" = "Pembersihan:";
+"ClearAll" = "Bersihkan Semua";
+"AdvancedCleanup" = "Pembersihan Lanjutan";
+"OptimizeDatabase" = "Padatkan dan Optimalkan Database";
+"ClearAllDescription" = "Menghapus riwayat papan klip tersimpan untuk file, gambar, dan teks. Item yang disematkan tetap disimpan secara default.";
+"IncludePinnedItems" = "Bersihkan juga item yang disematkan";
+"Cancel" = "Batal";
+"AdvancedCleanupDescription" = "Pilih jenis konten dan tanggal batas untuk dibersihkan.";
+"CleanupBefore" = "Lebih lama dari:";
+"Clear" = "Bersihkan";
+"ConfirmAdvancedCleanup" = "Konfirmasi Pembersihan Lanjutan";
+"Back" = "Kembali";
+"ConfirmCleanup" = "Konfirmasi Pembersihan";
+"OptimizeDatabaseDescription" = "Menghapus data konten tanpa item riwayat yang sesuai dan memadatkan database SQLite untuk mengosongkan ruang tak terpakai. Database besar mungkin memerlukan waktu.";
+"Close" = "Tutup";
+"StartOptimization" = "Mulai Optimasi";
+"OptimizationSucceeded" = "Optimasi selesai. Ukuran database: %@ -> %@.";
+"OptimizationFailed" = "Optimasi gagal: %@";
+"AdvancedCleanupConfirmationIncludingPinned" = "Akan membersihkan item %@ yang lebih lama dari %@, termasuk item yang disematkan. Konfirmasi?";
+"AdvancedCleanupConfirmationExcludingPinned" = "Akan membersihkan item %@ yang lebih lama dari %@, kecuali item yang disematkan. Konfirmasi?";

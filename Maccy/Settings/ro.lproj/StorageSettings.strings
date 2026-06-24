@@ -15,3 +15,25 @@
 "HistoryCountSummary" = "%d elemente (%d fixate, %d nefixate)";
 "UnlimitedHistory" = "Nelimitat";
 "UnlimitedHistoryTooltip" = "Nu limita numărul de elemente din istoric de păstrat. Când este activat, câmpul pentru număr este dezactivat.";
+
+"ListSeparator" = ", ";
+"Cleanup" = "Curățare:";
+"ClearAll" = "Curăță tot";
+"AdvancedCleanup" = "Curățare avansată";
+"OptimizeDatabase" = "Compactează și optimizează baza de date";
+"ClearAllDescription" = "Șterge istoricul salvat al clipboardului pentru fișiere, imagini și text. Elementele fixate sunt păstrate implicit.";
+"IncludePinnedItems" = "Curăță și elementele fixate";
+"Cancel" = "Anulează";
+"AdvancedCleanupDescription" = "Alege tipurile de conținut și o dată limită pentru curățare.";
+"CleanupBefore" = "Mai vechi de:";
+"Clear" = "Curăță";
+"ConfirmAdvancedCleanup" = "Confirmă curățarea avansată";
+"Back" = "Înapoi";
+"ConfirmCleanup" = "Confirmă curățarea";
+"OptimizeDatabaseDescription" = "Elimină datele de conținut fără elemente de istoric corespunzătoare și compactează baza SQLite pentru a elibera spațiu neutilizat. Bazele mari pot dura.";
+"Close" = "Închide";
+"StartOptimization" = "Pornește optimizarea";
+"OptimizationSucceeded" = "Optimizare finalizată. Dimensiunea bazei de date: %@ -> %@.";
+"OptimizationFailed" = "Optimizare eșuată: %@";
+"AdvancedCleanupConfirmationIncludingPinned" = "Se vor curăța elementele %@ mai vechi de %@, inclusiv cele fixate. Confirmi?";
+"AdvancedCleanupConfirmationExcludingPinned" = "Se vor curăța elementele %@ mai vechi de %@, fără cele fixate. Confirmi?";

@@ -15,3 +15,25 @@
 "HistoryCountSummary" = "%d รายการ (ปักหมุด %d, ไม่ได้ปักหมุด %d)";
 "UnlimitedHistory" = "ไม่จำกัด";
 "UnlimitedHistoryTooltip" = "ไม่จำกัดจำนวนรายการประวัติที่จะเก็บไว้ เมื่อเปิดใช้ ช่องจำนวนจะถูกปิดใช้งาน";
+
+"ListSeparator" = ", ";
+"Cleanup" = "ล้างข้อมูล:";
+"ClearAll" = "ล้างทั้งหมด";
+"AdvancedCleanup" = "ล้างขั้นสูง";
+"OptimizeDatabase" = "บีบอัดและปรับฐานข้อมูล";
+"ClearAllDescription" = "ลบประวัติคลิปบอร์ดที่บันทึกไว้สำหรับไฟล์ รูปภาพ และข้อความ รายการที่ปักหมุดจะถูกเก็บไว้ตามค่าเริ่มต้น";
+"IncludePinnedItems" = "ล้างรายการที่ปักหมุดด้วย";
+"Cancel" = "ยกเลิก";
+"AdvancedCleanupDescription" = "เลือกชนิดเนื้อหาและวันที่ตัดยอดสำหรับการล้าง";
+"CleanupBefore" = "เก่ากว่า:";
+"Clear" = "ล้าง";
+"ConfirmAdvancedCleanup" = "ยืนยันการล้างขั้นสูง";
+"Back" = "กลับ";
+"ConfirmCleanup" = "ยืนยันการล้าง";
+"OptimizeDatabaseDescription" = "ลบข้อมูลเนื้อหาที่ไม่มีรายการประวัติที่ตรงกัน และบีบอัดฐานข้อมูล SQLite เพื่อคืนพื้นที่ที่ไม่ได้ใช้ ฐานข้อมูลขนาดใหญ่อาจใช้เวลาสักครู่";
+"Close" = "ปิด";
+"StartOptimization" = "เริ่มปรับให้เหมาะสม";
+"OptimizationSucceeded" = "ปรับให้เหมาะสมเสร็จแล้ว ขนาดฐานข้อมูล: %@ -> %@.";
+"OptimizationFailed" = "ปรับให้เหมาะสมล้มเหลว: %@";
+"AdvancedCleanupConfirmationIncludingPinned" = "กำลังจะล้างรายการ %@ ที่เก่ากว่า %@ รวมถึงรายการที่ปักหมุด ยืนยันหรือไม่?";
+"AdvancedCleanupConfirmationExcludingPinned" = "กำลังจะล้างรายการ %@ ที่เก่ากว่า %@ โดยไม่รวมรายการที่ปักหมุด ยืนยันหรือไม่?";

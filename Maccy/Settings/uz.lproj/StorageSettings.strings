@@ -15,3 +15,25 @@
 "Text" = "Matn";
 "UnlimitedHistory" = "Cheksiz";
 "UnlimitedHistoryTooltip" = "Saqlanadigan tarix elementlari sonini cheklamang. Yoqilganda son maydoni o‘chiriladi.";
+
+"ListSeparator" = ", ";
+"Cleanup" = "Tozalash:";
+"ClearAll" = "Hammasini tozalash";
+"AdvancedCleanup" = "Kengaytirilgan tozalash";
+"OptimizeDatabase" = "Maʼlumotlar bazasini ixchamlash va optimallashtirish";
+"ClearAllDescription" = "Fayllar, rasmlar va matn uchun saqlangan clipboard tarixini o‘chiradi. Qadalgan elementlar odatda saqlanadi.";
+"IncludePinnedItems" = "Qadalgan elementlarni ham tozalash";
+"Cancel" = "Bekor qilish";
+"AdvancedCleanupDescription" = "Tozalash uchun kontent turlari va chegara sanani tanlang.";
+"CleanupBefore" = "Bundan eski:";
+"Clear" = "Tozalash";
+"ConfirmAdvancedCleanup" = "Kengaytirilgan tozalashni tasdiqlash";
+"Back" = "Orqaga";
+"ConfirmCleanup" = "Tozalashni tasdiqlash";
+"OptimizeDatabaseDescription" = "Mos tarix elementi bo‘lmagan kontent maʼlumotlarini olib tashlaydi va ishlatilmayotgan joyni bo‘shatish uchun SQLite bazasini ixchamlaydi. Katta bazalar biroz vaqt olishi mumkin.";
+"Close" = "Yopish";
+"StartOptimization" = "Optimallashtirishni boshlash";
+"OptimizationSucceeded" = "Optimallashtirish tugadi. Baza hajmi: %@ -> %@.";
+"OptimizationFailed" = "Optimallashtirish muvaffaqiyatsiz: %@";
+"AdvancedCleanupConfirmationIncludingPinned" = "%@ elementlari %@ dan eski bo‘lsa, qadalganlari bilan birga tozalanadi. Tasdiqlaysizmi?";
+"AdvancedCleanupConfirmationExcludingPinned" = "%@ elementlari %@ dan eski bo‘lsa, qadalganlaridan tashqari tozalanadi. Tasdiqlaysizmi?";

@@ -15,3 +15,25 @@
 "SortByTooltip" = "Noklusējums: pēdējās kopijas laiks.";
 "UnlimitedHistory" = "Neierobežots";
 "UnlimitedHistoryTooltip" = "Neierobežot saglabājamo vēstures vienumu skaitu. Kad ieslēgts, skaita lauks ir atspējots.";
+
+"ListSeparator" = ", ";
+"Cleanup" = "Tīrīšana:";
+"ClearAll" = "Notīrīt visu";
+"AdvancedCleanup" = "Papildu tīrīšana";
+"OptimizeDatabase" = "Saspiest un optimizēt datubāzi";
+"ClearAllDescription" = "Dzēš saglabāto starpliktuves vēsturi failiem, attēliem un tekstam. Piespraustie vienumi pēc noklusējuma tiek saglabāti.";
+"IncludePinnedItems" = "Tīrīt arī piespraustos vienumus";
+"Cancel" = "Atcelt";
+"AdvancedCleanupDescription" = "Izvēlieties tīrāmos satura tipus un robeždatumu.";
+"CleanupBefore" = "Vecāks par:";
+"Clear" = "Tīrīt";
+"ConfirmAdvancedCleanup" = "Apstiprināt papildu tīrīšanu";
+"Back" = "Atpakaļ";
+"ConfirmCleanup" = "Apstiprināt tīrīšanu";
+"OptimizeDatabaseDescription" = "Noņem satura datus bez atbilstošiem vēstures vienumiem un saspiež SQLite datubāzi, lai atbrīvotu neizmantotu vietu. Lielām datubāzēm tas var aizņemt laiku.";
+"Close" = "Aizvērt";
+"StartOptimization" = "Sākt optimizāciju";
+"OptimizationSucceeded" = "Optimizācija pabeigta. Datubāzes lielums: %@ -> %@.";
+"OptimizationFailed" = "Optimizācija neizdevās: %@";
+"AdvancedCleanupConfirmationIncludingPinned" = "Tiks notīrīti %@ vienumi, kas vecāki par %@, ieskaitot piespraustos. Apstiprināt?";
+"AdvancedCleanupConfirmationExcludingPinned" = "Tiks notīrīti %@ vienumi, kas vecāki par %@, neieskaitot piespraustos. Apstiprināt?";
