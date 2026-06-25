@@ -1,4 +1,4 @@
-<img width="128px" src="Maccy/Assets.xcassets/AppIcon.appiconset/AppIcon%20(Big%20Sur)-128w.png" alt="MaccyPaste icon" />
+<img width="128px" src="Maccy/Assets.xcassets/AppIcon.appiconset/AppIcon%20(Big%20Sur)-1024w.png" alt="MaccyPaste icon" />
 
 # MaccyPaste
 
