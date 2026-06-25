@@ -13,8 +13,8 @@
 "copy_modifiers_config" = "• آئٹم کاپی کرنے کے لیے %@ دبائے رکھ کر منتخب کریں۔";
 "paste_modifiers_config" = "• آئٹم کاپی اور پیسٹ کرنے کے لیے %@ دبائے رکھ کر منتخب کریں۔";
 "format_modifiers_config" = "• آئٹم کاپی، فارمیٹنگ صاف اور پیسٹ کرنے کے لیے %@ دبائے رکھ کر منتخب کریں۔";
-"accessibility_alert_message" = "“Maccy” اس کمپیوٹر کو رسائی کی خصوصیات کے ذریعے کنٹرول کرنا چاہتا ہے۔";
-"accessibility_alert_comment" = "اس ایپلیکیشن کو {settings} میں موجود {pane} میں رسائی دیں۔\n\n+ بٹن پر کلک کریں، Maccy منتخب کریں، اور اس کے ساتھ موجود چیک باکس آن کریں۔";
+"accessibility_alert_message" = "“MaccyPaste” اس کمپیوٹر کو رسائی کی خصوصیات کے ذریعے کنٹرول کرنا چاہتا ہے۔";
+"accessibility_alert_comment" = "اس ایپلیکیشن کو {settings} میں موجود {pane} میں رسائی دیں۔\n\n+ بٹن پر کلک کریں، MaccyPaste منتخب کریں، اور اس کے ساتھ موجود چیک باکس آن کریں۔";
 "accessibility_alert_deny" = "انکار";
 "accessibility_alert_open" = "System Preferences کھولیں";
 "clear_alert_message" = "کیا آپ واقعی تاریخ صاف کرنا چاہتے ہیں؟";

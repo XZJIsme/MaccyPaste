@@ -15,8 +15,8 @@
 "search_placeholder" = "Ketik untuk mencari…";
 "accessibility_alert_deny" = "Tolak";
 "accessibility_alert_open" = "Buka Preferensi Sistem";
-"accessibility_alert_message" = "“Maccy” ingin mengontrol komputer ini menggunakan fitur aksesibilitas.";
-"accessibility_alert_comment" = "Berikan akses untuk aplikasi ini di {pane}, yang berada di {settings}.\n\nKlik tombol +, pilih Maccy, lalu aktifkan kotak centang di sebelahnya.";
+"accessibility_alert_message" = "“MaccyPaste” ingin mengontrol komputer ini menggunakan fitur aksesibilitas.";
+"accessibility_alert_comment" = "Berikan akses untuk aplikasi ini di {pane}, yang berada di {settings}.\n\nKlik tombol +, pilih MaccyPaste, lalu aktifkan kotak centang di sebelahnya.";
 "clear_alert_message" = "Yakin ingin menghapus riwayat?";
 "clear_alert_comment" = "Tindakan ini tidak dapat dibatalkan.";
 "clear_alert_cancel" = "Batal";

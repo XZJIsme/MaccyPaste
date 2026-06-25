@@ -1,9 +1,9 @@
 "Title" = "Avançat";
 "TurnOff" = "Desactiva";
 "TurnOffDescription" = "Ignora temporalment totes les còpies noves.\nProbablement ho faràs servir programàticament per desactivar l’aplicació mentre copies dades sensibles.";
-"TurnOffShellScript" = "defaults write org.p0deje.Maccy ignoreEvents true\n# copia dades\ndefaults write org.p0deje.Maccy ignoreEvents false";
+"TurnOffShellScript" = "defaults write com.zenga.MaccyPaste ignoreEvents true\n# copia dades\ndefaults write com.zenga.MaccyPaste ignoreEvents false";
 "TurnOffViaMenuIconDescription" = "També pots fer clic a la icona de menú amb ⌥ premut.\nPer ignorar només la còpia següent, fes clic amb ⌥⇧.";
-"TurnOffNextShellScript" = "defaults write org.p0deje.Maccy ignoreOnlyNextEvent true\n# copia dades";
+"TurnOffNextShellScript" = "defaults write com.zenga.MaccyPaste ignoreEvents true\ndefaults write com.zenga.MaccyPaste ignoreOnlyNextEvent true\n# copia dades";
 "ClearHistoryOnQuit" = "Neteja l’historial en sortir";
 "ClearHistoryOnQuitTooltip" = "Elimina automàticament tots els elements no fixats abans de sortir de l’aplicació.";
 "ClearSystemClipboard" = "Neteja també el porta-retalls del sistema";

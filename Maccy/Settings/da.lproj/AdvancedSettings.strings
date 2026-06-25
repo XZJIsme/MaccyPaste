@@ -1,9 +1,9 @@
 "Title" = "Avanceret";
 "TurnOff" = "Slå fra";
 "TurnOffDescription" = "Ignorer midlertidigt alle nye kopieringer.\nDu vil sandsynligvis bruge dette programmatisk og deaktivere programmet, mens du kopierer følsomme data.";
-"TurnOffShellScript" = "defaults write org.p0deje.Maccy ignoreEvents true\n# kopier data\ndefaults write org.p0deje.Maccy ignoreEvents false";
+"TurnOffShellScript" = "defaults write com.zenga.MaccyPaste ignoreEvents true\n# kopier data\ndefaults write com.zenga.MaccyPaste ignoreEvents false";
 "TurnOffViaMenuIconDescription" = "Du kan også klikke på menuikonet med ⌥ trykket ned.\nKlik med ⌥⇧ for kun at ignorere den næste kopiering.";
-"TurnOffNextShellScript" = "defaults write org.p0deje.Maccy ignoreOnlyNextEvent true\n# kopier data";
+"TurnOffNextShellScript" = "defaults write com.zenga.MaccyPaste ignoreEvents true\ndefaults write com.zenga.MaccyPaste ignoreOnlyNextEvent true\n# kopier data";
 "ClearHistoryOnQuit" = "Ryd historik ved afslutning";
 "ClearHistoryOnQuitTooltip" = "Fjern automatisk alle ikke-fastgjorte emner, før programmet afsluttes.";
 "ClearSystemClipboard" = "Ryd også systemets udklipsholder";

@@ -13,8 +13,8 @@
 "copy_modifiers_config" = "• برای کپی کردن مورد، آن را با نگه داشتن %@ انتخاب کنید.";
 "paste_modifiers_config" = "• برای کپی و چسباندن مورد، آن را با نگه داشتن %@ انتخاب کنید.";
 "format_modifiers_config" = "• برای کپی، حذف قالب‌بندی و چسباندن مورد، آن را با نگه داشتن %@ انتخاب کنید.";
-"accessibility_alert_message" = "«Maccy» می‌خواهد با استفاده از قابلیت‌های دسترسی‌پذیری این رایانه را کنترل کند.";
-"accessibility_alert_comment" = "در {pane} واقع در {settings} به این برنامه دسترسی بدهید.\n\nروی دکمه + کلیک کنید، Maccy را انتخاب کنید و کادر کنار آن را فعال کنید.";
+"accessibility_alert_message" = "«MaccyPaste» می‌خواهد با استفاده از قابلیت‌های دسترسی‌پذیری این رایانه را کنترل کند.";
+"accessibility_alert_comment" = "در {pane} واقع در {settings} به این برنامه دسترسی بدهید.\n\nروی دکمه + کلیک کنید، MaccyPaste را انتخاب کنید و کادر کنار آن را فعال کنید.";
 "accessibility_alert_deny" = "رد کردن";
 "accessibility_alert_open" = "باز کردن تنظیمات سیستم";
 "clear_alert_message" = "آیا مطمئنید می‌خواهید تاریخچه را پاک کنید؟";

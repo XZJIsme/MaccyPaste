@@ -13,8 +13,8 @@
 "copy_modifiers_config" = "• Изберете със задържан %@, за да копирате елемента.";
 "paste_modifiers_config" = "• Изберете със задържан %@, за да копирате и поставите елемента.";
 "format_modifiers_config" = "• Изберете със задържан %@, за да копирате, изчистите форматирането и поставите елемента.";
-"accessibility_alert_message" = "„Maccy“ иска да управлява този компютър чрез функциите за достъпност.";
-"accessibility_alert_comment" = "Разрешете достъп на това приложение в {pane}, намиращи се в {settings}.\n\nНатиснете бутона +, изберете Maccy и включете отметката до него.";
+"accessibility_alert_message" = "„MaccyPaste“ иска да управлява този компютър чрез функциите за достъпност.";
+"accessibility_alert_comment" = "Разрешете достъп на това приложение в {pane}, намиращи се в {settings}.\n\nНатиснете бутона +, изберете MaccyPaste и включете отметката до него.";
 "accessibility_alert_deny" = "Откажи";
 "accessibility_alert_open" = "Отвори System Preferences";
 "clear_alert_message" = "Сигурни ли сте, че искате да изчистите историята?";

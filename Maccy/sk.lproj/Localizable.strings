@@ -13,8 +13,8 @@
 "copy_modifiers_config" = "• Vyberte so stlačeným %@, ak chcete položku skopírovať.";
 "paste_modifiers_config" = "• Vyberte so stlačeným %@, ak chcete položku skopírovať a vložiť.";
 "format_modifiers_config" = "• Vyberte so stlačeným %@, ak chcete položku skopírovať, odstrániť formátovanie a vložiť.";
-"accessibility_alert_message" = "„Maccy“ chce ovládať tento počítač pomocou funkcií prístupnosti.";
-"accessibility_alert_comment" = "Povoľte tejto aplikácii prístup v časti {pane}, ktorá sa nachádza v {settings}.\n\nKliknite na tlačidlo +, vyberte Maccy a zapnite začiarkavacie políčko vedľa nej.";
+"accessibility_alert_message" = "„MaccyPaste“ chce ovládať tento počítač pomocou funkcií prístupnosti.";
+"accessibility_alert_comment" = "Povoľte tejto aplikácii prístup v časti {pane}, ktorá sa nachádza v {settings}.\n\nKliknite na tlačidlo +, vyberte MaccyPaste a zapnite začiarkavacie políčko vedľa nej.";
 "accessibility_alert_deny" = "Odmietnuť";
 "accessibility_alert_open" = "Otvoriť System Preferences";
 "clear_alert_message" = "Naozaj chcete vymazať históriu?";

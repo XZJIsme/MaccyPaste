@@ -13,8 +13,8 @@
 "copy_modifiers_config" = "• Valitse %@ painettuna kopioidaksesi kohteen.";
 "paste_modifiers_config" = "• Valitse %@ painettuna kopioidaksesi ja liittääksesi kohteen.";
 "format_modifiers_config" = "• Valitse %@ painettuna kopioidaksesi, poistaaksesi muotoilun ja liittääksesi kohteen.";
-"accessibility_alert_message" = "“Maccy” haluaa ohjata tätä tietokonetta käyttöaputoimintojen avulla.";
-"accessibility_alert_comment" = "Anna tälle sovellukselle käyttöoikeus kohdassa {pane}, joka sijaitsee kohdassa {settings}.\n\nNapsauta +-painiketta, valitse Maccy ja ota sen vieressä oleva valintaruutu käyttöön.";
+"accessibility_alert_message" = "“MaccyPaste” haluaa ohjata tätä tietokonetta käyttöaputoimintojen avulla.";
+"accessibility_alert_comment" = "Anna tälle sovellukselle käyttöoikeus kohdassa {pane}, joka sijaitsee kohdassa {settings}.\n\nNapsauta +-painiketta, valitse MaccyPaste ja ota sen vieressä oleva valintaruutu käyttöön.";
 "accessibility_alert_deny" = "Estä";
 "accessibility_alert_open" = "Avaa System Preferences";
 "clear_alert_message" = "Haluatko varmasti tyhjentää historian?";

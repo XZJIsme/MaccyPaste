@@ -13,8 +13,8 @@
 "copy_modifiers_config" = "• Vali all hoitud %@-ga, et üksus kopeerida.";
 "paste_modifiers_config" = "• Vali all hoitud %@-ga, et üksus kopeerida ja kleepida.";
 "format_modifiers_config" = "• Vali all hoitud %@-ga, et üksus kopeerida, vormindus eemaldada ja kleepida.";
-"accessibility_alert_message" = "„Maccy“ soovib juhtida seda arvutit hõlbustusfunktsioonide abil.";
-"accessibility_alert_comment" = "Anna sellele rakendusele juurdepääs jaotises {pane}, mis asub kohas {settings}.\n\nKlõpsa nuppu +, vali Maccy ja lülita selle kõrval olev märkeruut sisse.";
+"accessibility_alert_message" = "„MaccyPaste“ soovib juhtida seda arvutit hõlbustusfunktsioonide abil.";
+"accessibility_alert_comment" = "Anna sellele rakendusele juurdepääs jaotises {pane}, mis asub kohas {settings}.\n\nKlõpsa nuppu +, vali MaccyPaste ja lülita selle kõrval olev märkeruut sisse.";
 "accessibility_alert_deny" = "Keela";
 "accessibility_alert_open" = "Ava System Preferences";
 "clear_alert_message" = "Kas soovid kindlasti ajaloo tühjendada?";

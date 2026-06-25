@@ -1,9 +1,9 @@
 "Title" = "Avancerat";
 "TurnOff" = "Stäng av";
 "TurnOffDescription" = "Ignorera tillfälligt alla nya kopior.\nDu använder troligen detta programmatiskt för att inaktivera appen när känsliga data kopieras.";
-"TurnOffShellScript" = "defaults write org.p0deje.Maccy ignoreEvents true\n# kopiera data\ndefaults write org.p0deje.Maccy ignoreEvents false";
+"TurnOffShellScript" = "defaults write com.zenga.MaccyPaste ignoreEvents true\n# kopiera data\ndefaults write com.zenga.MaccyPaste ignoreEvents false";
 "TurnOffViaMenuIconDescription" = "Du kan också klicka på menyikonen medan ⌥ hålls nedtryckt.\nKlicka med ⌥⇧ för att bara ignorera nästa kopia.";
-"TurnOffNextShellScript" = "defaults write org.p0deje.Maccy ignoreOnlyNextEvent true\n# kopiera data";
+"TurnOffNextShellScript" = "defaults write com.zenga.MaccyPaste ignoreEvents true\ndefaults write com.zenga.MaccyPaste ignoreOnlyNextEvent true\n# kopiera data";
 "ClearHistoryOnQuit" = "Rensa historik vid avslut";
 "ClearHistoryOnQuitTooltip" = "Ta automatiskt bort alla ej fästa objekt innan appen avslutas.";
 "ClearSystemClipboard" = "Rensa även systemurklipp";

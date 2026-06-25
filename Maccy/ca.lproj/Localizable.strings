@@ -10,12 +10,12 @@
 "preferences_pins" = "Fixats";
 "paste_modifiers_config" = "• Selecciona pressionant %@ per copiar i enganxar l'element.";
 "copy_modifiers_config" = "• Selecciona pressionant %@ per copiar element.";
-"accessibility_alert_message" = "“Maccy” demana accés per controlar aquest ordinador mitjançant les funcionalitats d'accessibilitat.";
+"accessibility_alert_message" = "“MaccyPaste” demana accés per controlar aquest ordinador mitjançant les funcionalitats d'accessibilitat.";
 "accessibility_alert_deny" = "Denegar";
 "accessibility_alert_open" = "Obre les Preferències del Sistema";
 "clear_alert_message" = "Estàs segur que vols esborrar l'històric?";
 "clear_tooltip" = "Neteja elements no fixats.\nSelecciona amb ⇧ per netejar tots els elements.";
-"accessibility_alert_comment" = "Dóna accés a aquesta aplicació a {pane}, dins {settings}.\n\nFes clic al botó +, selecciona Maccy i activa la casella del costat.";
+"accessibility_alert_comment" = "Dóna accés a aquesta aplicació a {pane}, dins {settings}.\n\nFes clic al botó +, selecciona MaccyPaste i activa la casella del costat.";
 "clear_all_tooltip" = "Neteja tots els elements.";
 "format_modifiers_config" = "• Selecciona pressionant %@ per copiar, netejar-ne el format i enganxar l'element.";
 "clear_alert_comment" = "Aquesta acció no és pot desfer.";

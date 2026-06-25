@@ -13,8 +13,8 @@
 "copy_modifiers_config" = "• Pilih sambil menekan %@ untuk menyalin item.";
 "paste_modifiers_config" = "• Pilih sambil menekan %@ untuk menyalin dan menampal item.";
 "format_modifiers_config" = "• Pilih sambil menekan %@ untuk menyalin, mengosongkan pemformatan dan menampal item.";
-"accessibility_alert_message" = "“Maccy” ingin mengawal komputer ini menggunakan ciri kebolehcapaian.";
-"accessibility_alert_comment" = "Berikan akses kepada aplikasi ini dalam {pane}, yang terletak dalam {settings}.\n\nKlik butang +, pilih Maccy dan hidupkan kotak pilihan di sebelahnya.";
+"accessibility_alert_message" = "“MaccyPaste” ingin mengawal komputer ini menggunakan ciri kebolehcapaian.";
+"accessibility_alert_comment" = "Berikan akses kepada aplikasi ini dalam {pane}, yang terletak dalam {settings}.\n\nKlik butang +, pilih MaccyPaste dan hidupkan kotak pilihan di sebelahnya.";
 "accessibility_alert_deny" = "Tolak";
 "accessibility_alert_open" = "Buka System Preferences";
 "clear_alert_message" = "Adakah anda pasti mahu mengosongkan sejarah?";

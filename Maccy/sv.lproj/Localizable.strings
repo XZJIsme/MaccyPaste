@@ -13,8 +13,8 @@
 "copy_modifiers_config" = "• Välj med %@ nedtryckt för att kopiera objektet.";
 "paste_modifiers_config" = "• Välj med %@ nedtryckt för att kopiera och klistra in objektet.";
 "format_modifiers_config" = "• Välj med %@ nedtryckt för att kopiera, rensa formatering och klistra in objektet.";
-"accessibility_alert_message" = "”Maccy” vill styra den här datorn med hjälp av hjälpmedelsfunktioner.";
-"accessibility_alert_comment" = "Ge den här appen åtkomst i {pane}, som finns i {settings}.\n\nKlicka på +-knappen, välj Maccy och aktivera kryssrutan bredvid den.";
+"accessibility_alert_message" = "”MaccyPaste” vill styra den här datorn med hjälp av hjälpmedelsfunktioner.";
+"accessibility_alert_comment" = "Ge den här appen åtkomst i {pane}, som finns i {settings}.\n\nKlicka på +-knappen, välj MaccyPaste och aktivera kryssrutan bredvid den.";
 "accessibility_alert_deny" = "Neka";
 "accessibility_alert_open" = "Öppna Systeminställningar";
 "clear_alert_message" = "Är du säker på att du vill rensa historiken?";

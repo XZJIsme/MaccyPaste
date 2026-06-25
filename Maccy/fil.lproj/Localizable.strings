@@ -13,8 +13,8 @@
 "copy_modifiers_config" = "• Pumili habang nakapindot ang %@ para kopyahin ang item.";
 "paste_modifiers_config" = "• Pumili habang nakapindot ang %@ para kopyahin at i-paste ang item.";
 "format_modifiers_config" = "• Pumili habang nakapindot ang %@ para kopyahin, alisin ang formatting at i-paste ang item.";
-"accessibility_alert_message" = "Gustong kontrolin ng “Maccy” ang computer na ito gamit ang mga accessibility feature.";
-"accessibility_alert_comment" = "Bigyan ng access ang application na ito sa {pane}, na nasa {settings}.\n\nI-click ang + button, piliin ang Maccy, at i-on ang checkbox sa tabi nito.";
+"accessibility_alert_message" = "Gustong kontrolin ng “MaccyPaste” ang computer na ito gamit ang mga accessibility feature.";
+"accessibility_alert_comment" = "Bigyan ng access ang application na ito sa {pane}, na nasa {settings}.\n\nI-click ang + button, piliin ang MaccyPaste, at i-on ang checkbox sa tabi nito.";
 "accessibility_alert_deny" = "Tanggihan";
 "accessibility_alert_open" = "Buksan ang System Preferences";
 "clear_alert_message" = "Sigurado ka bang gusto mong i-clear ang history?";

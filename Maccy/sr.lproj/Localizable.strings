@@ -13,8 +13,8 @@
 "copy_modifiers_config" = "• Изаберите са притиснутим %@ да копирате ставку.";
 "paste_modifiers_config" = "• Изаберите са притиснутим %@ да копирате и налепите ставку.";
 "format_modifiers_config" = "• Изаберите са притиснутим %@ да копирате, уклоните форматирање и налепите ставку.";
-"accessibility_alert_message" = "„Maccy“ жели да управља овим рачунаром помоћу функција приступачности.";
-"accessibility_alert_comment" = "Дозволите приступ овој апликацији у {pane}, које се налазе у {settings}.\n\nКликните на дугме +, изаберите Maccy и укључите поље за потврду поред њега.";
+"accessibility_alert_message" = "„MaccyPaste“ жели да управља овим рачунаром помоћу функција приступачности.";
+"accessibility_alert_comment" = "Дозволите приступ овој апликацији у {pane}, које се налазе у {settings}.\n\nКликните на дугме +, изаберите MaccyPaste и укључите поље за потврду поред њега.";
 "accessibility_alert_deny" = "Одбиј";
 "accessibility_alert_open" = "Отвори System Preferences";
 "clear_alert_message" = "Да ли сигурно желите да обришете историју?";
