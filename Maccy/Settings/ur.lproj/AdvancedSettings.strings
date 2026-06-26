@@ -1,9 +1,9 @@
 "Title" = "اعلیٰ";
 "TurnOff" = "بند کریں";
 "TurnOffDescription" = "تمام نئی کاپیز کو عارضی طور پر نظر انداز کریں۔\nممکن ہے آپ اسے پروگرام کے ذریعے استعمال کریں اور حساس ڈیٹا کاپی کرتے وقت ایپلیکیشن کو غیر فعال کریں۔";
-"TurnOffShellScript" = "defaults write com.zenga.MaccyPaste ignoreEvents true\n# ڈیٹا کاپی کریں\ndefaults write com.zenga.MaccyPaste ignoreEvents false";
+"TurnOffShellScript" = "defaults write com.gitswift.MaccyPaste ignoreEvents true\n# ڈیٹا کاپی کریں\ndefaults write com.gitswift.MaccyPaste ignoreEvents false";
 "TurnOffViaMenuIconDescription" = "آپ ⌥ دبائے رکھ کر مینو آئیکن پر بھی کلک کر سکتے ہیں۔\nصرف اگلی کاپی نظر انداز کرنے کے لیے ⌥⇧ کے ساتھ کلک کریں۔";
-"TurnOffNextShellScript" = "defaults write com.zenga.MaccyPaste ignoreEvents true\ndefaults write com.zenga.MaccyPaste ignoreOnlyNextEvent true\n# ڈیٹا کاپی کریں";
+"TurnOffNextShellScript" = "defaults write com.gitswift.MaccyPaste ignoreEvents true\ndefaults write com.gitswift.MaccyPaste ignoreOnlyNextEvent true\n# ڈیٹا کاپی کریں";
 "ClearHistoryOnQuit" = "بند کرتے وقت تاریخ صاف کریں";
 "ClearHistoryOnQuitTooltip" = "ایپلیکیشن بند کرنے سے پہلے تمام غیر پن شدہ آئٹمز خودکار طور پر ہٹا دیں۔";
 "ClearSystemClipboard" = "سسٹم کلپ بورڈ بھی صاف کریں";

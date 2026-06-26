@@ -64,7 +64,7 @@ enum ResizingMode {
 
 @Observable
 class SlideoutController {
-  let logger = Logger(label: "com.zenga.MaccyPaste")
+  let logger = Logger(label: "com.gitswift.MaccyPaste")
   private static let animationDuration = 0.25
 
   let onContentResize: (CGFloat) -> Void

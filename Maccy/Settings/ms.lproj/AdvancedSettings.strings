@@ -1,9 +1,9 @@
 "Title" = "Lanjutan";
 "TurnOff" = "Matikan";
 "TurnOffDescription" = "Abaikan semua salinan baharu buat sementara waktu.\nAnda mungkin menggunakannya secara programatik dan mematikan aplikasi semasa menyalin data sensitif.";
-"TurnOffShellScript" = "defaults write com.zenga.MaccyPaste ignoreEvents true\n# salin data\ndefaults write com.zenga.MaccyPaste ignoreEvents false";
+"TurnOffShellScript" = "defaults write com.gitswift.MaccyPaste ignoreEvents true\n# salin data\ndefaults write com.gitswift.MaccyPaste ignoreEvents false";
 "TurnOffViaMenuIconDescription" = "Anda juga boleh mengklik ikon menu sambil menekan ⌥.\nUntuk mengabaikan hanya salinan seterusnya, klik dengan ⌥⇧.";
-"TurnOffNextShellScript" = "defaults write com.zenga.MaccyPaste ignoreEvents true\ndefaults write com.zenga.MaccyPaste ignoreOnlyNextEvent true\n# salin data";
+"TurnOffNextShellScript" = "defaults write com.gitswift.MaccyPaste ignoreEvents true\ndefaults write com.gitswift.MaccyPaste ignoreOnlyNextEvent true\n# salin data";
 "ClearHistoryOnQuit" = "Kosongkan sejarah apabila keluar";
 "ClearHistoryOnQuitTooltip" = "Alih keluar semua item yang tidak disemat secara automatik sebelum keluar daripada aplikasi.";
 "ClearSystemClipboard" = "Kosongkan papan klip sistem juga";

@@ -8,6 +8,7 @@ class HistoryItem {
   private static let transientTypes: [String] = [
     NSPasteboard.PasteboardType.modified.rawValue,
     NSPasteboard.PasteboardType.fromMaccy.rawValue,
+    NSPasteboard.PasteboardType.fromLegacyMaccy.rawValue,
     NSPasteboard.PasteboardType.linkPresentationMetadata.rawValue,
     NSPasteboard.PasteboardType.customWebKitPasteboardData.rawValue,
     NSPasteboard.PasteboardType.source.rawValue,
@@ -149,7 +150,7 @@ class HistoryItem {
     return Int(modified)
   }
 
-  var fromMaccy: Bool { contentData([.fromMaccy]) != nil }
+  var fromMaccy: Bool { contentData([.fromMaccy, .fromLegacyMaccy]) != nil }
   var universalClipboard: Bool { contentData([.universalClipboard]) != nil }
 
   func containsContent(types: [NSPasteboard.PasteboardType]) -> Bool {

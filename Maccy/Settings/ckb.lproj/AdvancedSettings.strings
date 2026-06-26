@@ -1,9 +1,9 @@
 "Title" = "پێشکەوتوو";
 "TurnOff" = "ناچالاککردن";
 "TurnOffDescription" = "پشتگوێخستنی کاتیی هەموو کۆپییە نوێیەکان.\nئەگەری هەیە ئەمە بەشێوەی پرۆگرامی بەکاربهێنیت و بەرنامەکە ناچالاک بکەیت لەکati کۆپیکردنی داتای هەستیاردا.";
-"TurnOffShellScript" = "defaults write com.zenga.MaccyPaste ignoreEvents true\n# داتا کۆپی بکە\ndefaults write com.zenga.MaccyPaste ignoreEvents false";
+"TurnOffShellScript" = "defaults write com.gitswift.MaccyPaste ignoreEvents true\n# داتا کۆپی بکە\ndefaults write com.gitswift.MaccyPaste ignoreEvents false";
 "TurnOffViaMenuIconDescription" = "هەروەها دەتوانیت کلیک لەسەر ئایکۆنی مێنوەکە بکەیت بە داگرتنی دوگمەی ⌥.\nبۆ پشتگوێخستنی تەنها کۆپیی داهاتوو، کلیک بکە لەگەڵ داگرتنی ⌥⇧.";
-"TurnOffNextShellScript" = "defaults write com.zenga.MaccyPaste ignoreEvents true\ndefaults write com.zenga.MaccyPaste ignoreOnlyNextEvent true\n# داتا کۆپی بکە";
+"TurnOffNextShellScript" = "defaults write com.gitswift.MaccyPaste ignoreEvents true\ndefaults write com.gitswift.MaccyPaste ignoreOnlyNextEvent true\n# داتا کۆپی بکە";
 "ClearHistoryOnQuit" = "سڕینەوەی مێژوو لەکاتی داخستندا";
 "ClearHistoryOnQuitTooltip" = "بەشێوەیەکی خۆکارانە هەموو ئایتەمە نەچەسپێنراوەکان لادەبات پێش داخستنی بەرنامەکە.";
 "ClearSystemClipboard" = "سڕینەوەی کلیپبۆردی سیستەمیش";

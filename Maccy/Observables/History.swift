@@ -11,7 +11,7 @@ import SwiftData
 @Observable
 class History: ItemsContainer { // swiftlint:disable:this type_body_length
   static let shared = History()
-  let logger = Logger(label: "com.zenga.MaccyPaste")
+  let logger = Logger(label: "com.gitswift.MaccyPaste")
 
   var items: [HistoryItemDecorator] = []
   var pasteStack: PasteStack?

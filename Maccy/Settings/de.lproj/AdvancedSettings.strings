@@ -1,9 +1,9 @@
 "Title" = "Erweitert";
 "TurnOff" = "Deaktivieren";
 "TurnOffDescription" = "Vorrübergehend alle neue Einträge ignorieren. Zum Beispiel während dem Kopieren von sensiblen Daten.\nDies kann über das Terminal aktiviert und deaktiviert werden mit.";
-"TurnOffShellScript" = "defaults write com.zenga.MaccyPaste ignoreEvents true\n# Einträge wieder kopieren\ndefaults write com.zenga.MaccyPaste ignoreEvents false";
+"TurnOffShellScript" = "defaults write com.gitswift.MaccyPaste ignoreEvents true\n# Einträge wieder kopieren\ndefaults write com.gitswift.MaccyPaste ignoreEvents false";
 "TurnOffViaMenuIconDescription" = "Um MaccyPaste zu deaktivieren, klicke auf das Menüleistensymbol und halte dabei ⌥ gedrückt.\nUm nur die nächste Kopie zu ignorieren, klicke und halte ⌥⇧ gedrückt.";
-"TurnOffNextShellScript" = "defaults write com.zenga.MaccyPaste ignoreEvents true\ndefaults write com.zenga.MaccyPaste ignoreOnlyNextEvent true\n# Einträge wieder kopieren";
+"TurnOffNextShellScript" = "defaults write com.gitswift.MaccyPaste ignoreEvents true\ndefaults write com.gitswift.MaccyPaste ignoreOnlyNextEvent true\n# Einträge wieder kopieren";
 "ClearHistoryOnQuit" = "Verlauf beim Beenden löschen";
 "ClearHistoryOnQuitTooltip" = "Alle nicht angehefteten Elemente werden vor dem Beenden der Anwendung automatisch entfernt.";
 "ClearSystemClipboard" = "Löschen Sie auch die Zwischenablage des Systems";

@@ -1,9 +1,9 @@
 "Title" = "Напредно";
 "TurnOff" = "Искључи";
 "TurnOffDescription" = "Привремено игнориши сва нова копирања.\nВероватно ћете ово користити програмски и искључити апликацију док копирате осетљиве податке.";
-"TurnOffShellScript" = "defaults write com.zenga.MaccyPaste ignoreEvents true\n# копирање података\ndefaults write com.zenga.MaccyPaste ignoreEvents false";
+"TurnOffShellScript" = "defaults write com.gitswift.MaccyPaste ignoreEvents true\n# копирање података\ndefaults write com.gitswift.MaccyPaste ignoreEvents false";
 "TurnOffViaMenuIconDescription" = "Можете и да кликнете на икону менија са притиснутим ⌥.\nДа игноришете само следеће копирање, кликните са ⌥⇧.";
-"TurnOffNextShellScript" = "defaults write com.zenga.MaccyPaste ignoreEvents true\ndefaults write com.zenga.MaccyPaste ignoreOnlyNextEvent true\n# копирање података";
+"TurnOffNextShellScript" = "defaults write com.gitswift.MaccyPaste ignoreEvents true\ndefaults write com.gitswift.MaccyPaste ignoreOnlyNextEvent true\n# копирање података";
 "ClearHistoryOnQuit" = "Обриши историју при изласку";
 "ClearHistoryOnQuitTooltip" = "Аутоматски уклони све неприквачене ставке пре затварања апликације.";
 "ClearSystemClipboard" = "Обриши и системски клипборд";

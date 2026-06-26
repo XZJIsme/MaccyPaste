@@ -1,9 +1,9 @@
 "Title" = "Розширені опції";
 "TurnOff" = "Вимкнути";
 "TurnOffDescription" = "Тимчасово ігноруйте всі нові копії.\nВи, ймовірно, використаєте це програмно та вимкнете програму під час копіювання конфіденційних даних.";
-"TurnOffShellScript" = "defaults write com.zenga.MaccyPaste ignoreEvents true\n# копіювати данні\ndefaults write com.zenga.MaccyPaste ignoreEvents false";
+"TurnOffShellScript" = "defaults write com.gitswift.MaccyPaste ignoreEvents true\n# копіювати данні\ndefaults write com.gitswift.MaccyPaste ignoreEvents false";
 "TurnOffViaMenuIconDescription" = "Ви також можете натиснути значок меню, утримуючи ⌥.\nЩоб проігнорувати лише наступну копію, натисніть ⌥⇧.";
-"TurnOffNextShellScript" = "defaults write com.zenga.MaccyPaste ignoreEvents true\ndefaults write com.zenga.MaccyPaste ignoreOnlyNextEvent true\n# копіювати данні";
+"TurnOffNextShellScript" = "defaults write com.gitswift.MaccyPaste ignoreEvents true\ndefaults write com.gitswift.MaccyPaste ignoreOnlyNextEvent true\n# копіювати данні";
 "ClearHistoryOnQuit" = "Очистити історію після виходу";
 "ClearHistoryOnQuitTooltip" = "Автоматично видаляйте всі незакріплені елементи перед виходом із програми.";
 "ClearSystemClipboard" = "Також очистіть системний буфер обміну";

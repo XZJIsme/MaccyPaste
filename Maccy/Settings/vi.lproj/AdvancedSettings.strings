@@ -1,9 +1,9 @@
 "Title" = "Nâng cao";
 "TurnOff" = "Tắt";
 "TurnOffDescription" = "Tạm thời bỏ qua tất cả các bản sao mới.\nBạn có thể sẽ sử dụng tính năng này thông qua lập trình và tắt ứng dụng khi sao chép dữ liệu nhạy cảm.";
-"TurnOffShellScript" = "defaults write com.zenga.MaccyPaste ignoreEvents true\n# sao chép dữ liệu\ndefaults write com.zenga.MaccyPaste ignoreEvents false";
+"TurnOffShellScript" = "defaults write com.gitswift.MaccyPaste ignoreEvents true\n# sao chép dữ liệu\ndefaults write com.gitswift.MaccyPaste ignoreEvents false";
 "TurnOffViaMenuIconDescription" = "Bạn cũng có thể nhấp vào biểu tượng menu khi giữ phím ⌥ .\nĐể chỉ bỏ qua lần sao chép tiếp theo, hãy nhấp khi giữ đồng thời ⌥ ⇧ .";
-"TurnOffNextShellScript" = "defaults write com.zenga.MaccyPaste ignoreEvents true\ndefaults write com.zenga.MaccyPaste ignoreOnlyNextEvent true\n# sao chép dữ liệu";
+"TurnOffNextShellScript" = "defaults write com.gitswift.MaccyPaste ignoreEvents true\ndefaults write com.gitswift.MaccyPaste ignoreOnlyNextEvent true\n# sao chép dữ liệu";
 "ClearHistoryOnQuit" = "Xóa lịch sử khi thoát";
 "ClearHistoryOnQuitTooltip" = "Tự động xóa bỏ tất cả các mục không được ghim khi thoát khỏi ứng dụng.";
 "ClearSystemClipboard" = "Xóa cả bảng nhớ tạm của hệ thống nữa";

@@ -1,9 +1,9 @@
 "Title" = "Rozšírené";
 "TurnOff" = "Vypnúť";
 "TurnOffDescription" = "Dočasne ignorovať všetky nové kopírovania.\nPravdepodobne to použijete programovo a aplikáciu vypnete počas kopírovania citlivých údajov.";
-"TurnOffShellScript" = "defaults write com.zenga.MaccyPaste ignoreEvents true\n# kopírovanie údajov\ndefaults write com.zenga.MaccyPaste ignoreEvents false";
+"TurnOffShellScript" = "defaults write com.gitswift.MaccyPaste ignoreEvents true\n# kopírovanie údajov\ndefaults write com.gitswift.MaccyPaste ignoreEvents false";
 "TurnOffViaMenuIconDescription" = "Môžete tiež kliknúť na ikonu v menu so stlačeným ⌥.\nAk chcete ignorovať iba nasledujúce kopírovanie, kliknite so stlačeným ⌥⇧.";
-"TurnOffNextShellScript" = "defaults write com.zenga.MaccyPaste ignoreEvents true\ndefaults write com.zenga.MaccyPaste ignoreOnlyNextEvent true\n# kopírovanie údajov";
+"TurnOffNextShellScript" = "defaults write com.gitswift.MaccyPaste ignoreEvents true\ndefaults write com.gitswift.MaccyPaste ignoreOnlyNextEvent true\n# kopírovanie údajov";
 "ClearHistoryOnQuit" = "Vymazať históriu pri ukončení";
 "ClearHistoryOnQuitTooltip" = "Automaticky odstrániť všetky nepripnuté položky pred ukončením aplikácie.";
 "ClearSystemClipboard" = "Vymazať aj systémovú schránku";

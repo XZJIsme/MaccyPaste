@@ -1,9 +1,9 @@
 "Title" = "מתקדם";
 "TurnOff" = "כיבוי";
 "TurnOffDescription" = "להתעלם זמנית מכל העותקים החדשים.\nכנראה שזה ישמש אותך במהלך פיתוח ולהשבית יישום במהלך העתקת נתונים רגישים.";
-"TurnOffShellScript" = "defaults write com.zenga.MaccyPaste ignoreEvents true\n# העתקת נתונים\ndefaults write com.zenga.MaccyPaste ignoreEvents false";
+"TurnOffShellScript" = "defaults write com.gitswift.MaccyPaste ignoreEvents true\n# העתקת נתונים\ndefaults write com.gitswift.MaccyPaste ignoreEvents false";
 "TurnOffViaMenuIconDescription" = "אפשר ללחוץ על סמל התפריט תוך הזחקה של ⌥.\nכדי להתעלם רק מהעותק הבא, יש ללחוץ עם העכבר תוך החזקה של ⌥⇧.";
-"TurnOffNextShellScript" = "defaults write com.zenga.MaccyPaste ignoreEvents true\ndefaults write com.zenga.MaccyPaste ignoreOnlyNextEvent true\n# העתקת נתונים";
+"TurnOffNextShellScript" = "defaults write com.gitswift.MaccyPaste ignoreEvents true\ndefaults write com.gitswift.MaccyPaste ignoreOnlyNextEvent true\n# העתקת נתונים";
 "ClearHistoryOnQuit" = "פינוי היסטוריה עם היציאה";
 "ClearHistoryOnQuitTooltip" = "להסיר את כל הפריטים שאינם נעוצים בטרם יציאה מהיישום.";
 "ClearSystemClipboard" = "פינוי לוח הגזירים של המערכת בנוסף";

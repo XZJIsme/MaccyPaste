@@ -69,7 +69,7 @@ Homebrew installation is not set up for MaccyPaste yet.
 You can tell MaccyPaste to ignore all copied items:
 
 ```sh
-defaults write com.zenga.MaccyPaste ignoreEvents true # default is false
+defaults write com.gitswift.MaccyPaste ignoreEvents true # default is false
 ```
 
 This is useful if you have some workflow for copying sensitive data. You can set `ignoreEvents` to true, copy the data and set `ignoreEvents` back to false.
@@ -107,7 +107,7 @@ By default, MaccyPaste checks clipboard every 500 ms, which should be enough for
 to speed it up, you can change it with `defaults`:
 
 ```sh
-defaults write com.zenga.MaccyPaste clipboardCheckInterval 0.1 # 100 ms
+defaults write com.gitswift.MaccyPaste clipboardCheckInterval 0.1 # 100 ms
 ```
 
 ## FAQ
@@ -134,7 +134,7 @@ defaults write com.zenga.MaccyPaste clipboardCheckInterval 0.1 # 100 ms
 If for some reason it doesn't work, run the following command in Terminal.app:
 
 ```sh
-defaults write com.zenga.MaccyPaste showFooter 1
+defaults write com.gitswift.MaccyPaste showFooter 1
 ```
 
 ### How to ignore copies from [Universal Clipboard](https://support.apple.com/en-us/102430)?

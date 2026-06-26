@@ -154,7 +154,9 @@ class Clipboard {
 
     changeCount = pasteboard.changeCount
 
-    if pasteboard.pasteboardItems?.contains(where: { $0.types.contains(.fromMaccy) }) != true {
+    if pasteboard.pasteboardItems?.contains(where: { item in
+      item.types.contains(.fromMaccy) || item.types.contains(.fromLegacyMaccy)
+    }) != true {
       // External copy occurred. Stop the current paste stack.
       // Maybe queue it into the paste stack? Configurable behaviour?
       AppState.shared.history.interruptPasteStack()

@@ -46,7 +46,7 @@ MaccyPaste 目前还没有配置 Homebrew 安装。
 你可以让 MaccyPaste 忽略所有复制内容：
 
 ```sh
-defaults write com.zenga.MaccyPaste ignoreEvents true # 默认是 false
+defaults write com.gitswift.MaccyPaste ignoreEvents true # 默认是 false
 ```
 
 这适合复制敏感数据的工作流。你可以先把 `ignoreEvents` 设置为 true，复制敏感数据后再设置回 false。
@@ -76,7 +76,7 @@ defaults write com.zenga.MaccyPaste ignoreEvents true # 默认是 false
 默认情况下，MaccyPaste 每 500 ms 检查一次剪贴板，这对大多数用户已经足够。如果你想加快检查，可以用 `defaults` 修改：
 
 ```sh
-defaults write com.zenga.MaccyPaste clipboardCheckInterval 0.1 # 100 ms
+defaults write com.gitswift.MaccyPaste clipboardCheckInterval 0.1 # 100 ms
 ```
 
 ## 常见问题
@@ -103,7 +103,7 @@ defaults write com.zenga.MaccyPaste clipboardCheckInterval 0.1 # 100 ms
 如果不起作用，可以在 Terminal.app 中运行：
 
 ```sh
-defaults write com.zenga.MaccyPaste showFooter 1
+defaults write com.gitswift.MaccyPaste showFooter 1
 ```
 
 ### 如何忽略来自 [Universal Clipboard](https://support.apple.com/en-us/102430) 的复制？

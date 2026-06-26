@@ -1,9 +1,9 @@
 "Title" = "उन्नत";
 "TurnOff" = "बंद करें";
 "TurnOffDescription" = "सभी नई कॉपी को अस्थायी रूप से अनदेखा करें।\nसंवेदनशील डेटा कॉपी करते समय आप इसे प्रोग्राम से ऐप को निष्क्रिय करने के लिए इस्तेमाल कर सकते हैं।";
-"TurnOffShellScript" = "defaults write com.zenga.MaccyPaste ignoreEvents true\n# डेटा कॉपी करें\ndefaults write com.zenga.MaccyPaste ignoreEvents false";
+"TurnOffShellScript" = "defaults write com.gitswift.MaccyPaste ignoreEvents true\n# डेटा कॉपी करें\ndefaults write com.gitswift.MaccyPaste ignoreEvents false";
 "TurnOffViaMenuIconDescription" = "आप ⌥ दबाकर मेनू आइकन पर भी क्लिक कर सकते हैं।\nकेवल अगली कॉपी अनदेखी करने के लिए ⌥⇧ के साथ क्लिक करें।";
-"TurnOffNextShellScript" = "defaults write com.zenga.MaccyPaste ignoreEvents true\ndefaults write com.zenga.MaccyPaste ignoreOnlyNextEvent true\n# डेटा कॉपी करें";
+"TurnOffNextShellScript" = "defaults write com.gitswift.MaccyPaste ignoreEvents true\ndefaults write com.gitswift.MaccyPaste ignoreOnlyNextEvent true\n# डेटा कॉपी करें";
 "ClearHistoryOnQuit" = "बंद करते समय इतिहास साफ़ करें";
 "ClearHistoryOnQuitTooltip" = "ऐप बंद करने से पहले सभी अनपिन किए गए आइटम अपने-आप हटाएं।";
 "ClearSystemClipboard" = "सिस्टम क्लिपबोर्ड भी साफ़ करें";
