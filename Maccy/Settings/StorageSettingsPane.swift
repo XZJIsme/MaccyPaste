@@ -2,16 +2,54 @@ import AppKit
 import Defaults
 import Settings
 import SwiftUI
+import UniformTypeIdentifiers
 
 struct StorageSettingsPane: View {
   @Environment(AppState.self) private var appState
 
-  private enum CleanupSheet: String, Identifiable {
+  private enum CleanupSheet: Identifiable {
     case clearAll
     case advanced
     case optimize
+    case importOptions(PendingImport)
+    case transferResult(String)
+
+    var id: String {
+      switch self {
+      case .clearAll:
+        "clearAll"
+      case .advanced:
+        "advanced"
+      case .optimize:
+        "optimize"
+      case .importOptions(let pendingImport):
+        "importOptions-\(pendingImport.url.path)-\(pendingImport.count)"
+      case .transferResult(let message):
+        "transferResult-\(message)"
+      }
+    }
+  }
+
+  private enum ImportMode: String, CaseIterable, Identifiable {
+    case merge
+    case replace
 
     var id: String { rawValue }
+
+    var localizedTitle: String {
+      switch self {
+      case .merge:
+        AppLocalization.shared.localizedString("ImportModeMerge", tableName: "StorageSettings")
+      case .replace:
+        AppLocalization.shared.localizedString("ImportModeReplace", tableName: "StorageSettings")
+      }
+    }
+  }
+
+  private struct PendingImport {
+    let url: URL
+    let sourceName: String
+    let count: Int
   }
 
   @Observable
@@ -84,12 +122,17 @@ struct StorageSettingsPane: View {
   @State private var includesPinnedInClearAll = false
   @State private var includesPinnedInAdvancedCleanup = false
   @State private var optimizationResult: String?
+  @State private var importMode: ImportMode = .merge
 
   private let sizeFormatter: NumberFormatter = {
     let formatter = NumberFormatter()
     formatter.allowsFloats = false
     return formatter
   }()
+
+  private var sqliteContentTypes: [UTType] {
+    [UTType(filenameExtension: "sqlite") ?? .data]
+  }
 
   private var storageUsageSummary: String {
     let countSummary = String(
@@ -226,17 +269,19 @@ struct StorageSettingsPane: View {
       }
 
       Settings.Section(label: { Text("Cleanup", tableName: "StorageSettings") }) {
-        HStack {
-          Button(role: .destructive) {
-            cleanupSheet = .clearAll
-          } label: {
-            Text("ClearAll", tableName: "StorageSettings")
-          }
+        VStack(alignment: .leading, spacing: 8) {
+          HStack {
+            Button(role: .destructive) {
+              cleanupSheet = .clearAll
+            } label: {
+              Text("ClearAll", tableName: "StorageSettings")
+            }
 
-          Button {
-            cleanupSheet = .advanced
-          } label: {
-            Text("AdvancedCleanup", tableName: "StorageSettings")
+            Button {
+              cleanupSheet = .advanced
+            } label: {
+              Text("AdvancedCleanup", tableName: "StorageSettings")
+            }
           }
 
           Button {
@@ -244,6 +289,35 @@ struct StorageSettingsPane: View {
           } label: {
             Text("OptimizeDatabase", tableName: "StorageSettings")
           }
+        }
+      }
+
+      Settings.Section(label: { Text("ImportExport", tableName: "StorageSettings") }) {
+        VStack(alignment: .leading, spacing: 8) {
+          HStack {
+            Button {
+              exportBackup()
+            } label: {
+              Text("ExportBackup", tableName: "StorageSettings")
+            }
+
+            Button {
+              chooseImportFile()
+            } label: {
+              Text("ImportBackup", tableName: "StorageSettings")
+            }
+          }
+
+          Button {
+            importFromMaccy()
+          } label: {
+            Text("ImportFromMaccy", tableName: "StorageSettings")
+          }
+
+          Text("ImportExportDescription", tableName: "StorageSettings")
+            .controlSize(.small)
+            .foregroundStyle(.gray)
+            .fixedSize(horizontal: false, vertical: true)
         }
       }
     }
@@ -270,6 +344,10 @@ struct StorageSettingsPane: View {
       advancedCleanupSheet
     case .optimize:
       optimizeDatabaseSheet
+    case .importOptions(let pendingImport):
+      importOptionsSheet(pendingImport)
+    case .transferResult(let message):
+      transferResultSheet(message)
     }
   }
 
@@ -433,6 +511,91 @@ struct StorageSettingsPane: View {
     .frame(width: 440)
   }
 
+  private func importOptionsSheet(_ pendingImport: PendingImport) -> some View {
+    VStack(alignment: .leading, spacing: 16) {
+      Text("ConfirmImport", tableName: "StorageSettings")
+        .font(.headline)
+
+      Text(importConfirmationMessage(for: pendingImport))
+        .foregroundStyle(.gray)
+        .fixedSize(horizontal: false, vertical: true)
+
+      Picker("", selection: $importMode) {
+        ForEach(ImportMode.allCases) { mode in
+          Text(mode.localizedTitle).tag(mode)
+        }
+      }
+      .pickerStyle(.radioGroup)
+
+      HStack {
+        Spacer()
+        Button {
+          cleanupSheet = nil
+        } label: {
+          Text("Cancel", tableName: "StorageSettings")
+        }
+        Button {
+          performImport(from: pendingImport.url, sourceName: pendingImport.sourceName, mode: importMode)
+        } label: {
+          Text("Import", tableName: "StorageSettings")
+        }
+        if pendingImportExceedsLimit(pendingImport) {
+          Button {
+            unlimitedHistory = true
+            performImport(from: pendingImport.url, sourceName: pendingImport.sourceName, mode: importMode)
+          } label: {
+            Text("EnableUnlimitedAndImport", tableName: "StorageSettings")
+          }
+        }
+      }
+    }
+    .padding(24)
+    .frame(width: 480)
+  }
+
+  private func transferResultSheet(_ message: String) -> some View {
+    VStack(alignment: .leading, spacing: 16) {
+      Text("ImportExport", tableName: "StorageSettings")
+        .font(.headline)
+
+      Text(message)
+        .foregroundStyle(.gray)
+        .fixedSize(horizontal: false, vertical: true)
+
+      HStack {
+        Spacer()
+        Button {
+          cleanupSheet = nil
+        } label: {
+          Text("Close", tableName: "StorageSettings")
+        }
+      }
+    }
+    .padding(24)
+    .frame(width: 440)
+  }
+
+  private func importConfirmationMessage(for pendingImport: PendingImport) -> String {
+    if pendingImportExceedsLimit(pendingImport) {
+      return String(
+        format: AppLocalization.shared.localizedString("ImportConfirmationExceedsLimit", tableName: "StorageSettings"),
+        pendingImport.count,
+        pendingImport.sourceName,
+        size
+      )
+    }
+
+    return String(
+      format: AppLocalization.shared.localizedString("ImportConfirmation", tableName: "StorageSettings"),
+      pendingImport.count,
+      pendingImport.sourceName
+    )
+  }
+
+  private func pendingImportExceedsLimit(_ pendingImport: PendingImport) -> Bool {
+    return !unlimitedHistory && pendingImport.count > size
+  }
+
   private func refreshStorageUsage() {
     storageSize = Storage.shared.size
     historyCounts = Storage.shared.historyCounts
@@ -443,17 +606,21 @@ struct StorageSettingsPane: View {
     includesPinnedInClearAll = false
     includesPinnedInAdvancedCleanup = false
     optimizationResult = nil
+    importMode = .merge
   }
 
   private func optimizeDatabase() {
     do {
-      let before = Storage.shared.size
+      let before = Storage.shared.sizeInBytes
       try AppState.shared.history.optimizeStorage()
+      let after = Storage.shared.sizeInBytes
+      let summary = Storage.shared.optimizationSummary(before: before, after: after)
       refreshStorageUsage()
       optimizationResult = String(
         format: AppLocalization.shared.localizedString("OptimizationSucceeded", tableName: "StorageSettings"),
-        before,
-        storageSize
+        summary.before,
+        summary.after,
+        summary.saved
       )
     } catch {
       optimizationResult = String(
@@ -461,6 +628,137 @@ struct StorageSettingsPane: View {
         error.localizedDescription
       )
     }
+  }
+
+  private func exportBackup() {
+    let panel = NSSavePanel()
+    panel.canCreateDirectories = true
+    panel.isExtensionHidden = false
+    panel.allowedContentTypes = sqliteContentTypes
+    panel.nameFieldStringValue = defaultBackupFileName
+
+    guard panel.runModal() == .OK, let url = panel.url else {
+      return
+    }
+
+    do {
+      let summary = try Storage.shared.backup(to: url)
+      cleanupSheet = .transferResult(String(
+        format: AppLocalization.shared.localizedString("ExportSucceeded", tableName: "StorageSettings"),
+        url.path,
+        summary.total,
+        summary.images,
+        summary.files,
+        summary.text,
+        summary.fileSize
+      ))
+    } catch {
+      cleanupSheet = .transferResult(String(
+        format: AppLocalization.shared.localizedString("ExportFailed", tableName: "StorageSettings"),
+        error.localizedDescription
+      ))
+    }
+  }
+
+  private func chooseImportFile(defaultDirectory: URL? = nil, sourceName: String? = nil) {
+    let panel = NSOpenPanel()
+    panel.allowsMultipleSelection = false
+    panel.canChooseDirectories = false
+    panel.canChooseFiles = true
+    panel.allowedContentTypes = sqliteContentTypes
+    panel.directoryURL = defaultDirectory
+
+    guard panel.runModal() == .OK, let url = panel.url else {
+      return
+    }
+
+    prepareImport(from: url, sourceName: sourceName ?? url.deletingPathExtension().lastPathComponent)
+  }
+
+  private func importFromMaccy() {
+    guard let candidate = Storage.shared.originalMaccyImportSource else {
+      cleanupSheet = .transferResult(AppLocalization.shared.localizedString(
+        "ImportFromMaccyNotFound",
+        tableName: "StorageSettings"
+      ))
+      return
+    }
+
+    prepareImport(from: candidate.url, sourceName: candidate.name)
+  }
+
+  private func prepareImport(from url: URL, sourceName: String) {
+    do {
+      let count = try accessingSecurityScopedResource(url) {
+        try AppState.shared.history.importableRecordsCount(from: url)
+      }
+
+      let pendingImport = PendingImport(url: url, sourceName: sourceName, count: count)
+      importMode = .merge
+      cleanupSheet = .importOptions(pendingImport)
+    } catch {
+      cleanupSheet = .transferResult(String(
+        format: AppLocalization.shared.localizedString("ImportFailed", tableName: "StorageSettings"),
+        error.localizedDescription
+      ))
+    }
+  }
+
+  private func performImport(from url: URL, sourceName: String, mode: ImportMode) {
+    do {
+      let importedCount = try accessingSecurityScopedResource(url) {
+        try AppState.shared.history.importRecords(from: url, replaceExisting: mode == .replace)
+      }
+      let beforeOptimization = Storage.shared.sizeInBytes
+
+      do {
+        try AppState.shared.history.optimizeStorage()
+        let afterOptimization = Storage.shared.sizeInBytes
+        let optimizationSummary = Storage.shared.optimizationSummary(
+          before: beforeOptimization,
+          after: afterOptimization
+        )
+        refreshStorageUsage()
+        cleanupSheet = .transferResult(String(
+          format: AppLocalization.shared.localizedString("ImportSucceeded", tableName: "StorageSettings"),
+          importedCount,
+          sourceName,
+          optimizationSummary.before,
+          optimizationSummary.after,
+          optimizationSummary.saved
+        ))
+      } catch {
+        refreshStorageUsage()
+        cleanupSheet = .transferResult(String(
+          format: AppLocalization.shared.localizedString("ImportSucceededOptimizationFailed", tableName: "StorageSettings"),
+          importedCount,
+          sourceName,
+          error.localizedDescription
+        ))
+      }
+    } catch {
+      cleanupSheet = .transferResult(String(
+        format: AppLocalization.shared.localizedString("ImportFailed", tableName: "StorageSettings"),
+        error.localizedDescription
+      ))
+    }
+  }
+
+  private func accessingSecurityScopedResource<T>(_ url: URL, _ block: () throws -> T) throws -> T {
+    let accessed = url.startAccessingSecurityScopedResource()
+    defer {
+      if accessed {
+        url.stopAccessingSecurityScopedResource()
+      }
+    }
+    return try block()
+  }
+
+  private var defaultBackupFileName: String {
+    let formatter = DateFormatter()
+    formatter.locale = Locale(identifier: "en_US_POSIX")
+    formatter.dateFormat = "yyyyMMdd-HHmmss"
+    return "MaccyPaste-backup-\(formatter.string(from: Date())).sqlite"
   }
 }
 

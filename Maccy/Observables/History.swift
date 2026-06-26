@@ -737,6 +737,56 @@ class History: ItemsContainer { // swiftlint:disable:this type_body_length
   }
 
   @MainActor
+  func importableRecordsCount(from sourceURL: URL) throws -> Int {
+    let temporaryURL = try Storage.shared.temporaryReadableCopy(of: sourceURL)
+    defer {
+      try? FileManager.default.removeItem(at: temporaryURL.deletingLastPathComponent())
+    }
+
+    let sourceContainer = try sourceContainer(for: temporaryURL)
+    return try sourceContainer.mainContext.fetchCount(FetchDescriptor<HistoryItem>())
+  }
+
+  @MainActor
+  func importRecords(from sourceURL: URL, replaceExisting: Bool = false) throws -> Int {
+    let temporaryURL = try Storage.shared.temporaryReadableCopy(of: sourceURL)
+    defer {
+      try? FileManager.default.removeItem(at: temporaryURL.deletingLastPathComponent())
+    }
+
+    let sourceContainer = try sourceContainer(for: temporaryURL)
+    let sourceItems = try sourceContainer.mainContext.fetch(FetchDescriptor<HistoryItem>())
+
+    logger.info("Importing \(sourceItems.count) history records")
+    if replaceExisting {
+      clearSavedRecords(includePinned: true)
+    }
+
+    guard !sourceItems.isEmpty else {
+      return 0
+    }
+
+    for sourceItem in sourceItems {
+      Storage.shared.context.insert(clone(sourceItem))
+    }
+
+    Storage.shared.context.processPendingChanges()
+    try Storage.shared.context.save()
+    limitHistorySize(to: Defaults[.size])
+    deleteOrphanedContents()
+    Storage.shared.context.processPendingChanges()
+    try Storage.shared.context.save()
+
+    markStorageStatsChanged()
+    Task { @MainActor in
+      try? await loadInitialHistoryWindow()
+      AppState.shared.popup.needsResize = true
+    }
+
+    return sourceItems.count
+  }
+
+  @MainActor
   func delete(_ item: HistoryItemDecorator?) {
     guard let item else { return }
 
@@ -778,6 +828,26 @@ class History: ItemsContainer { // swiftlint:disable:this type_body_length
       Storage.shared.context.delete($0)
     }
     Storage.shared.context.delete(item)
+  }
+
+  private func sourceContainer(for url: URL) throws -> ModelContainer {
+    let configuration = ModelConfiguration(url: url)
+    return try ModelContainer(for: HistoryItem.self, configurations: configuration)
+  }
+
+  private func clone(_ sourceItem: HistoryItem) -> HistoryItem {
+    let contents = sourceItem.contents.map { content in
+      HistoryItemContent(type: content.type, value: content.value)
+    }
+    let item = HistoryItem(contents: contents)
+    item.application = sourceItem.application
+    item.firstCopiedAt = sourceItem.firstCopiedAt
+    item.lastCopiedAt = sourceItem.lastCopiedAt
+    item.numberOfCopies = sourceItem.numberOfCopies
+    item.pin = sourceItem.pin
+    item.title = sourceItem.title
+
+    return item
   }
 
   private func currentModifierFlags() -> NSEvent.ModifierFlags {
