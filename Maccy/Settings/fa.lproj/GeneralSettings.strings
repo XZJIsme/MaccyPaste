@@ -22,3 +22,10 @@
 "NotificationsAndSounds" = "اعلان‌ها و صداها 􀱁";
 "Language" = "زبان:";
 "SystemDefault" = "پیش‌فرض سیستم";
+"AutomaticallyDetectNewVersions" = "شناسایی خودکار نسخه‌های جدید";
+"CheckForNewVersionManually" = "شناسایی دستی نسخهٔ جدید";
+"UpdateNow" = "اکنون به‌روزرسانی شود";
+"CheckingForNewVersion" = "در حال بررسی نسخهٔ جدید...";
+"NoNewVersionFound" = "نسخهٔ جدیدی پیدا نشد.";
+"NewVersionAvailable" = "نسخهٔ جدید در دسترس است: %1$@.";
+"VersionCheckFailed" = "بررسی نسخهٔ جدید ناموفق بود";

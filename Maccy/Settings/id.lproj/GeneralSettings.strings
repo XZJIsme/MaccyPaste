@@ -22,3 +22,10 @@
 "NotificationsAndSounds" = "Notifikasi dan suara 􀱁";
 "Language" = "Bahasa:";
 "SystemDefault" = "Default sistem";
+"AutomaticallyDetectNewVersions" = "Deteksi versi baru secara otomatis";
+"CheckForNewVersionManually" = "Deteksi versi baru secara manual";
+"UpdateNow" = "Perbarui Sekarang";
+"CheckingForNewVersion" = "Memeriksa versi baru...";
+"NoNewVersionFound" = "Tidak ada versi baru.";
+"NewVersionAvailable" = "Versi baru tersedia: %1$@.";
+"VersionCheckFailed" = "Pemeriksaan versi baru gagal";

@@ -22,3 +22,10 @@
 "NotificationsAndSounds" = "התראות וצלילים 􀱁";
 "Language" = "שפה:";
 "SystemDefault" = "ברירת המחדל של המערכת";
+"AutomaticallyDetectNewVersions" = "לזהות גרסאות חדשות אוטומטית";
+"CheckForNewVersionManually" = "לזהות גרסה חדשה ידנית";
+"UpdateNow" = "לעדכן עכשיו";
+"CheckingForNewVersion" = "בודק אם יש גרסה חדשה...";
+"NoNewVersionFound" = "לא נמצאה גרסה חדשה.";
+"NewVersionAvailable" = "גרסה חדשה זמינה: %1$@.";
+"VersionCheckFailed" = "בדיקת גרסה חדשה נכשלה";

@@ -22,3 +22,10 @@
 "NotificationsAndSounds" = "Mga notification at tunog 􀱁";
 "Language" = "Wika:";
 "SystemDefault" = "Default ng system";
+"AutomaticallyDetectNewVersions" = "Awtomatikong tukuyin ang mga bagong bersyon";
+"CheckForNewVersionManually" = "Manu-manong tukuyin ang bagong bersyon";
+"UpdateNow" = "I-update ngayon";
+"CheckingForNewVersion" = "Tinitingnan kung may bagong bersyon...";
+"NoNewVersionFound" = "Walang nahanap na bagong bersyon.";
+"NewVersionAvailable" = "May bagong bersyon: %1$@.";
+"VersionCheckFailed" = "Nabigo ang pagtingin para sa bagong bersyon";

@@ -22,3 +22,10 @@
 "NotificationsAndSounds" = "Benachrichtigungen und Töne 􀱁";
 "Language" = "Sprache:";
 "SystemDefault" = "Systemeinstellung";
+"AutomaticallyDetectNewVersions" = "Neue Versionen automatisch erkennen";
+"CheckForNewVersionManually" = "Manuell nach neuer Version suchen";
+"UpdateNow" = "Jetzt aktualisieren";
+"CheckingForNewVersion" = "Neue Version wird gesucht...";
+"NoNewVersionFound" = "Keine neue Version gefunden.";
+"NewVersionAvailable" = "Neue Version verfügbar: %1$@.";
+"VersionCheckFailed" = "Suche nach neuer Version fehlgeschlagen";

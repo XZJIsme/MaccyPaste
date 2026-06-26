@@ -22,3 +22,10 @@
 "NotificationsAndSounds" = "Обавештења и звуци 􀱁";
 "Language" = "Језик:";
 "SystemDefault" = "Подразумевано системски";
+"AutomaticallyDetectNewVersions" = "Аутоматски откривај нове верзије";
+"CheckForNewVersionManually" = "Ручно откриј нову верзију";
+"UpdateNow" = "Ажурирај сада";
+"CheckingForNewVersion" = "Провера нове верзије...";
+"NoNewVersionFound" = "Нова верзија није пронађена.";
+"NewVersionAvailable" = "Доступна је нова верзија: %1$@.";
+"VersionCheckFailed" = "Провера нове верзије није успела";

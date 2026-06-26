@@ -23,3 +23,10 @@
 "PinTooltip" = "Kortkommando för att fästa historikpost .\nFörval: ⌥P.";
 "Modifiers" = "Anpassa beteendet vid val av post:\n• Välj med %@ nedtryckt för att kopiera posten.\n• Välj med %@ nedtryckt för att kopiera och klistra in posten.\n• Välj med %@ nedtryckt för att kopiera, rensa formatering och klistra in posten.";
 "Regex" = "Reguljära uttryck";
+"AutomaticallyDetectNewVersions" = "Upptäck nya versioner automatiskt";
+"CheckForNewVersionManually" = "Upptäck ny version manuellt";
+"UpdateNow" = "Uppdatera nu";
+"CheckingForNewVersion" = "Söker efter ny version...";
+"NoNewVersionFound" = "Ingen ny version hittades.";
+"NewVersionAvailable" = "Ny version tillgänglig: %1$@.";
+"VersionCheckFailed" = "Sökning efter ny version misslyckades";

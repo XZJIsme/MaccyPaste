@@ -22,3 +22,10 @@
 "NotificationsAndSounds" = "Oznámenia a zvuky 􀱁";
 "Language" = "Jazyk:";
 "SystemDefault" = "Predvolené podľa systému";
+"AutomaticallyDetectNewVersions" = "Automaticky zisťovať nové verzie";
+"CheckForNewVersionManually" = "Ručne zistiť novú verziu";
+"UpdateNow" = "Aktualizovať teraz";
+"CheckingForNewVersion" = "Kontroluje sa nová verzia...";
+"NoNewVersionFound" = "Nenašla sa žiadna nová verzia.";
+"NewVersionAvailable" = "Dostupná je nová verzia: %1$@.";
+"VersionCheckFailed" = "Kontrola novej verzie zlyhala";

@@ -22,3 +22,10 @@
 "NotificationsAndSounds" = "알림 및 소리 􀱁";
 "Language" = "언어:";
 "SystemDefault" = "시스템 기본값";
+"AutomaticallyDetectNewVersions" = "새 버전 자동 감지";
+"CheckForNewVersionManually" = "새 버전 수동 감지";
+"UpdateNow" = "지금 업데이트";
+"CheckingForNewVersion" = "새 버전을 확인하는 중...";
+"NoNewVersionFound" = "새 버전을 찾지 못했습니다.";
+"NewVersionAvailable" = "새 버전 사용 가능: %1$@.";
+"VersionCheckFailed" = "새 버전 확인 실패";

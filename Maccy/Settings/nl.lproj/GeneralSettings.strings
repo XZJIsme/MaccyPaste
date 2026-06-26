@@ -22,3 +22,10 @@
 "NotificationsAndSounds" = "Meldingen en geluiden 􀱁";
 "Language" = "Taal:";
 "SystemDefault" = "Systeemstandaard";
+"AutomaticallyDetectNewVersions" = "Nieuwe versies automatisch detecteren";
+"CheckForNewVersionManually" = "Handmatig nieuwe versie detecteren";
+"UpdateNow" = "Nu bijwerken";
+"CheckingForNewVersion" = "Controleren op een nieuwe versie...";
+"NoNewVersionFound" = "Geen nieuwe versie gevonden.";
+"NewVersionAvailable" = "Nieuwe versie beschikbaar: %1$@.";
+"VersionCheckFailed" = "Controle op nieuwe versie mislukt";

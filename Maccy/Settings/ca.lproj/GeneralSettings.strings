@@ -22,3 +22,10 @@
 "NotificationsAndSounds" = "Notificacions i sons 􀱁";
 "Language" = "Idioma:";
 "SystemDefault" = "Valor per defecte del sistema";
+"AutomaticallyDetectNewVersions" = "Detecta versions noves automàticament";
+"CheckForNewVersionManually" = "Detecta una versió nova manualment";
+"UpdateNow" = "Actualitza ara";
+"CheckingForNewVersion" = "S’està comprovant si hi ha una versió nova...";
+"NoNewVersionFound" = "No s’ha trobat cap versió nova.";
+"NewVersionAvailable" = "Hi ha una versió nova disponible: %1$@.";
+"VersionCheckFailed" = "No s’ha pogut comprovar si hi ha una versió nova";

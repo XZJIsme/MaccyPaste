@@ -22,3 +22,10 @@
 "NotificationsAndSounds" = "通知和聲音 􀱁";
 "Language" = "語言：";
 "SystemDefault" = "跟隨系統";
+"AutomaticallyDetectNewVersions" = "自動偵測新版本";
+"CheckForNewVersionManually" = "手動偵測新版本";
+"UpdateNow" = "立即更新";
+"CheckingForNewVersion" = "正在偵測新版本...";
+"NoNewVersionFound" = "未偵測到新版本。";
+"NewVersionAvailable" = "偵測到新版本：%1$@。";
+"VersionCheckFailed" = "偵測新版本失敗";

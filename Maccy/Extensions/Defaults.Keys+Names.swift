@@ -128,6 +128,8 @@ extension Defaults.Keys {
     "enabledPasteboardTypes", default: Set(StorageType.all.types)
   )
   static let highlightMatch = Key<HighlightMatch>("highlightMatch", default: .bold)
+  static let automaticallyDetectsNewVersions = Key<Bool>("automaticallyDetectsNewVersions", default: true)
+  static let lastVersionDetectionAt = Key<Date?>("lastVersionDetectionAt", default: nil)
   static let ignoreAllAppsExceptListed = Key<Bool>("ignoreAllAppsExceptListed", default: false)
   static let ignoreEvents = Key<Bool>("ignoreEvents", default: false)
   static let ignoreOnlyNextEvent = Key<Bool>("ignoreOnlyNextEvent", default: false)

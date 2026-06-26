@@ -22,3 +22,10 @@
 "NotificationsAndSounds" = "सूचनाएं और ध्वनियां 􀱁";
 "Language" = "भाषा:";
 "SystemDefault" = "सिस्टम डिफ़ॉल्ट";
+"AutomaticallyDetectNewVersions" = "नई संस्करणों का स्वतः पता लगाएँ";
+"CheckForNewVersionManually" = "नई संस्करण को मैन्युअल रूप से जाँचें";
+"UpdateNow" = "अभी अपडेट करें";
+"CheckingForNewVersion" = "नई संस्करण जाँची जा रही है...";
+"NoNewVersionFound" = "कोई नई संस्करण नहीं मिली।";
+"NewVersionAvailable" = "नई संस्करण उपलब्ध है: %1$@।";
+"VersionCheckFailed" = "नई संस्करण जाँच विफल रही";

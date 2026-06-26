@@ -23,3 +23,10 @@
 "ShowPreview" = "Pré-visualizar:";
 "ShowPreviewTooltip" = "Mostrar pré-visualização com informação adicional.\nPadrão: ⌃Space.";
 "Behavior" = "Comportamento:";
+"AutomaticallyDetectNewVersions" = "Detetar novas versões automaticamente";
+"CheckForNewVersionManually" = "Detetar nova versão manualmente";
+"UpdateNow" = "Atualizar agora";
+"CheckingForNewVersion" = "A procurar nova versão...";
+"NoNewVersionFound" = "Nenhuma nova versão encontrada.";
+"NewVersionAvailable" = "Nova versão disponível: %1$@.";
+"VersionCheckFailed" = "Falha ao procurar nova versão";

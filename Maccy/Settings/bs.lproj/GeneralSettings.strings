@@ -22,3 +22,10 @@
 "NotificationsAndSounds" = "Obavještenja i zvukovi 􀱁";
 "Language" = "Jezik:";
 "SystemDefault" = "Sistemski zadano";
+"AutomaticallyDetectNewVersions" = "Automatski otkrivaj nove verzije";
+"CheckForNewVersionManually" = "Ručno provjeri novu verziju";
+"UpdateNow" = "Ažuriraj sada";
+"CheckingForNewVersion" = "Provjeravam novu verziju...";
+"NoNewVersionFound" = "Nova verzija nije pronađena.";
+"NewVersionAvailable" = "Dostupna je nova verzija: %1$@.";
+"VersionCheckFailed" = "Provjera nove verzije nije uspjela";

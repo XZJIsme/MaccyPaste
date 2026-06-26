@@ -22,3 +22,10 @@
 "NotificationsAndSounds" = "การแจ้งเตือนและเสียง 􀱁";
 "Language" = "ภาษา:";
 "SystemDefault" = "ค่าเริ่มต้นของระบบ";
+"AutomaticallyDetectNewVersions" = "ตรวจหาเวอร์ชันใหม่โดยอัตโนมัติ";
+"CheckForNewVersionManually" = "ตรวจหาเวอร์ชันใหม่ด้วยตนเอง";
+"UpdateNow" = "อัปเดตตอนนี้";
+"CheckingForNewVersion" = "กำลังตรวจหาเวอร์ชันใหม่...";
+"NoNewVersionFound" = "ไม่พบเวอร์ชันใหม่";
+"NewVersionAvailable" = "มีเวอร์ชันใหม่: %1$@.";
+"VersionCheckFailed" = "ตรวจหาเวอร์ชันใหม่ไม่สำเร็จ";

@@ -22,3 +22,10 @@
 "NotificationsAndSounds" = "Ειδοποιήσεις και ήχοι 􀱁";
 "Language" = "Γλώσσα:";
 "SystemDefault" = "Προεπιλογή συστήματος";
+"AutomaticallyDetectNewVersions" = "Αυτόματος εντοπισμός νέων εκδόσεων";
+"CheckForNewVersionManually" = "Χειροκίνητος εντοπισμός νέας έκδοσης";
+"UpdateNow" = "Ενημέρωση τώρα";
+"CheckingForNewVersion" = "Έλεγχος για νέα έκδοση...";
+"NoNewVersionFound" = "Δεν βρέθηκε νέα έκδοση.";
+"NewVersionAvailable" = "Διαθέσιμη νέα έκδοση: %1$@.";
+"VersionCheckFailed" = "Αποτυχία ελέγχου νέας έκδοσης";

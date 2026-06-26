@@ -12,6 +12,7 @@ struct GeneralSettingsPane: View {
   @Default(.searchMode) private var searchMode
 
   @State private var localization = AppLocalization.shared
+  @State private var softwareUpdater = SoftwareUpdater.shared
   @State private var copyModifier = HistoryItemAction.copy.modifierFlags.description
   @State private var pasteModifier = HistoryItemAction.paste.modifierFlags.description
   @State private var pasteWithoutFormatting = HistoryItemAction.pasteWithoutFormatting.modifierFlags.description
@@ -21,6 +22,36 @@ struct GeneralSettingsPane: View {
       Settings.Section(title: "", bottomDivider: true) {
         LaunchAtLogin.Toggle {
           Text("LaunchAtLogin", tableName: "GeneralSettings")
+        }
+      }
+
+      Settings.Section(title: "", bottomDivider: true) {
+        Defaults.Toggle(key: .automaticallyDetectsNewVersions) {
+          Text("AutomaticallyDetectNewVersions", tableName: "GeneralSettings")
+        }
+        .fixedSize()
+
+        HStack(spacing: 8) {
+          Button {
+            softwareUpdater.detectNewVersionManually()
+          } label: {
+            Text("CheckForNewVersionManually", tableName: "GeneralSettings")
+          }
+          .disabled(softwareUpdater.detectionState == .checking)
+
+          Button {
+            softwareUpdater.installAvailableUpdate()
+          } label: {
+            Text("UpdateNow", tableName: "GeneralSettings")
+          }
+          .disabled(!softwareUpdater.updateAvailable)
+
+          if let updateStatusText {
+            Text(updateStatusText)
+              .controlSize(.small)
+              .foregroundStyle(.gray)
+              .fixedSize(horizontal: false, vertical: true)
+          }
         }
       }
 
@@ -127,6 +158,24 @@ struct GeneralSettingsPane: View {
     copyModifier = HistoryItemAction.copy.modifierFlags.description
     pasteModifier = HistoryItemAction.paste.modifierFlags.description
     pasteWithoutFormatting = HistoryItemAction.pasteWithoutFormatting.modifierFlags.description
+  }
+
+  private var updateStatusText: String? {
+    switch softwareUpdater.detectionState {
+    case .idle:
+      return nil
+    case .checking:
+      return AppLocalization.shared.localizedString("CheckingForNewVersion", tableName: "GeneralSettings")
+    case .upToDate:
+      return AppLocalization.shared.localizedString("NoNewVersionFound", tableName: "GeneralSettings")
+    case .updateAvailable(let shortVersion):
+      return String(
+        format: AppLocalization.shared.localizedString("NewVersionAvailable", tableName: "GeneralSettings"),
+        shortVersion
+      )
+    case .failed:
+      return AppLocalization.shared.localizedString("VersionCheckFailed", tableName: "GeneralSettings")
+    }
   }
 }
 

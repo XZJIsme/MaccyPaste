@@ -22,3 +22,10 @@
 "Search" = "Qidirish:";
 "Exact" = "Aniq";
 "Regex" = "Muntazam ifodalar";
+"AutomaticallyDetectNewVersions" = "Yangi versiyalarni avtomatik aniqlash";
+"CheckForNewVersionManually" = "Yangi versiyani qo‘lda aniqlash";
+"UpdateNow" = "Hozir yangilash";
+"CheckingForNewVersion" = "Yangi versiya tekshirilmoqda...";
+"NoNewVersionFound" = "Yangi versiya topilmadi.";
+"NewVersionAvailable" = "Yangi versiya mavjud: %1$@.";
+"VersionCheckFailed" = "Yangi versiyani tekshirish amalga oshmadi";

@@ -22,3 +22,10 @@
 "NotificationsAndSounds" = "通知と音 􀱁";
 "Language" = "言語:";
 "SystemDefault" = "システムデフォルト";
+"AutomaticallyDetectNewVersions" = "新しいバージョンを自動検出";
+"CheckForNewVersionManually" = "新しいバージョンを手動で検出";
+"UpdateNow" = "今すぐ更新";
+"CheckingForNewVersion" = "新しいバージョンを確認中...";
+"NoNewVersionFound" = "新しいバージョンは見つかりませんでした。";
+"NewVersionAvailable" = "新しいバージョンがあります: %1$@。";
+"VersionCheckFailed" = "新しいバージョンの確認に失敗しました";

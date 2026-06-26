@@ -22,3 +22,10 @@
 "NotificationsAndSounds" = "Известия и звуци 􀱁";
 "Language" = "Език:";
 "SystemDefault" = "Системен език";
+"AutomaticallyDetectNewVersions" = "Автоматично откриване на нови версии";
+"CheckForNewVersionManually" = "Ръчно откриване на нова версия";
+"UpdateNow" = "Обнови сега";
+"CheckingForNewVersion" = "Проверява се за нова версия...";
+"NoNewVersionFound" = "Не е открита нова версия.";
+"NewVersionAvailable" = "Налична е нова версия: %1$@.";
+"VersionCheckFailed" = "Неуспешна проверка за нова версия";

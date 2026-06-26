@@ -22,3 +22,10 @@
 "NotificationsAndSounds" = "Сповіщення та звуки 􀱁";
 "Language" = "Мова:";
 "SystemDefault" = "Типово для системи";
+"AutomaticallyDetectNewVersions" = "Автоматично виявляти нові версії";
+"CheckForNewVersionManually" = "Виявити нову версію вручну";
+"UpdateNow" = "Оновити зараз";
+"CheckingForNewVersion" = "Перевірка нової версії...";
+"NoNewVersionFound" = "Нову версію не знайдено.";
+"NewVersionAvailable" = "Доступна нова версія: %1$@.";
+"VersionCheckFailed" = "Не вдалося перевірити нову версію";

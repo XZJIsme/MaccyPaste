@@ -22,3 +22,10 @@
 "NotificationsAndSounds" = "Teavitused ja helid 􀱁";
 "Language" = "Keel:";
 "SystemDefault" = "Süsteemi vaikeseade";
+"AutomaticallyDetectNewVersions" = "Tuvasta uued versioonid automaatselt";
+"CheckForNewVersionManually" = "Tuvasta uus versioon käsitsi";
+"UpdateNow" = "Uuenda kohe";
+"CheckingForNewVersion" = "Uut versiooni otsitakse...";
+"NoNewVersionFound" = "Uut versiooni ei leitud.";
+"NewVersionAvailable" = "Uus versioon on saadaval: %1$@.";
+"VersionCheckFailed" = "Uue versiooni kontroll ebaõnnestus";

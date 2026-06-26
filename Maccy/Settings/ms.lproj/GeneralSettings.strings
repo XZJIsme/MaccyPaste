@@ -22,3 +22,10 @@
 "NotificationsAndSounds" = "Pemberitahuan dan bunyi 􀱁";
 "Language" = "Bahasa:";
 "SystemDefault" = "Lalai sistem";
+"AutomaticallyDetectNewVersions" = "Kesan versi baharu secara automatik";
+"CheckForNewVersionManually" = "Kesan versi baharu secara manual";
+"UpdateNow" = "Kemas kini sekarang";
+"CheckingForNewVersion" = "Memeriksa versi baharu...";
+"NoNewVersionFound" = "Tiada versi baharu ditemui.";
+"NewVersionAvailable" = "Versi baharu tersedia: %1$@.";
+"VersionCheckFailed" = "Pemeriksaan versi baharu gagal";

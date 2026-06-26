@@ -22,3 +22,10 @@
 "NotificationsAndSounds" = "Notifikationer og lyde 􀱁";
 "Language" = "Sprog:";
 "SystemDefault" = "Systemstandard";
+"AutomaticallyDetectNewVersions" = "Find nye versioner automatisk";
+"CheckForNewVersionManually" = "Find ny version manuelt";
+"UpdateNow" = "Opdater nu";
+"CheckingForNewVersion" = "Søger efter ny version...";
+"NoNewVersionFound" = "Der blev ikke fundet en ny version.";
+"NewVersionAvailable" = "Ny version tilgængelig: %1$@.";
+"VersionCheckFailed" = "Kunne ikke søge efter ny version";

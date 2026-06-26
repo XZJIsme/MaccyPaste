@@ -22,3 +22,10 @@
 "NotificationsAndSounds" = "Ilmoitukset ja äänet 􀱁";
 "Language" = "Kieli:";
 "SystemDefault" = "Järjestelmän oletus";
+"AutomaticallyDetectNewVersions" = "Tunnista uudet versiot automaattisesti";
+"CheckForNewVersionManually" = "Tunnista uusi versio käsin";
+"UpdateNow" = "Päivitä nyt";
+"CheckingForNewVersion" = "Tarkistetaan uutta versiota...";
+"NoNewVersionFound" = "Uutta versiota ei löytynyt.";
+"NewVersionAvailable" = "Uusi versio saatavilla: %1$@.";
+"VersionCheckFailed" = "Uuden version tarkistus epäonnistui";

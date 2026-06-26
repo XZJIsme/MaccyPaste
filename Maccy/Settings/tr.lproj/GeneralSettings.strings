@@ -22,3 +22,10 @@
 "NotificationsAndSounds" = "Bildirimler ve sesler 􀱁";
 "Language" = "Dil:";
 "SystemDefault" = "Sistem varsayılanı";
+"AutomaticallyDetectNewVersions" = "Yeni sürümleri otomatik algıla";
+"CheckForNewVersionManually" = "Yeni sürümü elle algıla";
+"UpdateNow" = "Şimdi Güncelle";
+"CheckingForNewVersion" = "Yeni sürüm denetleniyor...";
+"NoNewVersionFound" = "Yeni sürüm bulunamadı.";
+"NewVersionAvailable" = "Yeni sürüm mevcut: %1$@.";
+"VersionCheckFailed" = "Yeni sürüm denetimi başarısız";

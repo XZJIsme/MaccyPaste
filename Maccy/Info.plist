@@ -28,5 +28,7 @@
 	<string>Copyright © XZJIsme</string>
 	<key>NSPrincipalClass</key>
 	<string>NSApplication</string>
+	<key>SUFeedURL</key>
+	<string>https://raw.githubusercontent.com/XZJIsme/MaccyPaste/refs/heads/maccypaste/appcast.xml</string>
 </dict>
 </plist>

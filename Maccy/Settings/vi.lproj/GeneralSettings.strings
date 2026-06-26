@@ -22,3 +22,10 @@
 "NotificationsAndSounds" = "Thông báo và âm thanh 􀱁";
 "Language" = "Ngôn ngữ:";
 "SystemDefault" = "Mặc định hệ thống";
+"AutomaticallyDetectNewVersions" = "Tự động phát hiện phiên bản mới";
+"CheckForNewVersionManually" = "Phát hiện phiên bản mới thủ công";
+"UpdateNow" = "Cập nhật ngay";
+"CheckingForNewVersion" = "Đang kiểm tra phiên bản mới...";
+"NoNewVersionFound" = "Không tìm thấy phiên bản mới.";
+"NewVersionAvailable" = "Có phiên bản mới: %1$@.";
+"VersionCheckFailed" = "Kiểm tra phiên bản mới thất bại";

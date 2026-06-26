@@ -22,3 +22,10 @@
 "NotificationsAndSounds" = "Paziņojumi un skaņas 􀱁";
 "Language" = "Valoda:";
 "SystemDefault" = "Sistēmas noklusējums";
+"AutomaticallyDetectNewVersions" = "Automātiski noteikt jaunās versijas";
+"CheckForNewVersionManually" = "Manuāli noteikt jaunu versiju";
+"UpdateNow" = "Atjaunināt tagad";
+"CheckingForNewVersion" = "Meklē jaunu versiju...";
+"NoNewVersionFound" = "Jauna versija netika atrasta.";
+"NewVersionAvailable" = "Pieejama jauna versija: %1$@.";
+"VersionCheckFailed" = "Jaunas versijas pārbaude neizdevās";

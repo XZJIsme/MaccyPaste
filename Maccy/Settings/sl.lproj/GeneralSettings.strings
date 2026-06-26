@@ -22,3 +22,10 @@
 "NotificationsAndSounds" = "Obvestila in zvoki 􀱁";
 "Language" = "Jezik:";
 "SystemDefault" = "Sistemsko privzeto";
+"AutomaticallyDetectNewVersions" = "Samodejno zaznaj nove različice";
+"CheckForNewVersionManually" = "Ročno zaznaj novo različico";
+"UpdateNow" = "Posodobi zdaj";
+"CheckingForNewVersion" = "Preverjanje nove različice...";
+"NoNewVersionFound" = "Nova različica ni bila najdena.";
+"NewVersionAvailable" = "Na voljo je nova različica: %1$@.";
+"VersionCheckFailed" = "Preverjanje nove različice ni uspelo";

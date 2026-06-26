@@ -22,3 +22,10 @@
 "NotificationsAndSounds" = "اطلاعات اور آوازیں 􀱁";
 "Language" = "زبان:";
 "SystemDefault" = "سسٹم ڈیفالٹ";
+"AutomaticallyDetectNewVersions" = "نئے ورژن خودکار طور پر تلاش کریں";
+"CheckForNewVersionManually" = "نیا ورژن دستی طور پر تلاش کریں";
+"UpdateNow" = "ابھی اپ ڈیٹ کریں";
+"CheckingForNewVersion" = "نیا ورژن چیک کیا جا رہا ہے...";
+"NoNewVersionFound" = "کوئی نیا ورژن نہیں ملا۔";
+"NewVersionAvailable" = "نیا ورژن دستیاب ہے: %1$@۔";
+"VersionCheckFailed" = "نیا ورژن چیک ناکام ہوا";

@@ -23,3 +23,10 @@
 "Behavior" = "Comportament:";
 "Delete" = "Șterge:";
 "Title" = "General";
+"AutomaticallyDetectNewVersions" = "Detectează automat versiunile noi";
+"CheckForNewVersionManually" = "Detectează manual o versiune nouă";
+"UpdateNow" = "Actualizează acum";
+"CheckingForNewVersion" = "Se caută o versiune nouă...";
+"NoNewVersionFound" = "Nu a fost găsită nicio versiune nouă.";
+"NewVersionAvailable" = "Versiune nouă disponibilă: %1$@.";
+"VersionCheckFailed" = "Verificarea versiunii noi a eșuat";

@@ -22,3 +22,10 @@
 "NotificationsAndSounds" = "Értesítések és hangok 􀱁";
 "Language" = "Nyelv:";
 "SystemDefault" = "Rendszer alapértelmezése";
+"AutomaticallyDetectNewVersions" = "Új verziók automatikus keresése";
+"CheckForNewVersionManually" = "Új verzió kézi keresése";
+"UpdateNow" = "Frissítés most";
+"CheckingForNewVersion" = "Új verzió keresése...";
+"NoNewVersionFound" = "Nem található új verzió.";
+"NewVersionAvailable" = "Új verzió érhető el: %1$@.";
+"VersionCheckFailed" = "Az új verzió keresése sikertelen";

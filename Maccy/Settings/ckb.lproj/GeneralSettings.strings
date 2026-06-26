@@ -22,3 +22,10 @@
 "NotificationsAndSounds" = "ئاگادارییەکان و دەنگەکان 􀱁";
 "Language" = "زمان:";
 "SystemDefault" = "بنەڕەتی سیستەم";
+"AutomaticallyDetectNewVersions" = "وەشانی نوێ خۆکارانە بدۆزەوە";
+"CheckForNewVersionManually" = "بەدەستی وەشانی نوێ بدۆزەوە";
+"UpdateNow" = "ئێستا نوێ بکەرەوە";
+"CheckingForNewVersion" = "گەڕان بۆ وەشانی نوێ...";
+"NoNewVersionFound" = "هیچ وەشانێکی نوێ نەدۆزرایەوە.";
+"NewVersionAvailable" = "وەشانێکی نوێ بەردەستە: %1$@.";
+"VersionCheckFailed" = "گەڕان بۆ وەشانی نوێ سەرکەوتوو نەبوو";

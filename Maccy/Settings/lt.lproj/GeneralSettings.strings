@@ -22,3 +22,10 @@
 "NotificationsAndSounds" = "Pranešimai ir garsai 􀱁";
 "Language" = "Kalba:";
 "SystemDefault" = "Sistemos numatytoji";
+"AutomaticallyDetectNewVersions" = "Automatiškai aptikti naujas versijas";
+"CheckForNewVersionManually" = "Rankiniu būdu aptikti naują versiją";
+"UpdateNow" = "Atnaujinti dabar";
+"CheckingForNewVersion" = "Ieškoma naujos versijos...";
+"NoNewVersionFound" = "Nauja versija nerasta.";
+"NewVersionAvailable" = "Yra nauja versija: %1$@.";
+"VersionCheckFailed" = "Nepavyko patikrinti naujos versijos";

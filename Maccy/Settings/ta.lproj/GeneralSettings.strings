@@ -22,3 +22,10 @@
 "NotificationsAndSounds" = "அறிவிப்புகள் மற்றும் ஒலிகள்";
 "Language" = "மொழி:";
 "SystemDefault" = "அமைப்பு இயல்புநிலை";
+"AutomaticallyDetectNewVersions" = "புதிய பதிப்புகளை தானாகக் கண்டறி";
+"CheckForNewVersionManually" = "புதிய பதிப்பை கைமுறையாகக் கண்டறி";
+"UpdateNow" = "இப்போது புதுப்பி";
+"CheckingForNewVersion" = "புதிய பதிப்பு சரிபார்க்கப்படுகிறது...";
+"NoNewVersionFound" = "புதிய பதிப்பு எதுவும் கிடைக்கவில்லை.";
+"NewVersionAvailable" = "புதிய பதிப்பு கிடைக்கிறது: %1$@.";
+"VersionCheckFailed" = "புதிய பதிப்பு சரிபார்ப்பு தோல்வியடைந்தது";

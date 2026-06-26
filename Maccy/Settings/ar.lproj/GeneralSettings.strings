@@ -22,3 +22,10 @@
 "NotificationsAndSounds" = "الإشعارات والأصوات 􀱁";
 "Language" = "اللغة:";
 "SystemDefault" = "افتراضي النظام";
+"AutomaticallyDetectNewVersions" = "اكتشاف الإصدارات الجديدة تلقائيًا";
+"CheckForNewVersionManually" = "اكتشاف إصدار جديد يدويًا";
+"UpdateNow" = "التحديث الآن";
+"CheckingForNewVersion" = "جارٍ اكتشاف إصدار جديد...";
+"NoNewVersionFound" = "لم يتم العثور على إصدار جديد.";
+"NewVersionAvailable" = "يتوفر إصدار جديد: %1$@.";
+"VersionCheckFailed" = "فشل اكتشاف الإصدار الجديد";

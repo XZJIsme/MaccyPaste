@@ -23,3 +23,10 @@
 "NotificationsAndSounds" = "Sciigoj kaj sonoj 􀱁";
 "Language" = "Lingvo:";
 "SystemDefault" = "Sistema defaŭlto";
+"AutomaticallyDetectNewVersions" = "Aŭtomate detekti novajn versiojn";
+"CheckForNewVersionManually" = "Mane detekti novan version";
+"UpdateNow" = "Ĝisdatigi nun";
+"CheckingForNewVersion" = "Kontrolas novan version...";
+"NoNewVersionFound" = "Neniu nova versio trovita.";
+"NewVersionAvailable" = "Nova versio disponeblas: %1$@.";
+"VersionCheckFailed" = "Kontrolo de nova versio malsukcesis";
